@@ -40,7 +40,7 @@
 #packages_dir = /var/cache/pisi/packages
 #compiled_packages_dir = "/var/cache/pisi/packages"
 #index_dir = /var/cache/pisi/index
-#tmp_dir = /var/tmp/pisi
+#tmp_dir = /var/pisi
 #kde_dir = /usr/kde/3.5
 #qt_dir = /usr/qt/3
 
