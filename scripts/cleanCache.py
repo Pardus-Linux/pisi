@@ -60,7 +60,7 @@ def cleanPisis(clean, root = '/var/cache/pisi/packages'):
     l = findUnneededFiles(list)
     doit(root, l, clean, ".pisi")
 
-def cleanBuilds(clean, root = '/var/tmp/pisi'):
+def cleanBuilds(clean, root = '/var/pisi'):
     # Build remnant
     list = []
     for f in os.listdir(root):
