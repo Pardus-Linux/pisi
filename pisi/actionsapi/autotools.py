@@ -60,7 +60,7 @@ def configure(parameters = ''):
 
         args = './configure \
                 --prefix=/%s \
-                --host=%s \
+                --build=%s \
                 --mandir=/%s \
                 --infodir=/%s \
                 --datadir=/%s \
@@ -85,7 +85,7 @@ def rawConfigure(parameters = ''):
             raise ConfigureError(_('Configure failed.'))
     else:
         raise ConfigureError(_('No configure script found.'))
- 
+
 def compile(parameters = ''):
     #FIXME: Only one package uses this until now, hmmm
     system('%s %s %s' % (get.CC(), get.CFLAGS(), parameters))
