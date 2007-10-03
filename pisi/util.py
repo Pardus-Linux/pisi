@@ -326,10 +326,70 @@ def clean_ar_timestamps(ar_file):
         fp.write(line)
     fp.close()
 
+def calculate_hash(path):
+    """Return a (path, hash) tuple for given path."""
+    if os.path.islink(path):
+        try:
+            # For symlinks, path string is hashed instead of the content
+            value = sha1_data(os.readlink(path))
+        except FileError:
+            ctx.ui.info(_("Including external link '%s'") % path)
+            value = None
+    elif os.path.isdir(path):
+        ctx.ui.info(_("Including directory '%s'") % path)
+        value = None
+    else:
+        if path.endswith('.a'):
+            # .a file content changes with each compile due to timestamps
+            # We pad them with zeroes, thus hash will be stable
+            clean_ar_timestamps(path)
+        value = sha1_file(path)
+    
+    return (path, value)
+
+def get_file_hashes(top, excludePrefix=None, removePrefix=None):
+    """Yield (path, hash) tuples for given directory tree."""
+    def is_included(path):
+        if excludePrefix:
+            temp = remove_prefix(removePrefix, path)
+            if len(filter(lambda x: temp.startswith(x), excludePrefix)) > 0:
+                return False
+        return True
+    
+    # single file/symlink case
+    if not os.path.isdir(top) or os.path.islink(top):
+        if is_included(top):
+            yield calculate_hash(top)
+        return
+    
+    for root, dirs, files in os.walk(top):
+        # Hash files and file symlinks
+        for name in files:
+            path = os.path.join(root, name)
+            if is_included(path):
+                yield calculate_hash(path)
+        
+        # Hash symlink dirs
+        # os.walk doesn't enter them, we don't want to follow them either
+        # but their name and hashes must be reported
+        # Discussed in bug #339
+        for name in dirs:
+            path = os.path.join(root, name)
+            if os.path.islink(path):
+                if is_included(path):
+                    yield calculate_hash(path)
+        
+        # Hash empty dir
+        # Discussed in bug #340
+        if len(files) == 0 and len(dirs) == 0:
+            if is_included(root):
+                yield calculate_hash(root)
+
+
 # FIXME: this should be done in a much much simpler way
 # as it stands, it seems to be a kludge to solve
 # an unrelated problem
-def get_file_hashes(top, excludePrefix=None, removePrefix=None):
+def crap_get_file_hashes(top, excludePrefix=None, removePrefix=None):
     """Iterate over given path and return a list of file hashes.
     
     Generator function iterates over a toplevel path and returns the
@@ -449,14 +509,9 @@ def sha1_file(filename):
 
 def sha1_data(data):
     """Calculate sha1 hash of given data."""
-    try:
-        m = sha.new()
-        m.update(data)
-        return m.hexdigest()
-    except KeyboardInterrupt:
-        raise
-    except Exception: #FIXME: what exception could we catch here, replace with that.
-        raise Error(_("Cannot calculate SHA1 hash of given data"))
+    m = sha.new()
+    m.update(data)
+    return m.hexdigest()
 
 def uncompress(patchFile, compressType="gz", targetDir=None):
     """Uncompress the file and return the new path."""
