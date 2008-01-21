@@ -761,10 +761,7 @@ expanded to package names.
 
     def run(self):
 
-        if self.options.fetch_only:
-            self.init(database=True, write=False)
-        else:
-            self.init()
+        self.init()
 
         if not ctx.get_option('bypass_update_repo'):
             ctx.ui.info(_('Updating repositories'))
