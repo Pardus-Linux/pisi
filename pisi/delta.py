@@ -92,6 +92,9 @@ def create_delta_package(old_package, new_package):
 
     ctx.ui.info(_("Done."))
 
+    # return delta package name
+    return deltaname
+
 #  Hash not equals                      (these are the deltas)
 #  Hash equal but path different ones   (these are the relocations)
 #  Hash and also path equal ones        (do nothing)
