@@ -25,7 +25,7 @@ _ = __trans.ugettext
 
 # Pisi Modules
 import pisi.context as ctx
-from pisi.util import join_path
+from pisi.util import join_path, remove_prefix
 
 # ActionsAPI Modules
 import pisi.actionsapi
@@ -71,11 +71,13 @@ def dohtml(*sourceFiles):
             if os.path.isfile(source) and os.path.splitext(source)[1] in allowed_extensions:
                 system('install -m0644 "%s" %s' % (source, destionationDirectory))
             if os.path.isdir(source) and os.path.basename(source) not in disallowed_directories:
+                eraser = os.path.split(source)[0]
                 for root, dirs, files in os.walk(source):
-                    for source in files:
-                        if os.path.splitext(source)[1] in allowed_extensions:
-                            makedirs(destionationDirectory)
-                            system('install -m0644 %s %s' % (join_path(root, source), destionationDirectory))
+                    newRoot = remove_prefix(eraser, root)
+                    for sourcename in files:
+                        if os.path.splitext(sourcename)[1] in allowed_extensions:
+                            makedirs(join_path(destionationDirectory, newRoot))
+                            system('install -m0644 %s %s' % (join_path(root, sourcename), join_path(destionationDirectory, newRoot, sourcename)))
 
 def doinfo(*sourceFiles):
     '''inserts the into files in the list of files into /usr/share/info'''
