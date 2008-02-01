@@ -101,7 +101,10 @@ class Index(xmlfile.XmlFile):
                 if fn == 'distribution.xml':
                     self.add_distro(os.path.join(root, fn))
 
-        obsoletes_list = map(str, self.distribution.obsoletes)
+        try:
+            obsoletes_list = map(str, self.distribution.obsoletes)
+        except AttributeError:
+            obsoletes_list = []
 
         for pkg in util.filter_latest_packages(packages):
             pkg_name = util.parse_package_name(os.path.basename(pkg))[0]
@@ -126,7 +129,8 @@ class Index(xmlfile.XmlFile):
         for comp in self.components:
             ctx.componentdb.update_component(comp, repo, txn)
         ctx.packagedb.remove_repo(repo, txn=txn)
-        ctx.packagedb.add_obsoletes(self.distribution.obsoletes, repo, txn=txn)
+        if self.distribution is not None:
+            ctx.packagedb.add_obsoletes(self.distribution.obsoletes, repo, txn=txn)
         for pkg in self.packages:
             ctx.packagedb.add_package(pkg, repo, txn=txn)
             update_progress()
