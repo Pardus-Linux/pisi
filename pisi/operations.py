@@ -266,7 +266,7 @@ def is_upgradable(name, ignore_build = False):
         raise
     except Exception, e: #FIXME: what exception could we catch here, replace with that.
         return False
-        
+
     if ignore_build or (not build) or (not pkg.build):
         return pisi.version.Version(release) < pisi.version.Version(pkg.release)
     else:
@@ -448,7 +448,7 @@ def upgrade_pkg_names(A = []):
                 ctx.ui.info(_('Package %s is already at the latest build %s.')
                             % (pkg.name, pkg.build), True)
 
-                
+
     A = set(Ap)
 
     if len(A)==0:
@@ -506,7 +506,7 @@ def upgrade_pkg_names(A = []):
         remove_replaced_packages(order, replaces)
 
     remove_obsoleted_packages()
-    
+
     for path in paths:
         ctx.ui.info(util.colorize(_("Installing %d / %d") % (paths.index(path)+1, len(paths)), "yellow"))
         install_op = atomicoperations.Install(path, ignore_file_conflicts = True)
@@ -539,7 +539,7 @@ def plan_upgrade(A):
                 # add packages that can be upgraded
                 if ctx.installdb.is_installed(dep.package) and dependency.installed_satisfies_dep(dep):
                     continue
-                
+
                 if dependency.repo_satisfies_dep(dep):
                     if not dep.package in G_f.vertices():
                         Bp.add(str(dep.package))
@@ -547,7 +547,7 @@ def plan_upgrade(A):
                 else:
                     ctx.ui.error(_('Dependency %s of %s cannot be satisfied') % (dep, x))
                     raise Error(_("Upgrade is not possible."))
-                
+
         B = Bp
     # now, search reverse dependencies to see if anything
     # should be upgraded

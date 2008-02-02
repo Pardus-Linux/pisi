@@ -241,9 +241,9 @@ def absolute_path(path):
 
 def join_path(a, *p):
     """Join two or more pathname components.
-    
+
     Python os.path.join cannot handle '/' at the start of latter components.
-    
+
     """
     path = a
     for b in p:
@@ -344,7 +344,7 @@ def calculate_hash(path):
             # We pad them with zeroes, thus hash will be stable
             clean_ar_timestamps(path)
         value = sha1_file(path)
-    
+
     return (path, value)
 
 def get_file_hashes(top, excludePrefix=None, removePrefix=None):
@@ -355,20 +355,20 @@ def get_file_hashes(top, excludePrefix=None, removePrefix=None):
             if len(filter(lambda x: temp.startswith(x), excludePrefix)) > 0:
                 return False
         return True
-    
+
     # single file/symlink case
     if not os.path.isdir(top) or os.path.islink(top):
         if is_included(top):
             yield calculate_hash(top)
         return
-    
+
     for root, dirs, files in os.walk(top):
         # Hash files and file symlinks
         for name in files:
             path = os.path.join(root, name)
             if is_included(path):
                 yield calculate_hash(path)
-        
+
         # Hash symlink dirs
         # os.walk doesn't enter them, we don't want to follow them either
         # but their name and hashes must be reported
@@ -378,7 +378,7 @@ def get_file_hashes(top, excludePrefix=None, removePrefix=None):
             if os.path.islink(path):
                 if is_included(path):
                     yield calculate_hash(path)
-        
+
         # Hash empty dir
         # Discussed in bug #340
         if len(files) == 0 and len(dirs) == 0:
@@ -573,9 +573,9 @@ def package_name(name, version, release, build, prependSuffix=True):
 
 def is_package_name(fn, package_name = None):
     """Check if fn is a valid filename for given package_name.
-    
+
     If not given a package name, see if fn fits the package name rules
-    
+
     """
     if (package_name==None) or fn.startswith(package_name + '-'):
         if fn.endswith(ctx.const.package_suffix):
@@ -591,9 +591,9 @@ def is_package_name(fn, package_name = None):
 
 def parse_package_name(package_name):
     """Separate package name and version string.
-    
+
     example: tasma-1.0.3-5-2 -> (tasma, 1.0.3-5-2)
-    
+
     """
     # We should handle package names like 855resolution
     name = []
@@ -609,14 +609,14 @@ def parse_package_name(package_name):
 
 def parse_delta_package_name(package_name):
     """Separate delta package name and release infos
-    
+
     example: tasma-5-7.pisi.delta -> (tasma, 5, 7)
-    
+
     """
     name, build = parse_package_name(package_name)
     build = build[:-len(ctx.const.delta_package_suffix)]
     buildFrom, buildTo = build.split("-")
-    
+
     return name, buildFrom, buildTo
 
 def filter_latest_packages(package_paths):

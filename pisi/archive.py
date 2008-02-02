@@ -137,7 +137,7 @@ class ArchiveTar(ArchiveBase):
             # accessed. Removing and creating the file will also
             # change the inode and will do the trick (in fact, old
             # file will be deleted only when its closed).
-            # 
+            #
             # Also, tar.extract() doesn't write on symlinks... Not any
             # more :).
             if self.file_path == install_tar_path:

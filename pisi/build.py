@@ -454,7 +454,7 @@ class Builder:
         else:
             if mandatory:
                 raise Error(_("unable to call function from actions: %s") % func)
-        
+
         os.chdir(curDir)
         return True
 

@@ -77,7 +77,7 @@ class PackageDB(object):
 
         replaces = self.get_replaces(repo)
         return set(str(o) for o in obsoletes) - set(replaces.keys())
-    
+
     # replacesdb holds the info about the replaced packages (ex. gaim -> pidgin)
     def get_replaces(self, repo = None):
         pairs = {}
@@ -88,7 +88,7 @@ class PackageDB(object):
                     pairs[r.package] = pkg_name
 
         return pairs
-    
+
     def get_rev_deps(self, name, repo = None, txn = None):
         if self.dr.has_key(name, repo, txn=txn):
             return self.dr.get_item(name, repo, txn=txn)
@@ -127,7 +127,7 @@ class PackageDB(object):
 
             if package_info.replaces:
                 self.drp.add_item(name, package_info.replaces, repo, txn)
-            
+
             # add component
             ctx.componentdb.add_package(package_info.partOf, package_info.name, repo, txn)
 

@@ -132,9 +132,9 @@ class ComponentDB(object):
 
     # walk: walks through the underlying  components' packages
     def get_union_packages(self, component_name, walk=False, repo=pisi.itembyrepodb.repos, txn = None):
-        """returns union of all repository component's packages, not just the first repo's 
+        """returns union of all repository component's packages, not just the first repo's
         component's in order"""
-        
+
         component = self.get_union_comp(component_name, txn, repo)
         if not walk:
             return component.packages
@@ -149,7 +149,7 @@ class ComponentDB(object):
     # walk: walks through the underlying  components' packages
     def get_packages(self, component_name, walk=False, repo=None, txn = None):
         """returns the given component's and underlying recursive components' packages"""
-        
+
         component = self.get_component(component_name, repo, txn)
         if not walk:
             return component.packages

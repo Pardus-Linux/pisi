@@ -52,10 +52,10 @@ def init(database = True, write = True,
          comar_sockname = None,
          signal_handling = True):
     """Initialize PiSi subsystem.
-    
+
     You should call finalize() when your work is finished. Otherwise
     you can left the database in a bad state.
-    
+
     """
 
     # UI comes first
@@ -171,10 +171,10 @@ def list_upgradable():
 
 def package_graph(A, repo = pisi.itembyrepodb.installed, ignore_installed = False):
     """Construct a package relations graph.
-    
+
     Graph will contain all dependencies of packages A, if ignore_installed
     option is True, then only uninstalled deps will be added.
-    
+
     """
 
     ctx.ui.debug('A = %s' % str(A))
@@ -184,7 +184,7 @@ def package_graph(A, repo = pisi.itembyrepodb.installed, ignore_installed = Fals
 
     G_f = pgraph.PGraph(ctx.packagedb, repo)             # construct G_f
 
-    # find the "install closure" graph of G_f by package 
+    # find the "install closure" graph of G_f by package
     # set A using packagedb
     for x in A:
         G_f.add_package(x)
@@ -225,7 +225,7 @@ def generate_upgrade_order(A):
 
 def generate_base_upgrade(A):
     # all the packages of the system.base must be installed on the system.
-    # method returns the currently needed system.base component install and 
+    # method returns the currently needed system.base component install and
     # upgrade needs
     base = upgrade_base(A, ignore_package_conflicts = True)
     return list(base)

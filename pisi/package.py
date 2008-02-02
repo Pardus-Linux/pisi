@@ -99,7 +99,7 @@ class Package:
         self.impl.unpack_dir_flat(dir, outdir)
 
     def extract_to(self, outdir, clean_dir = False):
-        """Extracts contents of the archive to outdir. Before extracting if clean_dir 
+        """Extracts contents of the archive to outdir. Before extracting if clean_dir
         is set, outdir is deleted with its contents"""
         self.impl.unpack(outdir, clean_dir)
 

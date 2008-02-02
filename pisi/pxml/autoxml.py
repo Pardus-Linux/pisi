@@ -270,7 +270,7 @@ class autoxml(oo.autosuper, oo.autoprop):
         errorss = []
         formatters = []
 
-        # FIXME: What is this? Remove this crap and try to fix autoxml, if can not be fixed then 
+        # FIXME: What is this? Remove this crap and try to fix autoxml, if can not be fixed then
         # really throw whole autoxml to junk. But not this.
 
         # read declaration order from source
@@ -440,7 +440,7 @@ class autoxml(oo.autosuper, oo.autoprop):
             def read(self, uri, keepDoc = False, tmpDir = '/tmp',
                      sha1sum = False, compress = None, sign = None, copylocal = False):
                 "read XML file and decode it into a python object"
-                self.readxml(uri, tmpDir, sha1sum=sha1sum, 
+                self.readxml(uri, tmpDir, sha1sum=sha1sum,
                              compress=compress, sign=sign, copylocal=copylocal)
                 errs = []
                 self.decode(self.rootNode(), errs)

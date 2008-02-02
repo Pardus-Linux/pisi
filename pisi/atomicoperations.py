@@ -163,14 +163,14 @@ class Install(AtomicOperation):
 
         # If it is explicitly specified that package conflicts with this package and also
         # we passed check_conflicts tests in operations.py than this means a non-conflicting
-        # pkg is in "order" to be installed that has no file conflict problem with this package. 
+        # pkg is in "order" to be installed that has no file conflict problem with this package.
         # PS: we need this because "order" generating code does not consider conflicts.
         def really_conflicts(pkg):
             if not self.pkginfo.conflicts:
                 return True
 
             return not pkg in map(lambda x:x.package, self.pkginfo.conflicts)
-        
+
         # check file conflicts
         file_conflicts = []
         for f in self.files.list:
@@ -312,22 +312,22 @@ class Install(AtomicOperation):
                 # may contain same config typed files with same hashes, so the delta
                 # package will not have that config file. In order to protect user
                 # changed config files, they are renamed with ".old" prefix in case
-                # of the hashes of these files on the filesystem and the new config 
+                # of the hashes of these files on the filesystem and the new config
                 # file that is coming from the new package. But in delta package case
                 # with the given scenario there wont be any, so we can pass this one.
                 # If the config files were not be the same between these packages the
                 # delta package would have it and extract it and the path would point
-                # to that new config file. If they are same and the user had changed 
-                # that file and using the changed config file, there is no problem 
+                # to that new config file. If they are same and the user had changed
+                # that file and using the changed config file, there is no problem
                 # here.
                 if os.path.exists(path):
                     os.rename(path, newconfig)
 
                 os.rename(oldconfig, path)
 
-        # Delta package does not contain the files that have the same hash as in 
-        # the old package's. Because it means the file has not changed. But some 
-        # of these files may be relocated to some other directory in the new package. 
+        # Delta package does not contain the files that have the same hash as in
+        # the old package's. Because it means the file has not changed. But some
+        # of these files may be relocated to some other directory in the new package.
         # We handle these cases here.
         def relocate_files():
             for old_file, new_file in pisi.delta.find_relocations(self.old_files, self.files):
@@ -337,7 +337,7 @@ class Install(AtomicOperation):
                 if not os.path.exists(destdir):
                     os.makedirs(destdir)
 
-                if os.path.islink(old_path): 
+                if os.path.islink(old_path):
                     if not os.path.lexists(new_path):
                         os.symlink(os.readlink(old_path), new_path)
                 else:
