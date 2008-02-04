@@ -326,65 +326,95 @@ def clean_ar_timestamps(ar_file):
         fp.write(line)
     fp.close()
 
-def calculate_hash(path):
-    """Return a (path, hash) tuple for given path."""
-    if os.path.islink(path):
-        try:
-            # For symlinks, path string is hashed instead of the content
-            value = sha1_data(os.readlink(path))
-        except FileError:
-            ctx.ui.info(_("Including external link '%s'") % path)
-            value = None
-    elif os.path.isdir(path):
-        ctx.ui.info(_("Including directory '%s'") % path)
-        value = None
-    else:
-        if path.endswith('.a'):
-            # .a file content changes with each compile due to timestamps
-            # We pad them with zeroes, thus hash will be stable
-            clean_ar_timestamps(path)
-        value = sha1_file(path)
-
-    return (path, value)
-
+# FIXME: this should be done in a much much simpler way
+# as it stands, it seems to be a kludge to solve
+# an unrelated problem
 def get_file_hashes(top, excludePrefix=None, removePrefix=None):
-    """Yield (path, hash) tuples for given directory tree."""
-    def is_included(path):
-        if excludePrefix:
-            temp = remove_prefix(removePrefix, path)
-            if len(filter(lambda x: temp.startswith(x), excludePrefix)) > 0:
-                return False
-        return True
+    """Iterate over given path and return a list of file hashes.
 
-    # single file/symlink case
-    if not os.path.isdir(top) or os.path.islink(top):
-        if is_included(top):
-            yield calculate_hash(top)
+    Generator function iterates over a toplevel path and returns the
+    (filePath, sha1Hash) tuples for all files. If excludePrefixes list
+    is given as a parameter, function will exclude the filePaths
+    matching those prefixes. The removePrefix string parameter will be
+    used to remove prefix from filePath while matching excludes, if
+    given.
+    """
+
+    def sha1_sum(f, data=False):
+        if not data and f.endswith('.a'):
+            #workaround for .a issue..
+            #don't skip .a files,
+            #but pad their timestamps with '0'..
+            clean_ar_timestamps(f)
+
+        func = None
+
+        if data:
+            func = sha1_data
+        else:
+            func = sha1_file
+
+        try:
+            return func(f)
+        except FileError, e:
+            if os.path.islink(f):
+                ctx.ui.info(_("Including external link '%s'") % f)
+            elif os.path.isdir(f):
+                ctx.ui.info(_("Including directory '%s'") % f)
+            else:
+                raise e
+            return None
+
+    def has_excluded_prefix(filename):
+        if excludePrefix and removePrefix:
+            tempfnam = remove_prefix(removePrefix, filename)
+            for p in excludePrefix:
+                if tempfnam.startswith(p):
+                    return 1
+        return 0
+
+    # handle single file
+    if os.path.isfile(top):
+        yield (top, sha1_sum(top))
         return
 
-    for root, dirs, files in os.walk(top):
-        # Hash files and file symlinks
-        for name in files:
-            path = os.path.join(root, name)
-            if is_included(path):
-                yield calculate_hash(path)
+    # handle single symlink declaration here.
+    if os.path.islink(top):
+        yield (top, sha1_sum(os.readlink(top), True))
+        return
 
-        # Hash symlink dirs
-        # os.walk doesn't enter them, we don't want to follow them either
-        # but their name and hashes must be reported
-        # Discussed in bug #339
-        for name in dirs:
-            path = os.path.join(root, name)
-            if os.path.islink(path):
-                if is_included(path):
-                    yield calculate_hash(path)
+    for root, dirs, files in os.walk(top, topdown=False):
+        #bug 339
+        if os.path.islink(root) and not has_excluded_prefix(root):
+            #yield the symlink..
+            #bug 373
+            yield (root, sha1_sum(os.readlink(root), True))
+            excludePrefix.append(remove_prefix(removePrefix, root) + "/")
+            continue
 
-        # Hash empty dir
-        # Discussed in bug #340
-        if len(files) == 0 and len(dirs) == 0:
-            if is_included(root):
-                yield calculate_hash(root)
+        #bug 397
+        for directory in dirs:
+            d = join_path(root, directory)
+            if os.path.islink(d) and not has_excluded_prefix(d):
+                yield (d, sha1_sum(os.readlink(d), True))
+                excludePrefix.append(remove_prefix(removePrefix, d) + "/")
 
+        #bug 340
+        if os.path.isdir(root) and not has_excluded_prefix(root):
+            parent, r, d, f = root, '', '', ''
+            for r, d, f in os.walk(parent, topdown=False): pass
+            if not f and not d:
+                yield (parent, sha1_sum(parent))
+
+        for fname in files:
+            f = join_path(root, fname)
+            if has_excluded_prefix(f):
+                continue
+            #bug 373
+            elif os.path.islink(f):
+                yield (f, sha1_sum(os.readlink(f), True))
+            else:
+                yield (f, sha1_sum(f))
 
 def copy_dir(src, dest):
     """Copy source dir to destination dir recursively."""
@@ -419,9 +449,14 @@ def sha1_file(filename):
 
 def sha1_data(data):
     """Calculate sha1 hash of given data."""
-    m = sha.new()
-    m.update(data)
-    return m.hexdigest()
+    try:
+        m = sha.new()
+        m.update(data)
+        return m.hexdigest()
+    except KeyboardInterrupt:
+        raise
+    except Exception: #FIXME: what exception could we catch here, replace with that.
+        raise Error(_("Cannot calculate SHA1 hash of given data"))
 
 def uncompress(patchFile, compressType="gz", targetDir=None):
     """Uncompress the file and return the new path."""
