@@ -51,7 +51,7 @@ def configure(parameters = ''):
     if can_access_file('configure'):
         args = './configure \
                 --prefix=%s \
-                --build=%s \
+                --host=%s \
                 --with-x \
                 --enable-mitshm \
                 --with-xinerama \

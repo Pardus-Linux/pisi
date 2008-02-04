@@ -60,7 +60,7 @@ def configure(parameters = ''):
 
         args = './configure \
                 --prefix=/%s \
-                --build=%s \
+                --host=%s \
                 --mandir=/%s \
                 --infodir=/%s \
                 --datadir=/%s \
