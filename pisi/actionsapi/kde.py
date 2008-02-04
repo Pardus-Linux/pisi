@@ -23,7 +23,6 @@ import pisi.context as ctx
 import pisi.actionsapi
 import pisi.actionsapi.get as get
 from pisi.actionsapi.shelltools import system
-from pisi.actionsapi.pisitoolsfunctions import *
 from pisi.actionsapi.shelltools import can_access_file
 
 class ConfigureError(pisi.actionsapi.Error):
@@ -80,12 +79,3 @@ def install(parameters = 'install'):
             raise InstallError(_('Install failed.'))
     else:
         raise InstallError(_('No Makefile found.'))
-
-def domo(sourceFile, locale, destinationFile ):
-    '''inserts the mo files in the list of files into /usr/kde/VERSION/share/locale/LOCALE/LC_MESSAGES'''
-
-    '''example call: kde.domo("po/tr.po", "tr", "pam_login.mo")'''
-
-    system('msgfmt %s' % sourceFile)
-    makedirs(join_path(get.installDIR(), get.kdeDIR(), 'share/locale', locale, 'LC_MESSAGES'))
-    move('messages.mo', join_path(get.installDIR(), get.kdeDIR(), 'share/locale', locale, 'LC_MESSAGES', destinationFile))
