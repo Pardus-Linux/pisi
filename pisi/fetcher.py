@@ -237,7 +237,7 @@ class Fetcher:
 
         elif ctx.config.values.general.ftp_proxy and self.url.scheme() == "ftp":
             ftp_proxy = ctx.config.values.general.ftp_proxy
-            proxy_handler = urllib2.ProxyHandler({pisi.uri.URI(http_proxy): ftp_proxy})
+            proxy_handler = urllib2.ProxyHandler({pisi.uri.URI(ftp_proxy): ftp_proxy})
 
         if proxy_handler:
             ctx.ui.info(_("Proxy configuration has been found for '%s' protocol") % self.url.scheme())
