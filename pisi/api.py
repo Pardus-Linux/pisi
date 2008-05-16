@@ -265,15 +265,24 @@ def generate_pending_order(A):
 
     return order
 
-def configure_pending():
+def configure_pending(pkgs):
     # start with pending packages
     # configure them in reverse topological order of dependency
-    A = ctx.installdb.list_pending()
-    order = generate_pending_order(A)
+
+    packages = {}
+    if not pkgs:
+        packages = ctx.installdb.list_pending()
+    else:
+        lp = ctx.installdb.list_pending()
+        for pkg in pkgs:
+            if lp.has_key(pkg):
+                packages[pkg] = lp[pkg]
+
+    order = generate_pending_order(packages)
     try:
         for x in order:
             if ctx.installdb.is_installed(x):
-                pkginfo = A[x]
+                pkginfo = packages[x]
                 pkgname = pisi.util.package_name(x, pkginfo.version,
                                         pkginfo.release,
                                         False,
