@@ -24,6 +24,7 @@
 #[build]
 #host = i686-pc-linux-gnu
 #generateDebug = False
+#enableSandbox = True
 #jobs = "-j1"
 #CFLAGS= -mtune=i686 -march=i686 -O2 -pipe -fomit-frame-pointer
 #CXXFLAGS= -mtune=i686 -march=i686 -O2 -pipe -fomit-frame-pointer
@@ -75,6 +76,7 @@ class BuildDefaults:
     host = "i686-pc-linux-gnu"
     jobs = "-j1"
     generateDebug = False
+    enableSandbox = True
     cflags = "-mtune=i686 -O2 -pipe -fomit-frame-pointer"
     cxxflags = "-mtune=i686 -O2 -pipe -fomit-frame-pointer"
     ldflags = ""
