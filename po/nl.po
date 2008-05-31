@@ -1,16 +1,16 @@
 # translation of nl.po to Nederlands
 # Andre van der Lubben <klikspin@gmail.com>, 2006.
-# Willem Gielen <w.gielen@gmail.com>, 2006, 2007.
+# Willem Gielen <w.gielen@gmail.com>, 2006, 2007, 2008.
 # Rinse de Vries <rinsedevries@kde.nl>, 2006.
 # W.P.M.H.I.A. Gielen <w.gielen@gmail.com>, 2006.
-# Copyright (C) 2005, 2006, 2007 Free Software Foundation, Inc.
+# Copyright (C) 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
 msgid ""
 msgstr ""
 "Project-Id-Version: nl\n"
 "POT-Creation-Date: 2007-07-05 09:54+EEST\n"
-"PO-Revision-Date: 2007-06-03 21:15+0200\n"
+"PO-Revision-Date: 2008-05-31 14:29+0200\n"
 "Last-Translator: Willem Gielen <w.gielen@gmail.com>\n"
-"Language-Team: Nederlands <Pardus-translation-nl@pardus.org.tr>\n"
+"Language-Team: Nederlands <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -555,9 +555,8 @@ msgstr "Uitvoeren autoheader mislukt."
 
 # pisi/actionsapi/autotools.py:77 :87
 #: pisi/actionsapi/cmaketools.py:64
-#, fuzzy
 msgid "No configure script found for cmake."
-msgstr "Geen configuratiescript gevonden."
+msgstr "Geen configuratiescript gevonden voor cmake."
 
 #: pisi/actionsapi/get.py:160
 msgid "Util %s cannot be found"
@@ -892,8 +891,7 @@ msgid "Not removing conflicted file : %s"
 msgstr "Niet verwijderen conflicterend bestand: %s"
 
 #: pisi/atomicoperations.py:530
-msgid ""
-"Installed file %s is not exists on system [Probably you manually deleted]"
+msgid "Installed file %s is not exists on system [Probably you manually deleted]"
 msgstr ""
 "Geïnstalleerd bestand %s bestaat niet op systeem [mogelijk met de hand "
 "verwijderd]"
@@ -983,9 +981,8 @@ msgid "Building source..."
 msgstr "Bouwen bron..."
 
 #: pisi/build.py:340
-#, fuzzy
 msgid "Testing package..."
-msgstr "Aanmaken PiSi-pakket %s."
+msgstr "Testen pakket..."
 
 #: pisi/build.py:344
 msgid "Installing..."
@@ -1008,22 +1005,19 @@ msgid "SyntaxError in COMAR file (%s): %s"
 msgstr "Syntaxfout in COMAR bestand (%s): %s"
 
 #: pisi/build.py:419
-#, fuzzy
 msgid "Sandbox violation: %s (%s -> %s)"
-msgstr "ambiguous option: %s (%s?)"
+msgstr "Zandbak overtreding: %s (%s -> %s)"
 
 #: pisi/build.py:453
-#, fuzzy
 msgid "Sandbox violations!"
-msgstr "index opties"
+msgstr "Zandbak overtredingen!"
 
 #: pisi/build.py:456
 msgid "unable to call function from actions: %s"
 msgstr "kan functie niet aanroepen vanuit actions: %s"
 
 #: pisi/build.py:473
-msgid ""
-"Safety switch: following extra packages in system.devel will be installed: "
+msgid "Safety switch: following extra packages in system.devel will be installed: "
 msgstr ""
 "Veiligheidsprocedure: de volgende extra pakketten in system.devel zullen "
 "geïnstalleerd worden:"
@@ -1081,9 +1075,8 @@ msgid "Skipping %s with wrong pkg name "
 msgstr "Overslaan %s met onjuiste pakketnaam"
 
 #: pisi/build.py:715
-#, fuzzy
 msgid "(no previous build found, setting build no to 1.)"
-msgstr "(geen eerdere bouw gevonden, zet compilatienummer op 1.)"
+msgstr "(geen eerdere bouw gevonden, zet bouwnummer op 1.)"
 
 #: pisi/build.py:760
 msgid "(old package lacks a build no, setting build no to 1.)"
@@ -1135,10 +1128,8 @@ msgid "Abandoned files under the install dir (%s):"
 msgstr "Verlaten bestanden in de installatiemap (%s):"
 
 #: pisi/build.py:923
-msgid ""
-"All of the files under the install dir (%s) has been collected by package(s)"
-msgstr ""
-"Alle bestanden in de installatiemap (%s) zijn verzameld door pakket(ten)."
+msgid "All of the files under the install dir (%s) has been collected by package(s)"
+msgstr "Alle bestanden in de installatiemap (%s) zijn verzameld door pakket(ten)."
 
 #: pisi/build.py:927
 msgid "Cleaning Build Directory..."
@@ -1413,17 +1404,15 @@ msgid "Bypass safety switch"
 msgstr "Omzeilen veiligheidsprocedure"
 
 #: pisi/cli/commands.py:447
-#, fuzzy
 msgid "Bypass testing step"
-msgstr "Omzeilen veiligheidsprocedure"
+msgstr "Omzeilen testfase"
 
 #: pisi/cli/commands.py:449
 msgid "Create a static package with ar files"
 msgstr "Maak een statisch pakket met ar-bestanden aan"
 
 #: pisi/cli/commands.py:451
-msgid ""
-"Do not install build dependencies, fail if a build dependency is present"
+msgid "Do not install build dependencies, fail if a build dependency is present"
 msgstr ""
 "Installeer geen bouwafhankelijkheden, stoppen als zich een "
 "compileerafhankelijkheid voordoet"
@@ -1434,11 +1423,11 @@ msgstr "PiSi binaire pakket formaten: '1.0', '1.1' (standaard)"
 
 #: pisi/cli/commands.py:455
 msgid "Use quilt patch management system instead of GNU patch"
-msgstr ""
+msgstr "Gebruik quilt patch beheer in plaats van GNU patch"
 
 #: pisi/cli/commands.py:457
 msgid "Do not constrain build process inside the build folder"
-msgstr ""
+msgstr "Beperk bouwproces niet tot in de bouwmap"
 
 #: pisi/cli/commands.py:460
 msgid "build steps"
@@ -1465,9 +1454,8 @@ msgid "Break build after running compile step"
 msgstr "Breek bouwen af na uitvoeren van de compilatie stap"
 
 #: pisi/cli/commands.py:470
-#, fuzzy
 msgid "Break build after running check step"
-msgstr "Breek bouwen af na uitvoeren van de compilatie stap"
+msgstr "Breek bouwen af na uitvoeren van de controle fase"
 
 #: pisi/cli/commands.py:472
 msgid "Break build after running install step"
@@ -1501,11 +1489,17 @@ msgid ""
 "releases.\n"
 "\n"
 msgstr ""
+"Maakt delta PiSi pakketten\n"
+"\n"
+"Gebruik: delta oudpakket nieuwpakket\n"
+"\n"
+"Delta commando vindt gewijzigde bestanden tussen opgegeven pakketten door het vergelijken van de sha1sum van de bestanden\n"
+"en maakt een delta pisi pakket met de gewijzigde bestanden tussen de twee uitgaves.\n"
+"\n"
 
 #: pisi/cli/commands.py:521
-#, fuzzy
 msgid "delta options"
-msgstr "index opties"
+msgstr "delta opties"
 
 #: pisi/cli/commands.py:553
 msgid ""
@@ -1777,9 +1771,8 @@ msgid "[repo] "
 msgstr "[repo] "
 
 #: pisi/cli/commands.py:963
-#, fuzzy
 msgid "Package found in %s repository:"
-msgstr "Pakket gevonden in repository:"
+msgstr "Pakket gevonden in %s repository:"
 
 #: pisi/cli/commands.py:967
 msgid "%s is not found in repositories"
@@ -1833,14 +1826,12 @@ msgstr ""
 "Als er geen pakketten opgegeven worden, worden alle pakketen nagekeken.\n"
 
 #: pisi/cli/commands.py:1018
-#, fuzzy
 msgid "check options"
-msgstr "search opties"
+msgstr "controle opties"
 
 #: pisi/cli/commands.py:1020
-#, fuzzy
 msgid "Check installed packages under given component"
-msgstr "Toon geïnstalleerde pakketten onder gegeven component"
+msgstr "Controlleer geïnstalleerde pakketten onder gegeven component"
 
 #: pisi/cli/commands.py:1036
 msgid "Checking all installed packages"
@@ -1942,8 +1933,7 @@ msgstr "Toon gedetailleerde installatie-informatie"
 
 # pisi/cli/commands.py:542 :729
 #: pisi/cli/commands.py:1146 pisi/cli/commands.py:1524
-msgid ""
-"Package Name     |St|   Version|  Rel.| Build|  Distro|             Date"
+msgid "Package Name     |St|   Version|  Rel.| Build|  Distro|             Date"
 msgstr "Pakketnaam     |St|   Versie|  Rel.| Bouw |  Distro|             Datum"
 
 #: pisi/cli/commands.py:1161
@@ -2402,14 +2392,12 @@ msgid "Can't unbind constant: %s"
 msgstr "Kan niet ontkoppelen van contante: %s"
 
 #: pisi/delta.py:27
-#, fuzzy
 msgid "Cannot create delta for same package!"
-msgstr "Kan map %s niet aanmaken"
+msgstr "Kan geen delta maken voor hetzelfde pakket!"
 
 #: pisi/delta.py:41
-#, fuzzy
 msgid "Creating delta PiSi package between %s %s"
-msgstr "Aanmaken PiSi-pakket %s."
+msgstr "Aanmaken delta Pisi pakket tussen %s %s"
 
 #: pisi/dependency.py:55
 msgid "%s dependency of package %s is not satisfied"
@@ -2432,8 +2420,7 @@ msgid "Access denied to destination file: \"%s\""
 msgstr "Toegang geweigerd van doelbestand: \"%s\" "
 
 #: pisi/fetcher.py:100
-msgid ""
-"A problem occured. Please check the archive address and/or permissions again."
+msgid "A problem occured. Please check the archive address and/or permissions again."
 msgstr ""
 "Probleem plaatsgevonden. Controleer het archiefadres en/of de "
 "toegangsrechten opnieuw."
@@ -2579,19 +2566,12 @@ msgid "Key %s in repo %s not found"
 msgstr "Sleutel %s in repo %s niet gevonden"
 
 #: pisi/lockeddbshelve.py:46
-#, fuzzy
 msgid "Database version for %s insufficient. Please run rebuild-db command."
-msgstr ""
-"Databaseversie van %s is niet toereikend. Voer a.u.b. het commando rebuild-"
-"db uit."
+msgstr "Databaseversie van %s is niet toereikend. Voer het rebuild-db commando uit."
 
 #: pisi/lockeddbshelve.py:50
-#, fuzzy
-msgid ""
-"Database version for %s greater than PiSi version. You need a newer PiSi."
-msgstr ""
-"Databaseversie van %s is hoger dan de PiSi-versie. Een nieuwere versie van "
-"PiSi is nodig."
+msgid "Database version for %s greater than PiSi version. You need a newer PiSi."
+msgstr "Databaseversie van %s is hoger dan de PiSi-versie. U heeft een nieuwere versie van PiSi is nodig."
 
 #: pisi/lockeddbshelve.py:61
 msgid "Cannot attain write access to database environment"
@@ -2626,8 +2606,7 @@ msgid "Cannot attain read or write access to database %s"
 msgstr "Kan geen lees- of schrijftoegang krijgen tot de database %s"
 
 #: pisi/lockeddbshelve.py:138
-msgid ""
-"Flags should be one of 'r', 'w', 'c' or 'n' or use the bsddb.db.DB_* flags"
+msgid "Flags should be one of 'r', 'w', 'c' or 'n' or use the bsddb.db.DB_* flags"
 msgstr ""
 "Opties moeten een van  'r', 'w', 'c' of 'n'  zijn of gebruik de opties bsddb."
 "db.DB_*"
@@ -2675,7 +2654,7 @@ msgstr "Installatievolgorde: "
 
 #: pisi/operations.py:223
 msgid "Replaced package remains"
-msgstr ""
+msgstr "Vervang pakket overblijfselen"
 
 #: pisi/operations.py:227 pisi/operations.py:255
 msgid "Conflicts remain"
@@ -2683,7 +2662,7 @@ msgstr "Conflicten blijven bestaan"
 
 #: pisi/operations.py:233
 msgid "Obsoleted packages remaining"
-msgstr ""
+msgstr "Overbodige pakket overblijfselen"
 
 #: pisi/operations.py:243
 msgid "Selected packages [%s] are in conflict with each other."
@@ -2771,12 +2750,11 @@ msgstr "De volgende pakketen zullen worden opgewaardeerd: "
 
 #: pisi/operations.py:493
 msgid "Downloading %d / %d"
-msgstr ""
+msgstr "Downloaden %d / %d"
 
 #: pisi/operations.py:511
-#, fuzzy
 msgid "Installing %d / %d"
-msgstr "Geïnstalleerd %s"
+msgstr "Installeren %d / %d"
 
 #: pisi/operations.py:548
 msgid "Dependency %s of %s cannot be satisfied"
@@ -2847,12 +2825,11 @@ msgid "Cannot find source package: %s"
 msgstr "Kan bronpakket %s niet vinden"
 
 #: pisi/package.py:56
-#, fuzzy
 msgid ""
 "There was a problem while fetching '%s'.\n"
 "The package may have been upgraded. Please try to upgrade the package."
 msgstr ""
-"Er was een probleem bij ophalen van '%s'.\n"
+"Er was een probleem bij ophalen '%s'.\n"
 "Het pakket kan opgewaardeerd zijn. Probeer het pakket op te waarderen."
 
 #: pisi/package.py:60 pisi/sourcearchive.py:92
@@ -3109,10 +3086,8 @@ msgstr ""
 "%s\n"
 
 #: scripts/repostats.py:371
-msgid ""
-"Developer '%s <%s>' has another mail address '%s' in source package '%s'"
-msgstr ""
-"Ontwikkelaar '%s <%s>' heeft een ander e-mailadres '%s' in bronpakket '%s'"
+msgid "Developer '%s <%s>' has another mail address '%s' in source package '%s'"
+msgstr "Ontwikkelaar '%s <%s>' heeft een ander e-mailadres '%s' in bronpakket '%s'"
 
 #: scripts/repostats.py:467
 msgid ""
@@ -3138,24 +3113,3 @@ msgstr "Scannen bron-repository...\n"
 msgid "Scanning binary packages...\n"
 msgstr "Scannen binaire pakketten...\n"
 
-#, fuzzy
-#~ msgid "History for Package %s not found"
-#~ msgstr "Pakket %s niet gevonden"
-
-#~ msgid "Updating environment..."
-#~ msgstr "Updaten omgeving..."
-
-#~ msgid "Set search language"
-#~ msgstr "Stel zoektaal in"
-
-#~ msgid "Unknown file type '%s' in package '%s'"
-#~ msgstr "Onbekend bestandstype '%s' in pakket '%s'"
-
-#~ msgid "Source package '%s' has wrong date format '%s'"
-#~ msgstr "Bronpakket '%s' heeft een onjuiste datumopmaak: '%s'"
-
-#~ msgid "Encountered %d errors! Fix them immediately!\n"
-#~ msgstr "%d problemen gevonden! Repareer ze onmiddellijk!\n"
-
-#~ msgid "These dependencies are not available in repository:\n"
-#~ msgstr "Deze afhankelijkheden zijn niet beschikbaar in de repository:\n"
