@@ -522,13 +522,12 @@ def generate_pending_order(A):
 
 @locked
 def configure_pending(packages=None):
-    # start with pending packages
-    # configure them in reverse topological order of dependency
-    installdb = pisi.db.installdb.InstallDB()
-
     # Import COMAR
     import pisi.comariface
 
+    # start with pending packages
+    # configure them in reverse topological order of dependency
+    installdb = pisi.db.installdb.InstallDB()
     if not packages:
         packages = installdb.list_pending()
     else:
