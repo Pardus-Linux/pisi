@@ -70,7 +70,7 @@ Lists previous operations.""")
 
             if operation.type == "snapshot":
                 print _("    * There are %d packages in this snapshot.") % len(operation.packages)
-            if operation.type == "repoupdate":
+            elif operation.type == "repoupdate":
                 for repo in operation.repos:
                     print "    *",  repo
             else:
