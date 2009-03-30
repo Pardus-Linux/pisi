@@ -72,7 +72,8 @@ def find_upgrades(packages, replaces):
                 continue
 
         if pisi.util.any(lambda u:"reverseDependencyUpdate" in u.required_actions() , updates):
-            Ap.extend(map(lambda d:d[0], packagedb.get_rev_deps(u_pkg)))
+            rev_deps = map(lambda d:d[0], packagedb.get_rev_deps(u_pkg))
+            Ap.extend(filter(lambda name:is_upgradable(name), rev_deps))
 
         if ignore_build or (not build) or (not pkg.build):
             if pisi.version.Version(release) < pisi.version.Version(pkg.release):
