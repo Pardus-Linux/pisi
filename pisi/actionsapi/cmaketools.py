@@ -60,7 +60,7 @@ def configure(parameters = '', installPrefix = '/%s' % get.defaultprefixDIR(), s
                       -DCMAKE_C_FLAGS="%s" \
                       -DCMAKE_CXX_FLAGS="%s" \
                       -DCMAKE_LD_FLAGS="%s" \
-                      -DCMAKE_BUILD_TYPE=release %s %s' % (installPrefix, get.CFLAGS(), get.CXXFLAGS(), get.LDFLAGS(), parameters, sourceDir)
+                      -DCMAKE_BUILD_TYPE=None %s %s' % (installPrefix, get.CFLAGS(), get.CXXFLAGS(), get.LDFLAGS(), parameters, sourceDir)
 
         if system(args):
             raise ConfigureError(_('Configure failed.'))
