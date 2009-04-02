@@ -20,6 +20,7 @@ import sys
 import sha
 import shutil
 import string
+import fnmatch
 import statvfs
 import operator
 import subprocess
@@ -349,8 +350,10 @@ def get_file_hashes(top, excludePrefix=None, removePrefix=None):
     def is_included(path):
         if excludePrefix:
             temp = remove_prefix(removePrefix, path)
-            if len(filter(lambda x: temp.startswith(x), excludePrefix)) > 0:
-                return False
+            while temp != "/":
+                if len(filter(lambda x: fnmatch.fnmatch(temp, x), excludePrefix)) > 0:
+                    return False
+                temp = os.path.dirname(temp)
         return True
     
     # single file/symlink case
