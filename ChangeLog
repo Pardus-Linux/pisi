@@ -1,3 +1,7 @@
+2009-04-09 Ozan Çağlayan <ozan@pardus.org.tr>
+        * (scripts/revdep-rebuild): Ignore /opt/ptsp during library and binary
+        search.
+
 2009-02-13 Faik Uygur <faik@pardus.org.tr>
         * pisi-2.1.2
 

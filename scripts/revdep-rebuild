@@ -9,6 +9,7 @@ LD_LIBRARY_MASK="libodbcinst.so libodbc.so libjava.so libjvm.so"
 # List of directories to be searched (feel free to edit it)
 # Note /usr/libexec and /usr/local/subprefix cotradicts FHS, but are present
 SEARCH_DIRS="/lib /bin /sbin /usr/lib /usr/bin /usr/sbin /usr/libexec /usr/local /usr/qt* /usr/kde/*/bin /usr/lib/MozillaFirefox /usr/kde/*/lib /usr/*-*-linux-gnu /opt"
+EXCLUDE_DIRS="/opt/ptsp"
 
 # Base of temporary files names.
 LIST=~/.revdep-rebuild
@@ -131,7 +132,11 @@ if [ -f $LIST.1_files ] ; then
 	echo " using existing $LIST.1_files."
 else
 	set_trap "$LIST.1_files"
-	find $SEARCH_DIRS -type f \( -perm /+u+x -o -name '*.so' -o -name '*.so.*' \) 2>/dev/null >$LIST.1_files
+    EXCLUDED_DIRS=
+    for d in $EXCLUDE_DIRS; do
+        EXCLUDED_DIRS+="-path $d -prune -o "
+    done
+	find $SEARCH_DIRS $EXCLUDED_DIRS -type f \( -perm /+u+x -o -name '*.so' -o -name '*.so.*' \) 2>/dev/null >$LIST.1_files
 	echo -e " done.\n  ($LIST.1_files)"
 fi
 
