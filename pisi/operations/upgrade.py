@@ -151,6 +151,10 @@ def upgrade_pkg_names(A = [], repo=None):
 
     ctx.ui.notify(ui.packagestogo, order = order)
 
+    conflicts = []
+    if not ctx.get_option('ignore_package_conflicts'):
+        conflicts = operations.helper.check_conflicts(order, packagedb)
+
     paths = []
     for x in order:
         ctx.ui.info(util.colorize(_("Downloading %d / %d") % (order.index(x)+1, len(order)), "yellow"))
@@ -161,10 +165,8 @@ def upgrade_pkg_names(A = [], repo=None):
     if ctx.get_option('fetch_only'):
         return
 
-    if not ctx.get_option('ignore_package_conflicts'):
-        conflicts = operations.helper.check_conflicts(order, packagedb)
-        if conflicts:
-            operations.remove.remove_conflicting_packages(conflicts)
+    if conflicts:
+        operations.remove.remove_conflicting_packages(conflicts)
 
     operations.remove.remove_replaced_packages(replaces.keys())
     operations.remove.remove_obsoleted_packages()
