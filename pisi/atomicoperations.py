@@ -78,8 +78,10 @@ class Install(AtomicOperation):
             installdb = pisi.db.installdb.InstallDB()
             # Package is installed. This is an upgrade. Check delta.
             if installdb.has_package(pkg.name):
-                (version, release, build) = installdb.get_version(pkg.name)
-                delta = pkg.get_delta(buildFrom=build)
+                (version, release, build, distro, distro_release) = installdb.get_version_and_distro_release(pkg.name)
+                # pisi distro upgrade should not use delta support
+                if distro == pkg.distro and distro_release == pkg.distributionRelease:
+                    delta = pkg.get_delta(buildFrom=build)
 
             # If delta exists than use the delta uri.
             if delta:
