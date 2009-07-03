@@ -86,7 +86,7 @@ def calculate_download_sizes(order):
         if installdb.has_package(pkg.name):
             (version, release, build, distro, distro_release) = installdb.get_version_and_distro_release(pkg.name)
             # pisi distro upgrade should not use delta support
-            if distro == pkg.distro and distro_release == pkg.distributionRelease:
+            if distro == pkg.distribution and distro_release == pkg.distributionRelease:
                 delta = pkg.get_delta(buildFrom=build)
 
         if delta:
