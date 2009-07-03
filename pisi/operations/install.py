@@ -83,12 +83,15 @@ def install_pkg_names(A, reinstall = False):
 
     ignore_dep = ctx.config.get_option('ignore_dependency')
 
+    import time
+    xi = time.time()
     paths = []
     for x in order:
         ctx.ui.info(util.colorize(_("Downloading %d / %d") % (order.index(x)+1, len(order)), "yellow"))
         install_op = atomicoperations.Install.from_name(x)
         paths.append(install_op.package_fname)
-
+    print time.time() - xi
+    return
     # fetch to be installed packages but do not install them.
     if ctx.get_option('fetch_only'):
         return

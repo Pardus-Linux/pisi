@@ -64,7 +64,7 @@ def find_upgrades(packages, replaces):
             continue
 
         pkg = packagedb.get_package(u_pkg)
-        (version, release, build) = installdb.get_version(i_pkg)
+        (version, release, build, distro, distro_release) = installdb.get_version_and_distro_release(i_pkg)
 
         updates = [i for i in pkg.history if pisi.version.Version(i.release) > pisi.version.Version(release)]
         if security_only:
@@ -75,7 +75,9 @@ def find_upgrades(packages, replaces):
             rev_deps = map(lambda d:d[0], packagedb.get_rev_deps(u_pkg))
             Ap.extend(filter(lambda name:is_upgradable(name), rev_deps))
 
-        if ignore_build or (not build) or (not pkg.build):
+        if pkg.distribution == distro and pisi.version.Version(pkg.distributionRelease) > pisi.version.Version(distro_release):
+            Ap.append(u_pkg)
+        elif ignore_build or (not build) or (not pkg.build):
             if pisi.version.Version(release) < pisi.version.Version(pkg.release):
                 Ap.append(u_pkg)
             else:
@@ -263,16 +265,18 @@ def is_upgradable(name, ignore_build = False):
     if not installdb.has_package(name):
         return False
 
-    (version, release, build) = installdb.get_version(name)
+    (i_version, i_release, i_build, i_distro, i_distro_release) = installdb.get_version_and_distro_release(name)
 
     try:
-        pkg_version, pkg_release, pkg_build = packagedb.get_version(name, packagedb.which_repo(name))
+        version, release, build, distro, distro_release = packagedb.get_version_and_distro_release(name, packagedb.which_repo(name))
     except KeyboardInterrupt:
         raise
     except Exception: #FIXME: what exception could we catch here, replace with that.
         return False
 
-    if ignore_build or (not build) or (not pkg_build):
-        return pisi.version.Version(release) < pisi.version.Version(pkg_release)
+    if distro == i_distro and pisi.version.Version(distro_release) > pisi.version.Version(i_distro_release):
+        return True
+    elif ignore_build or (not i_build) or (not build):
+        return pisi.version.Version(i_release) < pisi.version.Version(release)
     else:
-        return build < pkg_build
+        return i_build < build

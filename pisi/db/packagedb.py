@@ -102,17 +102,33 @@ class PackageDB(lazydb.LazyDB):
                 found.append(name)
         return found
 
+    def __get_version(self, meta_doc):
+        history = meta_doc.getTag("History")
+        build = meta_doc.getTagData("Build")
+        version = history.getTag("Update").getTagData("Version")
+        release = history.getTag("Update").getAttribute("release")
+
+        return version, release, build and int(build)
+
+    def __get_distro_release(self, meta_doc):
+        distro = meta_doc.getTagData("Distribution")
+        release = meta_doc.getTagData("DistributionRelease")
+
+        return distro, release
+
+    def get_version_and_distro_release(self, name, repo):
+        if not self.has_package(name, repo):
+            raise Exception(_('Package %s not found.') % name)
+
+        pkg_doc = piksemel.parseString(self.pdb.get_item(name, repo))
+        return self.__get_version(pkg_doc) + self.__get_distro_release(pkg_doc)
+
     def get_version(self, name, repo):
         if not self.has_package(name, repo):
             raise Exception(_('Package %s not found.') % name)
 
         pkg_doc = piksemel.parseString(self.pdb.get_item(name, repo))
-        history = pkg_doc.getTag("History")
-        build = pkg_doc.getTagData("Build")
-        version = history.getTag("Update").getTagData("Version")
-        release = history.getTag("Update").getAttribute("release")
-
-        return version, release, build and int(build)
+        return self.__get_version(pkg_doc)
 
     def get_package_repo(self, name, repo=None):
         pkg, repo = self.pdb.get_item_repo(name, repo)

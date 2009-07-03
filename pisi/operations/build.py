@@ -45,6 +45,9 @@ import pisi.db
 class Error(pisi.Error):
     pass
 
+class ActionScriptException(Error):
+    pass
+
 # Helper Functions
 def get_file_type(path, pinfo_list, install_dir):
     """Return the file type of a path according to the given PathInfo
@@ -468,11 +471,9 @@ class Builder:
                     for result in ret.violations:
                         ctx.ui.error("* %s (%s -> %s)" % (result[0], result[1], result[2]))
                     raise Error(_("Sandbox violations!"))
-                else:
-                    # Retcode is 1 when there is a python exception.
-                    # This is for actionsapi's exceptions. Without this, when exception is raised, build process continues.
-                    if ret.code == 1:
-                        sys.exit(1)
+
+                if ret.code == 1:
+                    raise ActionScriptException
         else:
             if mandatory:
                 raise Error(_("unable to call function from actions: %s") % func)
@@ -978,7 +979,11 @@ def build(pspec):
         pb = Builder(pspec)
     else:
         pb = Builder.from_name(pspec)
-    return pb.build()
+    try:
+        return pb.build()
+    except ActionScriptException, e:
+        ctx.ui.error("Action script error caught.")
+        raise e
 
 order = {"none": 0,
          "fetch": 1,

@@ -108,16 +108,29 @@ class InstallDB(lazydb.LazyDB):
                 found.append(name)
         return found
 
-    def get_version(self, package):
-        metadata_xml = os.path.join(self.package_path(package), ctx.const.metadata_xml)
-
-        meta_doc = piksemel.parse(metadata_xml)
+    def __get_version(self, meta_doc):
         history = meta_doc.getTag("Package").getTag("History")
         build = meta_doc.getTag("Package").getTagData("Build")
         version = history.getTag("Update").getTagData("Version")
         release = history.getTag("Update").getAttribute("release")
 
         return version, release, build and int(build)
+
+    def __get_distro_release(self, meta_doc):
+        distro = meta_doc.getTag("Package").getTagData("Distribution")
+        release = meta_doc.getTag("Package").getTagData("DistributionRelease")
+
+        return distro, release
+
+    def get_version_and_distro_release(self, package):
+        metadata_xml = os.path.join(self.package_path(package), ctx.const.metadata_xml)
+        meta_doc = piksemel.parse(metadata_xml)
+        return self.__get_version(meta_doc) + self.__get_distro_release(meta_doc)
+
+    def get_version(self, package):
+        metadata_xml = os.path.join(self.package_path(package), ctx.const.metadata_xml)
+        meta_doc = piksemel.parse(metadata_xml)
+        return self.__get_version(meta_doc)
 
     def get_files(self, package):
         files = pisi.files.Files()
