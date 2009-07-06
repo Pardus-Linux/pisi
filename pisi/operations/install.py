@@ -32,6 +32,7 @@ def install_pkg_names(A, reinstall = False):
     installs"""
 
     installdb = pisi.db.installdb.InstallDB()
+    packagedb = pisi.db.packagedb.PackageDB()
 
     A = [str(x) for x in A] #FIXME: why do we still get unicode input here? :/ -- exa
     # A was a list, remove duplicates
@@ -83,6 +84,10 @@ def install_pkg_names(A, reinstall = False):
 
     ignore_dep = ctx.config.get_option('ignore_dependency')
 
+    conflicts = []
+    if not ctx.get_option('ignore_package_conflicts'):
+        conflicts = operations.helper.check_conflicts(order, packagedb)
+
     paths = []
     for x in order:
         ctx.ui.info(util.colorize(_("Downloading %d / %d") % (order.index(x)+1, len(order)), "yellow"))
@@ -92,6 +97,9 @@ def install_pkg_names(A, reinstall = False):
     # fetch to be installed packages but do not install them.
     if ctx.get_option('fetch_only'):
         return
+
+    if conflicts:
+        operations.remove.remove_conflicting_packages(conflicts)
 
     for path in paths:
         ctx.ui.info(util.colorize(_("Installing %d / %d") % (paths.index(path)+1, len(paths)), "yellow"))
@@ -243,8 +251,4 @@ def plan_install_pkg_names(A, ignore_package_conflicts = False):
         G_f.write_graphviz(sys.stdout)
     order = G_f.topological_sort()
     order.reverse()
-    if not ctx.get_option('ignore_package_conflicts') and not ignore_package_conflicts:
-        conflicts = operations.helper.check_conflicts(order, packagedb)
-        if conflicts:
-            operations.remove.remove_conflicting_packages(conflicts)
     return G_f, order
