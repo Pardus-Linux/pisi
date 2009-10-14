@@ -118,13 +118,13 @@ class HistoryDB(lazydb.LazyDB):
             hist.operation.no = int(log.split("_")[0])
             yield hist.operation
 
-    def get_last_repo_update(self, last=-1):
+    def get_last_repo_update(self, last=1):
         repoupdates = filter(lambda l:l.endswith("repoupdate.xml"), self.__logs)
         repoupdates.reverse()
         if not len(repoupdates) >= 2:
             return None
 
-        if last != -1 and len(repoupdates) <= last:
+        if last != 1 and len(repoupdates) <= last:
             return None
 
         hist = pisi.history.History(os.path.join(ctx.config.history_dir(), repoupdates[-last]))
