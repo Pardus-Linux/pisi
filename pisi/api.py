@@ -14,6 +14,7 @@ import fcntl
 import re
 import logging
 import logging.handlers
+import fetcher
 
 import gettext
 __trans = gettext.translation('pisi', fallback=True)
@@ -686,6 +687,26 @@ def __update_repo(repo, force=False):
         ctx.ui.info(_('* Package database updated.'))
     else:
         raise pisi.Error(_('No repository named %s found.') % repo)
+
+def fetch(packages=[], path=os.path.curdir):
+    """
+    Fetches the given packages from the repository without installing, just downloads the packages.
+    @param packages: list of package names -> list_of_strings
+    @param path: path to where the packages will be downloaded. If not given, packages will be downloaded
+    to the current working directory.
+    """
+    packagedb = pisi.db.packagedb.PackageDB()
+    repodb = pisi.db.repodb.RepoDB()
+    for name in packages:
+        package, repo = packagedb.get_package_repo(name)
+        ctx.ui.info(_("%s package found in %s repository") % (package.name, repo))
+        uri = pisi.uri.URI(package.packageURI)
+        if uri.is_absolute_path():
+            url = str(pkg_uri)
+        else:
+            url = os.path.join(os.path.dirname(repodb.get_repo_url(repo)), str(uri.path()))
+
+        fetcher.fetch_url(url, path, ctx.ui.Progress)
 
 @locked
 def delete_cache():
