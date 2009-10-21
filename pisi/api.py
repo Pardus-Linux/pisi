@@ -701,6 +701,10 @@ def fetch(packages=[], path=os.path.curdir):
         package, repo = packagedb.get_package_repo(name)
         ctx.ui.info(_("%s package found in %s repository") % (package.name, repo))
         uri = pisi.uri.URI(package.packageURI)
+        output = os.path.join(path, uri.path())
+        if os.path.exists(output) and package.packageHash == pisi.util.sha1_file(output):
+            ctx.ui.warning(_("%s package already fetched") % uri.path())
+            continue
         if uri.is_absolute_path():
             url = str(pkg_uri)
         else:
