@@ -136,13 +136,15 @@ class Fetcher:
         try:
             urlgrabber.urlgrab(self.url.get_uri(),
                            self.partial_file,
-                           progress_obj = UIHandler(self.progress),
-                           http_headers = self._get_http_headers(),
-                           ftp_headers  = self._get_ftp_headers(),
-                           proxies      = self._get_proxies(),
-                           throttle     = self._get_bandwith_limit(),
-                           reget        = self._test_range_support(),
-                           user_agent   = 'PiSi Fetcher/' + pisi.__version__)
+                           progress_obj     = UIHandler(self.progress),
+                           http_headers     = self._get_http_headers(),
+                           close_connection = 1,
+                           keepalive        = 0,
+                           ftp_headers      = self._get_ftp_headers(),
+                           proxies          = self._get_proxies(),
+                           throttle         = self._get_bandwith_limit(),
+                           reget            = self._test_range_support(),
+                           user_agent       = 'PiSi Fetcher/' + pisi.__version__)
         except urlgrabber.grabber.URLGrabError, e:
             raise FetchError(_('Could not fetch destination file "%s": %s') % (self.archive_file, e))
 
