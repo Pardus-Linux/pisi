@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: pisi-cli:41
@@ -545,9 +545,18 @@ msgid ""
 "\n"
 "If no repo is given, add-repo pardus-devel repo is added by default\n"
 "\n"
-"NB: We support only local files (e.g., /a/b/c) and http:// URIs at the "
-"moment\n"
+"NB: We support only local files (e.g., /a/b/c) and http:// URIs at the moment\n"
 msgstr ""
+"Depo ekle\n"
+"\n"
+"Kullanım: add-repo <depo> <endeksadresi>\n"
+"\n"
+"<depo>: eklenecek deponun adı\n"
+"<endeksadresi>: endeks dosyasının adresi\n"
+"\n"
+"Depo verilmezse öntanımlı olarak pardus-devel deposu eklenir\n"
+"\n"
+"Not: Şu anda sadece yerel dosyaları (örn. /a/b/c) ve http:// adresleri destekliyoruz\n"
 
 #: pisi/cli/addrepo.py:44
 msgid "add-repo options"
@@ -577,6 +586,15 @@ msgid ""
 "Alternatively, you can give the name of a source package\n"
 "to be downloaded from a repository containing sources.\n"
 msgstr ""
+"PiSi paketlerini inşa et\n"
+"\n"
+"Kullanım: build [<pspec.xml> | <kaynakismi>] ...\n"
+"\n"
+"pspec.xml dosyasının adresini verebilirsiniz. PiSi \n"
+"gerekli tüm dosyaları çekip paketi inşa edecektir.\n"
+"\n"
+"Alternatif olarak, kaynak içeren bir depodan indirilecek\n"
+"bir kaynak paket ismi de verebilirsiniz.\n"
 
 #: pisi/cli/build.py:47
 msgid "build options"
@@ -632,12 +650,8 @@ msgid "Break build after fetching the source archive"
 msgstr "Kaynak arşivini indirdikten sonra inşa'yı sonlandır"
 
 #: pisi/cli/build.py:81
-msgid ""
-"Break build after unpacking the source archive, checking sha1sum and "
-"applying patches"
-msgstr ""
-"Kaynak arşivini açtıktan, sha1sum kontrolü yaptıktan ve yamaları "
-"uyguladıktan sonra inşa'yı sonlandır"
+msgid "Break build after unpacking the source archive, checking sha1sum and applying patches"
+msgstr "Kaynak arşivini açtıktan, sha1sum kontrolü yaptıktan ve yamaları uyguladıktan sonra inşa'yı sonlandır"
 
 #: pisi/cli/build.py:83
 msgid "Break build after running configure step"
@@ -685,6 +699,17 @@ msgid ""
 "\n"
 "If no packages are given, checks all installed packages.\n"
 msgstr ""
+"Kurulumu doğrula\n"
+"\n"
+"Kullanım: check [<paket1> <paket2> ... <paketn>]\n"
+"\n"
+"<paketi>: paket ismi\n"
+"\n"
+"Kurulan her dosya için şifrelenmiş bir kontrol toplamı\n"
+"depolanır. Doğrulama komutu paketleri doğrulamak için o kontrol toplamlarını kullanır.\n"
+"Paketlerin isimlerini vermeniz yeterlidir.\n"
+"\n"
+"Paket ismi verilmezse tüm paketleri kontrol eder.\n"
 
 #: pisi/cli/check.py:47
 msgid "check options"
@@ -820,6 +845,12 @@ msgid ""
 "of packages waiting to be configured. This command\n"
 "configures those packages.\n"
 msgstr ""
+"Bekleyen paketleri yapılandır\n"
+"\n"
+"Kurulum anında COMAR\n"
+"yapılandırmaları tamamlanamayan paketler\n"
+"bir listeye eklenir. Bu komut\n"
+"o paket yapılandırmalarını tamamlar.\n"
 
 #: pisi/cli/configurepending.py:39
 msgid "configure-pending options"
@@ -835,6 +866,13 @@ msgid ""
 "under /var directory. Since these accumulate they can\n"
 "consume a lot of disk space."
 msgstr ""
+"Önbellek dosyalarını sil\n"
+"\n"
+"Kullanım: delete-cache\n"
+"\n"
+"Kaynaklar, paketler ve geçici dosyalar /var\n"
+"dizini altında depolanır. Bunlar biriktikçe\n"
+"kullandıkları disk alanı artar."
 
 #: pisi/cli/delta.py:23
 msgid ""
@@ -842,12 +880,17 @@ msgid ""
 "\n"
 "Usage: delta oldpackage newpackage\n"
 "\n"
-"Delta command finds the changed files between the given packages by "
-"comparing the sha1sum of the files\n"
-"and creates a delta pisi package with the changed files between two "
-"releases.\n"
+"Delta command finds the changed files between the given packages by comparing the sha1sum of the files\n"
+"and creates a delta pisi package with the changed files between two releases.\n"
 "\n"
 msgstr ""
+"Delta PiSi paketleri yaratır\n"
+"\n"
+"Kullanım: delta eskipaket yenipaket\n"
+"\n"
+"Delta komutu dosyaların sha1 toplamlarını karşılaştırarak iki paket arasında farklı olan ve\n"
+"değişen dosyaları bulur ve bu farklı dosyalardan bir delta pisi paketi oluşturur.\n"
+"\n"
 
 #: pisi/cli/delta.py:40
 msgid "delta options"
@@ -864,6 +907,14 @@ msgid ""
 "\n"
 "You can also give the name of a component.\n"
 msgstr ""
+"Depodan PiSi kaynak paketleri inşa et ve kur\n"
+"\n"
+"Kullanım: emerge <sourcename> ...\n"
+"\n"
+"Kaynak içeren bir depodan,\n"
+"bir kaynak paketin ismini vermelisiniz.\n"
+"\n"
+"Bileşen ismi de verebilirsiniz.\n"
 
 #: pisi/cli/emerge.py:44
 msgid "emerge options"
@@ -1178,18 +1229,12 @@ msgid "Fetch upgrades but do not install."
 msgstr "Yükseltilecekleri indir ama kurma"
 
 #: pisi/cli/install.py:63
-msgid ""
-"When installing packages, ignore packages and components whose basenames "
-"match pattern."
+msgid "When installing packages, ignore packages and components whose basenames match pattern."
 msgstr "Paket kurarken, ifade ile eşleşen paket ve bileşenleri gözardı et."
 
 #: pisi/cli/install.py:65
-msgid ""
-"When installing packages, ignore packages and components whose "
-"basenames                      match any pattern contained in file."
-msgstr ""
-"Paket kurarken, paket ya da bileşen isimlerinden dosya içerisinde verilen "
-"kalıplardan herhangi birisi ile eşleşenleri gözardı et."
+msgid "When installing packages, ignore packages and components whose basenames                      match any pattern contained in file."
+msgstr "Paket kurarken, paket ya da bileşen isimlerinden dosya içerisinde verilen kalıplardan herhangi birisi ile eşleşenleri gözardı et."
 
 #: pisi/cli/listavailable.py:26
 msgid ""
@@ -1286,15 +1331,11 @@ msgid "list-newest options"
 msgstr "list-newest seçenekleri"
 
 #: pisi/cli/listnewest.py:47
-msgid ""
-"List new packages added to repository after this given date formatted as "
-"yyyy-mm-dd"
+msgid "List new packages added to repository after this given date formatted as yyyy-mm-dd"
 msgstr "yyyy-aa-gg biçiminde girilen tarihten sonra depoya eklenen yeni paketleri listeler"
 
 #: pisi/cli/listnewest.py:49
-msgid ""
-"List new packages added to repository after last nth previous repository "
-"update"
+msgid "List new packages added to repository after last nth previous repository update"
 msgstr "Önceki n'inci depo güncellemesinden sonra depoya eklenen yeni paketleri listeler"
 
 #: pisi/cli/listnewest.py:77
@@ -1554,20 +1595,12 @@ msgid "Name of the to be upgraded packages' repository"
 msgstr "Güncellenecek paketlerin depo ismi"
 
 #: pisi/cli/upgrade.py:74
-msgid ""
-"When upgrading system, ignore packages and components whose basenames match "
-"pattern."
-msgstr ""
-"Sistemi yükseltirken paket ya da bileşen isimlerinden verilen kalıp ile "
-"eşleşenleri yok say"
+msgid "When upgrading system, ignore packages and components whose basenames match pattern."
+msgstr "Sistemi yükseltirken paket ya da bileşen isimlerinden verilen kalıp ile eşleşenleri yok say"
 
 #: pisi/cli/upgrade.py:76
-msgid ""
-"When upgrading system, ignore packages and components whose "
-"basenames                      match any pattern contained in file."
-msgstr ""
-"Sistemi yükseltirken paket ya da bileşen isimlerinden dosya içerisinde "
-"verilen kalıplardan herhangi birisi ile eşleşenleri yok say"
+msgid "When upgrading system, ignore packages and components whose basenames                      match any pattern contained in file."
+msgstr "Sistemi yükseltirken paket ya da bileşen isimlerinden dosya içerisinde verilen kalıplardan herhangi birisi ile eşleşenleri yok say"
 
 #: pisi/cli/upgrade.py:89
 msgid "Updating repositories"
@@ -1740,12 +1773,8 @@ msgid "Could not fetch destination file \"%s\": %s"
 msgstr "\"%s\" hedef dosyasına erişilemedi: %s"
 
 #: pisi/fetcher.py:151
-msgid ""
-"A problem occurred. Please check the archive address and/or permissions "
-"again."
-msgstr ""
-"Bir hata oluştu. Lütfen arşiv adresini ve/veya kullanıcı izinlerini yeniden "
-"kontrol edin."
+msgid "A problem occurred. Please check the archive address and/or permissions again."
+msgstr "Bir hata oluştu. Lütfen arşiv adresini ve/veya kullanıcı izinlerini yeniden kontrol edin."
 
 #: pisi/fetcher.py:184
 msgid "Proxy configuration has been found for '%s' protocol"
@@ -1756,12 +1785,8 @@ msgid "Bandwidth usage is limited to %s KB/s"
 msgstr "Bantgenişliği kullanımı %s KB/s ile sınırlı"
 
 #: pisi/fetcher.py:207
-msgid ""
-"Server doesn't support partial downloads. Previously downloaded part of the "
-"file will be over-written."
-msgstr ""
-"Sunucu parçalı indirimleri desteklemiyor. Dosyanın daha önce indirilen "
-"parçası üzerine yazılacak."
+msgid "Server doesn't support partial downloads. Previously downloaded part of the file will be over-written."
+msgstr "Sunucu parçalı indirimleri desteklemiyor. Dosyanın daha önce indirilen parçası üzerine yazılacak."
 
 #: pisi/file.py:66
 msgid "uri must have type either URI or string"
@@ -1973,9 +1998,7 @@ msgstr "fonksiyon eylemlerden çağırılamıyor: %s"
 
 #: pisi/operations/build.py:499
 msgid "Safety switch: following extra packages in system.devel will be installed: "
-msgstr ""
-"Emniyet mandalı: taban geliştirme sistemi system.devel içindeki bu paketler "
-"ek olarak kurulacak:"
+msgstr "Emniyet mandalı: taban geliştirme sistemi system.devel içindeki bu paketler ek olarak kurulacak:"
 
 #: pisi/operations/build.py:504
 msgid "Safety switch: system.devel is already installed"
@@ -2059,12 +2082,8 @@ msgid "Generating %s,"
 msgstr "%s yaratılıyor,"
 
 #: pisi/operations/build.py:879
-msgid ""
-"Build number is not available. For repo builds you must enable buildno in "
-"pisi.conf."
-msgstr ""
-"İnşa (build) sayısı koyulmayacak. Depo inşaları için buildno seçeneğini pisi."
-"conf dosyasında etkinleştirmelisiniz."
+msgid "Build number is not available. For repo builds you must enable buildno in pisi.conf."
+msgstr "İnşa (build) sayısı koyulmayacak. Depo inşaları için buildno seçeneğini pisi.conf dosyasında etkinleştirmelisiniz."
 
 #: pisi/operations/build.py:899
 msgid "Creating PiSi package %s."
@@ -2080,9 +2099,7 @@ msgstr "kurulum dizini (%s) altındaki terkedilmiş dosyalar:"
 
 #: pisi/operations/build.py:954
 msgid "All of the files under the install dir (%s) has been collected by package(s)"
-msgstr ""
-"Kurulum dizini (%s) altındaki bütün dosyalar paket(ler) tarafından "
-"toplanmıştır"
+msgstr "Kurulum dizini (%s) altındaki bütün dosyalar paket(ler) tarafından toplanmıştır"
 
 #: pisi/operations/build.py:958
 msgid "Cleaning Build Directory..."
@@ -2134,9 +2151,7 @@ msgstr "Bağımlılıkları sağlamak için bu paketler verilen sırada kurulaca
 msgid ""
 "The following minimal list of packages will be built and\n"
 "installed in the respective order to satisfy dependencies:\n"
-msgstr ""
-"Bağımlılıkları sağlamak için aşağıdaki paketler verilen sırada derlenip, "
-"kurulacak:\n"
+msgstr "Bağımlılıkları sağlamak için aşağıdaki paketler verilen sırada derlenip, kurulacak:\n"
 
 #: pisi/operations/emerge.py:62 pisi/operations/install.py:79
 #: pisi/operations/upgrade.py:146
@@ -2206,9 +2221,7 @@ msgstr ""
 "Bu paketler depolarda ve önbellekte bulunamadı:\n"
 
 #: pisi/operations/install.py:45
-msgid ""
-"The following package(s) are already installed and are not going to be "
-"installed again:\n"
+msgid "The following package(s) are already installed and are not going to be installed again:\n"
 msgstr "Aşağıdaki paket(ler) zaten sistemde kurulu ve yeniden kurulmayacak(lar):\n"
 
 # pisi/api.py:168 :215
@@ -2217,9 +2230,7 @@ msgid "No packages to install."
 msgstr "Kurulacak paket yok."
 
 #: pisi/operations/install.py:68
-msgid ""
-"Following packages will be installed in the respective order to satisfy "
-"dependencies:\n"
+msgid "Following packages will be installed in the respective order to satisfy dependencies:\n"
 msgstr "Bağımlılıkları sağlamak için bu paketler verilen sırada kurulacaktır:\n"
 
 #: pisi/operations/install.py:73 pisi/operations/upgrade.py:140
@@ -2352,17 +2363,11 @@ msgstr "'%s' dili metni, etiket %s içerisinde boş"
 
 #: pisi/pxml/autoxml.py:114
 msgid "LocalText: unable to get either current or default locale"
-msgstr ""
-"LocalText: şu andaki ya da ön tanımlı yerelleştirme seçenekleri (locale) "
-"bulunamıyor"
+msgstr "LocalText: şu andaki ya da ön tanımlı yerelleştirme seçenekleri (locale) bulunamıyor"
 
 #: pisi/pxml/autoxml.py:120 pisi/pxml/autoxml.py:135
-msgid ""
-"Tag should have at least the current locale, or failing that an English or "
-"Turkish version"
-msgstr ""
-"Etiket en azından şu andaki yerelleştirme seçenekleri (locale) için bir "
-"girdiye, o olmazsa bir Türkçe ya da İngilizce versiyona sahip olmalı"
+msgid "Tag should have at least the current locale, or failing that an English or Turkish version"
+msgstr "Etiket en azından şu andaki yerelleştirme seçenekleri (locale) için bir girdiye, o olmazsa bir Türkçe ya da İngilizce versiyona sahip olmalı"
 
 #: pisi/pxml/autoxml.py:373
 msgid "autoxml.check: '%s' errors"
@@ -2604,4 +2609,3 @@ msgstr "Kaynak deposu taranıyor...\n"
 #: scripts/repostats.py:579
 msgid "Scanning binary packages...\n"
 msgstr "İkili dosyalar taranıyor...\n"
-
