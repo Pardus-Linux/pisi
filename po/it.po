@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "POT-Creation-Date: 2010-06-03 09:08+EEST\n"
-"PO-Revision-Date: 2010-07-01 16:01+0200\n"
+"PO-Revision-Date: 2010-07-16 11:57+0200\n"
 "Last-Translator: Davide Siciliano <edivad95@gmail.com>\n"
 "Language-Team: Italian <pardus-translators@pardus.org.tr>\n"
 "MIME-Version: 1.0\n"
@@ -417,7 +417,7 @@ msgstr "Link Simbolico %s saltato."
 
 #: pisi/actionsapi/texlivemodules.py:95
 msgid "Symlink %s -> %s skipped (texlive-core takes care of it."
-msgstr ""
+msgstr "Link simbolico %s -> %s saltato (se ne occuperà texlive-core)"
 
 #: pisi/actionsapi/texlivemodules.py:98
 msgid "Symlink %s -> %s skipped."
@@ -459,15 +459,15 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:195
 msgid "Language file  %s  already generated."
-msgstr ""
+msgstr "Il file della lingua %s è stato già generato."
 
 #: pisi/actionsapi/texlivemodules.py:197
 msgid "No rule to proccess %s. Please file a bug."
-msgstr ""
+msgstr "Nessuna regola per elaborare %s. Per favore, scrivi un bug report."
 
 #: pisi/actionsapi/texlivemodules.py:232
 msgid "\\languages{%s}{%s}{}{%s}{%s} is added to %s/language.%s.def"
-msgstr ""
+msgstr "\\lingue{%s}{%s}{}{%s}{%s} aggiunte in %s/language.%s.def"
 
 #: pisi/actionsapi/texlivemodules.py:235
 msgid "%s is added to %s/language.%s.dat"
@@ -475,11 +475,11 @@ msgstr "%s aggiunto a %s/language.%s.dat"
 
 #: pisi/actionsapi/texlivemodules.py:238
 msgid "\\languages{%s}{%s}{}{%s}{%s} is added to %s/language.%s.def "
-msgstr ""
+msgstr "\\lingue{%s}{%s}{}{%s}{%s} aggiunte in %s/language.%s.def "
 
 #: pisi/actionsapi/texlivemodules.py:241
 msgid "%s %s is added to %s/language.%s.dat "
-msgstr ""
+msgstr "%s %s aggiunto a %s/language.%s.dat"
 
 #: pisi/api.py:58 pisi/cli/command.py:166
 msgid "You have to be root for this operation."
@@ -523,7 +523,7 @@ msgstr "* File di indice scritto"
 
 #: pisi/api.py:786
 msgid "Not a valid repo name."
-msgstr ""
+msgstr "Nome repository non valido."
 
 #: pisi/api.py:789
 msgid "Repo %s already present."
@@ -546,13 +546,12 @@ msgid "Repository %s does not exist. Cannot remove."
 msgstr "Il repository %s non esiste. Impossibile rimuovere."
 
 #: pisi/api.py:827
-#, fuzzy
 msgid "Updating repository: %s"
-msgstr "* Aggiornamento del repository: %s"
+msgstr "Aggiornamento del repository: %s"
 
 #: pisi/api.py:836
 msgid "%s repository information is up-to-date."
-msgstr ""
+msgstr "Le informazioni sul repository %s sono aggiornate."
 
 #: pisi/api.py:838
 msgid "Updating database at any rate as requested"
@@ -585,6 +584,7 @@ msgstr "URI pacchetto: %s"
 #: pisi/atomicoperations.py:114
 msgid "Download Error: Package does not match the repository package."
 msgstr ""
+"Errore nel download: il pacchetto non corrisponde a quello del repository."
 
 #: pisi/atomicoperations.py:118
 msgid "Package %s not found in any active repository."
@@ -657,6 +657,8 @@ msgid ""
 "Unable to relocate following files. Reinstallation of this package is "
 "strongly recommended."
 msgstr ""
+"Impossibile spostare i seguenti file. Si consiglia caldamente di "
+"reinstallare il pacchetto."
 
 #: pisi/atomicoperations.py:504 pisi/atomicoperations.py:507
 #: pisi/atomicoperations.py:514
@@ -775,6 +777,10 @@ msgid ""
 "checking the distribution of the repository.\n"
 "Do you want to continue?"
 msgstr ""
+"Aggiungere il repository senza aggiornare il database?\n"
+"Confermando, il repository verrà inoltre aggiunto senza controllare a quale "
+"distribuzione appartiene.\n"
+"Vuoi continuare?"
 
 #: pisi/cli/addrepo.py:81
 msgid "%s repository could not be reached. Removing %s from system."
