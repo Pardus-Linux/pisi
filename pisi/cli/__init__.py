@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2005 - 2007, TUBITAK/UEKAE
+# Copyright (C) 2005-2010, TUBITAK/UEKAE
 #
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free
@@ -91,7 +91,7 @@ class CLI(pisi.ui.UI):
 
         new_msg = ""
         for line in msg.split("\n"):
-            key, column, rest = line.partition(column)
+            key, _column, rest = line.partition(column)
             rest = align(rest)
             new_msg += line_format % {"key":key, "column":column, "rest":rest}
             if not noln:
