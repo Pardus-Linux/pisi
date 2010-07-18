@@ -93,7 +93,9 @@ class CLI(pisi.ui.UI):
         for line in msg.split("\n"):
             key, _column, rest = line.partition(column)
             rest = align(rest)
-            new_msg += line_format % {"key":key, "column":column, "rest":rest}
+            new_msg += line_format % {"key": key,
+                                      "column": _column,
+                                      "rest": rest}
             if not noln:
                 new_msg = "%s\n" % new_msg
         msg = new_msg
