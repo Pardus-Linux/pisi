@@ -152,7 +152,7 @@ def dumpVersion():
     open(os.path.join(destination, get.srcNAME()), "w").write(__getSuffix())
 
 def build(debugSymbols=False):
-    extra_config = ["CONFIG_DEBUG_SECTION_MISMATCH=y"]
+    extra_config = []
     if debugSymbols:
         # Enable debugging symbols (-g -gdwarf2)
         extra_config.append("CONFIG_DEBUG_INFO=y")
