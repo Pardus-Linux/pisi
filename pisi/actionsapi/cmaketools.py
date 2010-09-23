@@ -69,16 +69,13 @@ def configure(parameters = '', installPrefix = '/%s' % get.defaultprefixDIR(), s
 
 def make(parameters = ''):
     '''build source with given parameters'''
-    if can_access_file('Makefile'):
-        if ctx.config.get_option("verbose") and ctx.config.get_option("debug"):
-            command = 'make VERBOSE=1 %s %s' % (get.makeJOBS(), parameters)
-        else:
-            command = 'make %s %s' % (get.makeJOBS(), parameters)
-
-        if system(command):
-            raise MakeError(_('Make failed.'))
+    if ctx.config.get_option("verbose") and ctx.config.get_option("debug"):
+        command = 'make VERBOSE=1 %s %s' % (get.makeJOBS(), parameters)
     else:
-        raise InstallError(_('No Makefile found.'))
+        command = 'make %s %s' % (get.makeJOBS(), parameters)
+
+    if system(command):
+        raise MakeError(_('Make failed.'))
 
 def fixInfoDir():
     infoDir = '%s/usr/share/info/dir' % get.installDIR()
