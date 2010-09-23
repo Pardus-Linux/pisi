@@ -84,23 +84,20 @@ def fixInfoDir():
 
 def install(parameters = '', argument = 'install'):
     '''install source into install directory with given parameters'''
-    if can_access_file('makefile') or can_access_file('Makefile') or can_access_file('GNUmakefile'):
-        # You can't squeeze unix paths with things like 'bindir', 'datadir', etc with CMake
-        # http://public.kitware.com/pipermail/cmake/2006-August/010748.html
-        args = 'make DESTDIR="%(destdir)s" \
-                     %(parameters)s \
-                     %(argument)s' % {
-                                         'destdir'      : get.installDIR(),
-                                         'parameters'   : parameters,
-                                         'argument'     : argument,
-                                     }
+    # You can't squeeze unix paths with things like 'bindir', 'datadir', etc with CMake
+    # http://public.kitware.com/pipermail/cmake/2006-August/010748.html
+    args = 'make DESTDIR="%(destdir)s" \
+                 %(parameters)s \
+                 %(argument)s' % {
+                                     'destdir'      : get.installDIR(),
+                                     'parameters'   : parameters,
+                                     'argument'     : argument,
+                                 }
 
-        if system(args):
-            raise InstallError(_('Install failed.'))
-        else:
-            fixInfoDir()
+    if system(args):
+        raise InstallError(_('Install failed.'))
     else:
-        raise InstallError(_('No Makefile found.'))
+        fixInfoDir()
 
 def rawInstall(parameters = '', argument = 'install'):
     '''install source into install directory with given parameters = PREFIX=%s % get.installDIR()'''
