@@ -110,7 +110,7 @@ def dolib_a(sourceFile, destinationDirectory = '/usr/lib'):
     lib_insinto(sourceFile, destinationDirectory, 644)
 
 def dolib_so(sourceFile, destinationDirectory = '/usr/lib'):
-    '''insert the static library into /usr/lib with permission 0755'''
+    '''insert the dynamic library into /usr/lib with permission 0755'''
 
     '''example call: pisitools.dolib_so("pppd/plugins/minconn.so")'''
     sourceFile = join_path(os.getcwd(), sourceFile)
