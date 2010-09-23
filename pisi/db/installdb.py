@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2005 - 2007, TUBITAK/UEKAE
+# Copyright (C) 2005 - 2010, TUBITAK/UEKAE
 #
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free
@@ -84,6 +84,7 @@ class InstallDB(lazydb.LazyDB):
         metadata_xml = os.path.join(self.package_path(package), ctx.const.metadata_xml)
         try:
             meta_doc = piksemel.parse(metadata_xml)
+            pkg = meta_doc.getTag("Package")
         except:
             # If package info is broken or not available, skip it.
             ctx.ui.warning(_("Installation info for package '%s' is broken. "
@@ -91,17 +92,15 @@ class InstallDB(lazydb.LazyDB):
             del self.installed_db[package]
             return
 
-        pkg = meta_doc.getTag("Package")
         deps = pkg.getTag('RuntimeDependencies')
         if deps:
-            name = pkg.getTagData('Name')
             for dep in deps.tags("Dependency"):
                 revdep = revdeps.setdefault(dep.firstChild().data(), {})
-                revdep[name] = dep.toString()
+                revdep[package] = dep.toString()
             for anydep in deps.tags("AnyDependency"):
                 for dep in anydep.tags("Dependency"):
                     revdep = revdeps.setdefault(dep.firstChild().data(), {})
-                    revdep[name] = anydep.toString()
+                    revdep[package] = anydep.toString()
 
     def __generate_revdeps(self):
         revdeps = {}
