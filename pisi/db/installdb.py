@@ -86,6 +86,9 @@ class InstallDB(lazydb.LazyDB):
             meta_doc = piksemel.parse(metadata_xml)
             pkg = meta_doc.getTag("Package")
         except:
+            pkg = None
+
+        if pkg is None:
             # If package info is broken or not available, skip it.
             ctx.ui.warning(_("Installation info for package '%s' is broken. "
                              "Reinstall it to fix this problem.") % package)
