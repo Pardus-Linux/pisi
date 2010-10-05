@@ -98,7 +98,7 @@ msgstr ""
 
 #: pisi-cli:54
 msgid "System error. Program terminated."
-msgstr ""
+msgstr "Системная ошибка. Программа закрыта."
 
 #: pisi-cli:63
 msgid "Please use 'pisi help' for general help."
@@ -2023,7 +2023,7 @@ msgstr ""
 
 #: pisi/file.py:117
 msgid "Fetching %s"
-msgstr ""
+msgstr "Закачка %s"
 
 #: pisi/file.py:122
 msgid "Copying %s to transfer dir"
@@ -2031,7 +2031,7 @@ msgstr ""
 
 #: pisi/file.py:127
 msgid "File '%s' not found."
-msgstr ""
+msgstr "Файл '%s' не найден."
 
 #: pisi/file.py:135
 msgid "File integrity of %s compromised."
@@ -2051,7 +2051,7 @@ msgstr ""
 
 #: pisi/file.py:202 pisi/file.py:205
 msgid "ERROR: gpg --detach-sig %s failed"
-msgstr ""
+msgstr "Ошибка: gpg --detach-sig %s failed"
 
 #: pisi/graph.py:30
 msgid "Encountered cycle %s"
@@ -2071,15 +2071,15 @@ msgstr ""
 
 #: pisi/history.py:68
 msgid "%s %s is removed."
-msgstr ""
+msgstr "%s %s удален."
 
 #: pisi/history.py:70
 msgid "%s %s is installed."
-msgstr ""
+msgstr "%s %s установлен."
 
 #: pisi/history.py:72
 msgid "%s %s is reinstalled."
-msgstr ""
+msgstr "%s %s переустановлен."
 
 #: pisi/history.py:74
 msgid "%s is downgraded from %s to %s."
@@ -2107,7 +2107,7 @@ msgstr ""
 
 #: pisi/metadata.py:84
 msgid ", Package Size: %s"
-msgstr ""
+msgstr ", Размер пакета: %s"
 
 #: pisi/mirrors.py:46
 msgid "Mirrors file %s does not exist. Could not resolve mirrors://"
@@ -2159,7 +2159,7 @@ msgstr ""
 
 #: pisi/operations/build.py:411
 msgid "Unpacking archive(s)..."
-msgstr ""
+msgstr "Распаковка архива (ов)"
 
 #: pisi/operations/build.py:417
 msgid " unpacked (%s)"
@@ -2167,19 +2167,19 @@ msgstr ""
 
 #: pisi/operations/build.py:422
 msgid "Setting up source..."
-msgstr ""
+msgstr "Настройка исходных кодов..."
 
 #: pisi/operations/build.py:427
 msgid "Building source..."
-msgstr ""
+msgstr "Компиляция исходных кодов..."
 
 #: pisi/operations/build.py:432
 msgid "Testing package..."
-msgstr ""
+msgstr "Тестирование исходных кодов..."
 
 #: pisi/operations/build.py:436
 msgid "Installing..."
-msgstr ""
+msgstr "Установка..."
 
 #: pisi/operations/build.py:503
 msgid "Unable to read Actions Script (%s): %s"
@@ -2271,7 +2271,7 @@ msgstr ""
 
 #: pisi/operations/build.py:820
 msgid "(found old version %s)"
-msgstr ""
+msgstr "(найдена старая версия %s)"
 
 #: pisi/operations/build.py:845
 msgid "(no previous build found, setting build no to 1.)"
@@ -2307,7 +2307,7 @@ msgstr ""
 
 #: pisi/operations/build.py:1002 pisi/operations/build.py:1005
 msgid "Generating %s,"
-msgstr ""
+msgstr "Создание %s,"
 
 #: pisi/operations/build.py:1011
 msgid "Build number is not available. For repo builds you must enable buildno in pisi.conf."
@@ -2319,7 +2319,7 @@ msgstr ""
 
 #: pisi/operations/build.py:1079 pisi/operations/delta.py:97
 msgid "Done."
-msgstr ""
+msgstr "Готово."
 
 #: pisi/operations/build.py:1081
 msgid "All of the files under the install dir (%s) has been collected by package(s)"
@@ -2327,7 +2327,7 @@ msgstr ""
 
 #: pisi/operations/build.py:1085
 msgid "Cleaning Build Directory..."
-msgstr ""
+msgstr "Очистка Build директории ..."
 
 #: pisi/operations/build.py:1088
 msgid "Keeping Build Directory"
@@ -2335,11 +2335,11 @@ msgstr ""
 
 #: pisi/operations/build.py:1114
 msgid "*** %d error(s), %d warning(s)"
-msgstr ""
+msgstr "*** %d ошика, %d предупреждение"
 
 #: pisi/operations/check.py:37
 msgid "Checking /%s "
-msgstr ""
+msgstr "Проверка /%s "
 
 #: pisi/operations/check.py:42
 msgid ""
@@ -2389,7 +2389,7 @@ msgstr ""
 
 #: pisi/operations/emerge.py:95
 msgid "Cannot find source package: %s"
-msgstr ""
+msgstr "Не найден исходный пакет: %s"
 
 #: pisi/operations/helper.py:51
 msgid "Selected packages [%s] are in conflict with each other."
@@ -2415,11 +2415,11 @@ msgstr ""
 
 #: pisi/operations/history.py:86 pisi/operations/history.py:96
 msgid "%s could not be found"
-msgstr ""
+msgstr "%s не может быть найден"
 
 #: pisi/operations/history.py:99 pisi/package.py:60 pisi/sourcearchive.py:111
 msgid "%s [cached]"
-msgstr ""
+msgstr "%s [cached]"
 
 #: pisi/operations/history.py:147
 msgid "Following packages will be installed:\n"
@@ -2433,12 +2433,12 @@ msgstr ""
 #: pisi/operations/install.py:200 pisi/operations/remove.py:72
 #: pisi/operations/upgrade.py:190
 msgid "Do you want to continue?"
-msgstr ""
+msgstr "Вы хотите продолжить?"
 
 #: pisi/operations/history.py:158 pisi/operations/install.py:95
 #: pisi/operations/upgrade.py:201
 msgid "Downloading %d / %d"
-msgstr ""
+msgstr "Загрузка %d / %d"
 
 #: pisi/operations/history.py:164
 msgid ""
@@ -2452,7 +2452,7 @@ msgstr ""
 
 #: pisi/operations/install.py:53 pisi/operations/install.py:213
 msgid "No packages to install."
-msgstr ""
+msgstr "Нет пакетов для установки."
 
 #: pisi/operations/install.py:71
 msgid "Following packages will be installed:"
@@ -2464,7 +2464,7 @@ msgstr ""
 
 #: pisi/operations/install.py:107 pisi/operations/upgrade.py:215
 msgid "Installing %d / %d"
-msgstr ""
+msgstr "Установка %d / %d"
 
 #: pisi/operations/install.py:121
 msgid "Mixing file names and package names not supported yet."
@@ -2492,7 +2492,7 @@ msgstr ""
 
 #: pisi/operations/install.py:244
 msgid "Installation order: "
-msgstr ""
+msgstr "Порядок установки:"
 
 #: pisi/operations/install.py:279 pisi/specfile.py:265
 msgid "%s dependency of package %s is not satisfied"
@@ -2512,7 +2512,7 @@ msgstr ""
 
 #: pisi/operations/remove.py:59
 msgid "No packages to remove."
-msgstr ""
+msgstr "Нет пакетов для удаления."
 
 #: pisi/operations/remove.py:68
 msgid ""
@@ -2570,7 +2570,7 @@ msgstr ""
 
 #: pisi/operations/upgrade.py:173
 msgid "The following packages will be upgraded:"
-msgstr ""
+msgstr "Следующие пакеты будут обновлены:"
 
 #: pisi/operations/upgrade.py:183
 msgid "There are extra packages due to dependencies."
@@ -2582,7 +2582,7 @@ msgstr ""
 
 #: pisi/operations/upgrade.py:264
 msgid "Upgrade is not possible."
-msgstr ""
+msgstr "Обновление невозможно."
 
 #: pisi/operations/upgrade.py:326
 msgid "Safety switch forces the installation of following packages:"
@@ -2709,7 +2709,7 @@ msgstr ""
 
 #: pisi/sourcearchive.py:63
 msgid "Fetching source from: %s"
-msgstr ""
+msgstr "Получение исходных кодов: %s"
 
 #: pisi/sourcearchive.py:74
 msgid "Source archive is stored: %s/%s"
@@ -2733,7 +2733,7 @@ msgstr ""
 
 #: pisi/sourcearchive.py:120
 msgid "unpack: check_file_hash failed"
-msgstr ""
+msgstr "распаковка: check_file_hash failed"
 
 #: pisi/specfile.py:164
 msgid "URI: %s, type: %s, sha1sum: %s"
@@ -2741,11 +2741,11 @@ msgstr ""
 
 #: pisi/specfile.py:194 pisi/specfile.py:197
 msgid " or "
-msgstr ""
+msgstr "или"
 
 #: pisi/specfile.py:365
 msgid "Name: %s, version: %s, release: %s, build %s\n"
-msgstr ""
+msgstr "Имя: %s, версия: %s, релиз: %s, билд %s\n"
 
 #: pisi/specfile.py:367 pisi/specfile.py:438
 msgid "Summary: %s\n"
