@@ -124,26 +124,26 @@ msgstr ""
 #: pisi/actionsapi/cmaketools.py:66 pisi/actionsapi/kde.py:65
 #: pisi/actionsapi/perlmodules.py:54 pisi/actionsapi/perlmodules.py:57
 msgid "Configure failed."
-msgstr ""
+msgstr "Ошибка конфигурирования."
 
 #: pisi/actionsapi/autotools.py:80 pisi/actionsapi/autotools.py:90
 #: pisi/actionsapi/kde.py:67
 msgid "No configure script found."
-msgstr ""
+msgstr "Файл конфигурации не найден."
 
 #: pisi/actionsapi/autotools.py:99 pisi/actionsapi/cmaketools.py:79
 #: pisi/actionsapi/kde.py:72 pisi/actionsapi/perlmodules.py:63
 #: pisi/actionsapi/perlmodules.py:72 pisi/actionsapi/pythonmodules.py:62
 #: pisi/actionsapi/scons.py:39
 msgid "Make failed."
-msgstr ""
+msgstr "Ошибка компиляции."
 
 #: pisi/actionsapi/autotools.py:127 pisi/actionsapi/autotools.py:138
 #: pisi/actionsapi/cmaketools.py:102 pisi/actionsapi/cmaketools.py:112
 #: pisi/actionsapi/kde.py:79 pisi/actionsapi/pythonmodules.py:67
 #: pisi/actionsapi/scons.py:43
 msgid "Install failed."
-msgstr ""
+msgstr "Ошибка установки."
 
 #: pisi/actionsapi/autotools.py:131 pisi/actionsapi/autotools.py:142
 #: pisi/actionsapi/cmaketools.py:81 pisi/actionsapi/cmaketools.py:106
@@ -196,11 +196,11 @@ msgstr ""
 
 #: pisi/actionsapi/libtools.py:38
 msgid "Running ldconfig failed."
-msgstr ""
+msgstr "Запуск ldconfig не удался."
 
 #: pisi/actionsapi/libtools.py:49
 msgid "GNU Config Update Finished."
-msgstr ""
+msgstr "GNU Config Обновление завершено."
 
 #: pisi/actionsapi/libtools.py:53
 msgid "Running libtoolize failed."
@@ -228,7 +228,7 @@ msgstr ""
 
 #: pisi/actionsapi/pisitools.py:188
 msgid "ActionsAPI [rename]: %s: %s"
-msgstr ""
+msgstr "ActionsAPI [rename]: %s: %s"
 
 #: pisi/actionsapi/pisitools.py:203
 msgid "No such file matching pattern: \"%s\". 'dosed' operation failed."
@@ -262,7 +262,7 @@ msgstr ""
 #: pisi/actionsapi/pisitoolsfunctions.py:63
 #: pisi/actionsapi/pisitoolsfunctions.py:80
 msgid "Insufficient arguments."
-msgstr ""
+msgstr "Недостаточно аргументов."
 
 #: pisi/actionsapi/pisitoolsfunctions.py:53
 msgid "No executable file matched pattern \"%s\"."
@@ -270,15 +270,15 @@ msgstr ""
 
 #: pisi/actionsapi/pythonmodules.py:56
 msgid "Configuration failed."
-msgstr ""
+msgstr "Ошибка конфигурирования."
 
 #: pisi/actionsapi/pythonmodules.py:81
 msgid "Running %s failed."
-msgstr ""
+msgstr "Запуск %s не удался."
 
 #: pisi/actionsapi/shelltools.py:49
 msgid "Cannot create directory %s"
-msgstr ""
+msgstr "Директория %s  не создана"
 
 #: pisi/actionsapi/shelltools.py:57
 msgid "ActionsAPI [echo]: Can't append to file %s."
@@ -374,7 +374,7 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:57
 msgid "Generate config files failed"
-msgstr ""
+msgstr "Ошибка создание конфигурационных файлов"
 
 #: pisi/actionsapi/texlivemodules.py:64
 msgid "Creating symlinks from format to engines failed"
