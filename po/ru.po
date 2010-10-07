@@ -556,7 +556,7 @@ msgstr "OK."
 
 #: pisi/atomicoperations.py:71 pisi/operations/history.py:76
 msgid "Package %s found in repository %s"
-msgstr ""
+msgstr "Пакет %s найден в репозитории %s"
 
 #: pisi/atomicoperations.py:102
 msgid "Package URI: %s"
@@ -584,7 +584,7 @@ msgstr ""
 
 #: pisi/atomicoperations.py:220
 msgid "/%s from %s package\n"
-msgstr ""
+msgstr "/%s для %s пакета\n"
 
 #: pisi/atomicoperations.py:221
 msgid ""
@@ -643,7 +643,7 @@ msgstr ""
 
 #: pisi/atomicoperations.py:587
 msgid "Removing package %s"
-msgstr ""
+msgstr "Удаление пакета %s"
 
 #: pisi/atomicoperations.py:590
 msgid "Trying to remove nonexistent package "
@@ -768,7 +768,7 @@ msgstr ""
 
 #: pisi/cli/blame.py:72
 msgid "Update Date: %s\n"
-msgstr ""
+msgstr "Дата обновления: %s\n"
 
 #: pisi/cli/build.py:25
 msgid ""
@@ -862,7 +862,7 @@ msgstr ""
 
 #: pisi/cli/build.py:94
 msgid "create PiSi package"
-msgstr ""
+msgstr "создание PiSi пакета"
 
 #: pisi/cli/build.py:108
 msgid "package_format must be one of %s "
@@ -870,7 +870,7 @@ msgstr ""
 
 #: pisi/cli/build.py:111 pisi/cli/delta.py:59 pisi/cli/emerge.py:71
 msgid "Output directory: %s"
-msgstr ""
+msgstr "Конечная папка: %s"
 
 #: pisi/cli/build.py:113 pisi/cli/delta.py:61
 msgid "Outputting packages in the working directory."
@@ -893,7 +893,7 @@ msgstr ""
 
 #: pisi/cli/check.py:47
 msgid "check options"
-msgstr ""
+msgstr "проверка опций"
 
 #: pisi/cli/check.py:49
 msgid "Check installed packages under given component"
@@ -905,11 +905,11 @@ msgstr ""
 
 #: pisi/cli/check.py:66
 msgid "Checking all installed packages"
-msgstr ""
+msgstr "Проверка всех установленных пакетов"
 
 #: pisi/cli/check.py:71
 msgid "* Checking %s... "
-msgstr ""
+msgstr "* Проверка %s... "
 
 #: pisi/cli/check.py:77
 msgid ""
@@ -925,11 +925,11 @@ msgstr ""
 
 #: pisi/cli/check.py:81 pisi/operations/check.py:48
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: pisi/cli/check.py:83
 msgid "Package %s not installed"
-msgstr ""
+msgstr "Пакет %s не установлен"
 
 #: pisi/cli/clean.py:20
 msgid ""
@@ -987,7 +987,7 @@ msgstr ""
 
 #: pisi/cli/command.py:152
 msgid "Password: "
-msgstr ""
+msgstr "Пароль: "
 
 #: pisi/cli/command.py:191
 msgid "Command terminated abnormally."
@@ -1191,15 +1191,15 @@ msgstr ""
 
 #: pisi/cli/history.py:28
 msgid "install"
-msgstr ""
+msgstr "установка"
 
 #: pisi/cli/history.py:28
 msgid "remove"
-msgstr ""
+msgstr "удаление"
 
 #: pisi/cli/history.py:28
 msgid "repository update"
-msgstr ""
+msgstr "обновление ропозиториев"
 
 #: pisi/cli/history.py:28
 msgid "snapshot"
@@ -1207,7 +1207,7 @@ msgstr ""
 
 #: pisi/cli/history.py:28
 msgid "takeback"
-msgstr ""
+msgstr "трасировка"
 
 #: pisi/cli/history.py:28
 msgid "upgrade"
@@ -1244,7 +1244,7 @@ msgstr ""
 
 #: pisi/cli/history.py:68
 msgid "Date: %s %s"
-msgstr ""
+msgstr "Дата: %s %s"
 
 #: pisi/cli/history.py:72
 msgid "    * There are %d packages in this snapshot."
@@ -1348,7 +1348,7 @@ msgstr ""
 
 #: pisi/cli/info.py:172
 msgid "[binary] "
-msgstr ""
+msgstr "[binary] "
 
 #: pisi/cli/info.py:174 pisi/cli/info.py:186
 msgid "Package found in %s repository:"
@@ -1360,7 +1360,7 @@ msgstr ""
 
 #: pisi/cli/info.py:184
 msgid "[source] "
-msgstr ""
+msgstr "[source] "
 
 #: pisi/cli/info.py:189
 msgid "%s package is not found in source repositories"
@@ -1381,7 +1381,7 @@ msgstr ""
 
 #: pisi/cli/install.py:44
 msgid "install options"
-msgstr ""
+msgstr "опции установки"
 
 #: pisi/cli/install.py:51
 msgid "Reinstall already installed packages"
@@ -1450,7 +1450,7 @@ msgstr ""
 
 #: pisi/cli/listavailable.py:67
 msgid "Repository : %s\n"
-msgstr ""
+msgstr "Репозиторий : %s\n"
 
 #: pisi/cli/listcomponents.py:24
 msgid ""
