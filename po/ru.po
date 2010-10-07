@@ -109,10 +109,12 @@ msgid ""
 "\n"
 "Traceback:"
 msgstr ""
+"\n"
+"Трассировеа:"
 
 #: pisi-cli:69
 msgid "Use --debug to see a traceback."
-msgstr ""
+msgstr "Используйте --debug для просмотра трассировки"
 
 #: pisi/actionsapi/autotools.py:37 pisi/actionsapi/cmaketools.py:36
 msgid ""
@@ -173,11 +175,11 @@ msgstr "Запуск autoheader не удался."
 
 #: pisi/actionsapi/cmaketools.py:68
 msgid "No configure script found for cmake."
-msgstr ""
+msgstr "Не найден скрипт конфигурации для cmake. "
 
 #: pisi/actionsapi/get.py:174
 msgid "Util %s cannot be found"
-msgstr ""
+msgstr "Утилита %s не найдена"
 
 #: pisi/actionsapi/get.py:176
 msgid "Warning: %s does not exist, using plain name %s"
@@ -322,7 +324,7 @@ msgstr ""
 
 #: pisi/actionsapi/shelltools.py:121
 msgid "ActionsAPI [unlinkDir]: Directory %s doesn't exists."
-msgstr ""
+msgstr "ActionsAPI [unlinkDir]: Каталог %s не существует."
 
 #: pisi/actionsapi/shelltools.py:127
 msgid "ActionsAPI [move]: No file matched pattern \"%s\"."
@@ -330,11 +332,11 @@ msgstr ""
 
 #: pisi/actionsapi/shelltools.py:134
 msgid "ActionsAPI [move]: Permission denied: %s to %s"
-msgstr ""
+msgstr "ActionsAPI [move]: Доступ запрещен: %s в %s"
 
 #: pisi/actionsapi/shelltools.py:136
 msgid "ActionsAPI [move]: File %s doesn't exists."
-msgstr ""
+msgstr "ActionsAPI [move]: Файл %s не существует."
 
 #: pisi/actionsapi/shelltools.py:143
 msgid "ActionsAPI [copy]: No file matched pattern \"%s\"."
@@ -342,19 +344,19 @@ msgstr ""
 
 #: pisi/actionsapi/shelltools.py:150
 msgid "ActionsAPI [copy]: Permission denied: %s to %s"
-msgstr ""
+msgstr "ActionsAPI [copy]: Доступ запрещен: %s в %s"
 
 #: pisi/actionsapi/shelltools.py:166
 msgid "ActionsAPI [copy]: File %s does not exist."
-msgstr ""
+msgstr "ActionsAPI [copy]: Файл %s не существует."
 
 #: pisi/actionsapi/shelltools.py:181
 msgid "ActionsAPI [copytree] %s to %s: %s"
-msgstr ""
+msgstr "ActionsAPI [copytree] %s в %s: %s"
 
 #: pisi/actionsapi/shelltools.py:183
 msgid "ActionsAPI [copytree]: Directory %s doesn't exists."
-msgstr ""
+msgstr "ActionsAPI [copytree]: Каталог %s не существует."
 
 #: pisi/actionsapi/shelltools.py:191
 msgid "ActionsAPI [touch]: No file matched pattern \"%s\"."
@@ -362,7 +364,7 @@ msgstr ""
 
 #: pisi/actionsapi/shelltools.py:200
 msgid "ActionsAPI [touch]: Permission denied: %s"
-msgstr ""
+msgstr "ActionsAPI [touch]: Доступ запрещен: %s"
 
 #: pisi/actionsapi/shelltools.py:255
 msgid "Command \"%s\" failed, return value was %d."
@@ -466,7 +468,7 @@ msgstr ""
 
 #: pisi/api.py:58 pisi/cli/command.py:166
 msgid "You have to be root for this operation."
-msgstr ""
+msgstr "Вы дожны иметь права root  для этой операции."
 
 #: pisi/api.py:65
 msgid "Another instance of PiSi is running. Only one instance is allowed."
@@ -478,7 +480,7 @@ msgstr ""
 
 #: pisi/api.py:424
 msgid "%s package already fetched"
-msgstr ""
+msgstr "%s пакет уже получен"
 
 #: pisi/api.py:566
 msgid "Taking snapshot of the system"
@@ -526,7 +528,7 @@ msgstr ""
 
 #: pisi/api.py:827
 msgid "Updating repository: %s"
-msgstr ""
+msgstr "Обновление репозитория: %s"
 
 #: pisi/api.py:836
 msgid "%s repository information is up-to-date."
@@ -538,7 +540,7 @@ msgstr ""
 
 #: pisi/api.py:851
 msgid "* Package database updated."
-msgstr ""
+msgstr "* База данных пакетов обновлена."
 
 #: pisi/api.py:853
 msgid "No repository named %s found."
@@ -550,7 +552,7 @@ msgstr ""
 
 #: pisi/api.py:869
 msgid "OK."
-msgstr ""
+msgstr "OK."
 
 #: pisi/atomicoperations.py:71 pisi/operations/history.py:76
 msgid "Package %s found in repository %s"
@@ -624,7 +626,7 @@ msgstr ""
 
 #: pisi/atomicoperations.py:322
 msgid "%s configuration failed."
-msgstr ""
+msgstr "%s ошибка конфигурирования."
 
 #: pisi/atomicoperations.py:413
 msgid "Unable to relocate following files. Reinstallation of this package is strongly recommended."
@@ -657,35 +659,35 @@ msgstr ""
 
 #: pisi/cli/__init__.py:115
 msgid "Warning: "
-msgstr ""
+msgstr "Предупреждение:"
 
 #: pisi/cli/__init__.py:125
 msgid "Error: "
-msgstr ""
+msgstr "Ошибка: "
 
 #: pisi/cli/__init__.py:155
 msgid " (yes/no)"
-msgstr ""
+msgstr " (да/нет)"
 
 #: pisi/cli/__init__.py:176
 msgid " [complete]\n"
-msgstr ""
+msgstr " [готово]\n"
 
 #: pisi/cli/__init__.py:186
 msgid "Installed %s"
-msgstr ""
+msgstr "Установленно %s"
 
 #: pisi/cli/__init__.py:188
 msgid "Removed %s"
-msgstr ""
+msgstr "Удалено %s"
 
 #: pisi/cli/__init__.py:190
 msgid "Upgraded %s"
-msgstr ""
+msgstr "Обновленно %s"
 
 #: pisi/cli/__init__.py:192
 msgid "Configured %s"
-msgstr ""
+msgstr "Сконфигурированно %s"
 
 #: pisi/cli/__init__.py:194
 msgid "Extracting the files of %s"
