@@ -1803,7 +1803,7 @@ msgstr ""
 
 #: pisi/cli/upgrade.py:88
 msgid "Updating repositories"
-msgstr ""
+msgstr "Обновление репозиториев"
 
 #: pisi/cli/upgrade.py:92
 msgid "Will not update repositories"
@@ -1835,7 +1835,7 @@ msgstr ""
 #: pisi/comariface.py:139 pisi/comariface.py:156 pisi/comariface.py:165
 #: pisi/comariface.py:184 pisi/comariface.py:193 pisi/comariface.py:200
 msgid "Script error: %s"
-msgstr ""
+msgstr "Ошибка скрипта: %s"
 
 #: pisi/comariface.py:118
 msgid "Calling post install handlers"
@@ -1883,27 +1883,27 @@ msgstr ""
 
 #: pisi/conflict.py:26 pisi/dependency.py:26 pisi/replace.py:24
 msgid " version >= "
-msgstr ""
+msgstr "версия >= "
 
 #: pisi/conflict.py:28 pisi/dependency.py:28 pisi/replace.py:26
 msgid " version <= "
-msgstr ""
+msgstr "версия <= "
 
 #: pisi/conflict.py:30 pisi/dependency.py:30 pisi/replace.py:28
 msgid " version "
-msgstr ""
+msgstr "версия"
 
 #: pisi/conflict.py:32 pisi/dependency.py:32 pisi/replace.py:30
 msgid " release >= "
-msgstr ""
+msgstr "релиз >= "
 
 #: pisi/conflict.py:34 pisi/dependency.py:34 pisi/replace.py:32
 msgid " release <= "
-msgstr ""
+msgstr "релиз <= "
 
 #: pisi/conflict.py:36 pisi/dependency.py:36 pisi/replace.py:34
 msgid " release "
-msgstr ""
+msgstr "релиз"
 
 #: pisi/constants.py:30
 msgid "Can't rebind constant: %s"
@@ -1915,15 +1915,15 @@ msgstr ""
 
 #: pisi/db/componentdb.py:87
 msgid "Component %s not found"
-msgstr ""
+msgstr "Компонент %s не найден"
 
 #: pisi/db/groupdb.py:66 pisi/db/groupdb.py:75
 msgid "Group %s not found"
-msgstr ""
+msgstr "Группа %s не найдена"
 
 #: pisi/db/installdb.py:37
 msgid "installed"
-msgstr ""
+msgstr "установлен"
 
 #: pisi/db/installdb.py:37
 msgid "installed-pending"
@@ -1945,7 +1945,7 @@ msgstr ""
 
 #: pisi/db/installdb.py:326
 msgid "Package %s is not installed"
-msgstr ""
+msgstr "Пакет %s не установлен"
 
 #: pisi/db/itembyrepo.py:40
 msgid "%s not found in any repository."
@@ -1957,11 +1957,11 @@ msgstr ""
 
 #: pisi/db/itembyrepo.py:60 pisi/db/itembyrepo.py:71 pisi/db/itembyrepo.py:81
 msgid "Repository %s does not exist."
-msgstr ""
+msgstr "Репозиторий %s не существует."
 
 #: pisi/db/packagedb.py:144 pisi/db/packagedb.py:151
 msgid "Package %s not found."
-msgstr ""
+msgstr "Пакет %s не найден."
 
 #: pisi/db/repodb.py:167
 msgid "%s repository needs to be updated"
@@ -1981,7 +1981,7 @@ msgstr ""
 
 #: pisi/fetcher.py:134
 msgid "Filename error"
-msgstr ""
+msgstr "Ошибка имени файла"
 
 #: pisi/fetcher.py:137
 msgid "Access denied to write to destination directory: \"%s\""
@@ -2061,7 +2061,7 @@ msgstr ""
 
 #: pisi/history.py:44
 msgid "%s repository is updated."
-msgstr ""
+msgstr "%s репозиторий обновлен."
 
 #: pisi/history.py:64
 msgid "%s is upgraded from %s to %s with delta."
@@ -2556,7 +2556,7 @@ msgstr ""
 
 #: pisi/operations/upgrade.py:85
 msgid "Package %s is not installed."
-msgstr ""
+msgstr "Пакет %s не установлен."
 
 #: pisi/operations/upgrade.py:89
 msgid "Package %s is not available in repositories."
@@ -2755,11 +2755,11 @@ msgstr ""
 
 #: pisi/specfile.py:368 pisi/specfile.py:439
 msgid "Description: %s\n"
-msgstr ""
+msgstr "Описание: %s\n"
 
 #: pisi/specfile.py:369 pisi/specfile.py:440
 msgid "Component: %s\n"
-msgstr ""
+msgstr "Компонент: %s\n"
 
 #: pisi/specfile.py:370
 msgid "Provides: "
@@ -2783,7 +2783,7 @@ msgstr ""
 
 #: pisi/util.py:208 pisi/util.py:229
 msgid "Running "
-msgstr ""
+msgstr "Запуск"
 
 #: pisi/util.py:212 pisi/util.py:247
 msgid "return value for \"%s\" is %s"
@@ -2803,11 +2803,11 @@ msgstr ""
 
 #: pisi/util.py:578
 msgid "ERROR: patch (%s) failed"
-msgstr ""
+msgstr "Ошибка: неверный путь (%s)"
 
 #: pisi/util.py:580
 msgid "ERROR: patch (%s) failed: %s"
-msgstr ""
+msgstr "Ошибка: не верный путь (%s): %s"
 
 #: pisi/util.py:590
 msgid "strip command failed for file '%s'!"
