@@ -102,7 +102,7 @@ msgstr "Системная ошибка. Программа закрыта."
 
 #: pisi-cli:63
 msgid "Please use 'pisi help' for general help."
-msgstr ""
+msgstr "Используйте 'pisi help' для получения справки."
 
 #: pisi-cli:66
 msgid ""
@@ -194,7 +194,7 @@ msgstr ""
 
 #: pisi/actionsapi/kerneltools.py:117
 msgid "Can't find kernel version information file %s."
-msgstr ""
+msgstr "Не найден файл информации о ядре %s."
 
 #: pisi/actionsapi/libtools.py:38
 msgid "Running ldconfig failed."
@@ -206,7 +206,7 @@ msgstr "GNU Config Обновление завершено."
 
 #: pisi/actionsapi/libtools.py:53
 msgid "Running libtoolize failed."
-msgstr ""
+msgstr "Ошибка выполнения libtoolize."
 
 #: pisi/actionsapi/perlmodules.py:66
 msgid "perl build failed."
@@ -242,11 +242,11 @@ msgstr ""
 
 #: pisi/actionsapi/pisitools.py:219
 msgid "File does not exist or permission denied: %s"
-msgstr ""
+msgstr "Файл не существует или доступ запрещен: %s"
 
 #: pisi/actionsapi/pisitools.py:236
 msgid "ActionsAPI [dosym]: File already exists: %s"
-msgstr ""
+msgstr "ActionsAPI [dosym]: Файл уже существует: %s"
 
 #: pisi/actionsapi/pisitools.py:245 pisi/actionsapi/pisitoolsfunctions.py:71
 msgid "No file matched pattern \"%s\"."
@@ -296,7 +296,7 @@ msgstr ""
 
 #: pisi/actionsapi/shelltools.py:73
 msgid "ActionsAPI [chmod]: File %s doesn't exists."
-msgstr ""
+msgstr "ActionsAPI [chmod]: Файл %s не существует."
 
 #: pisi/actionsapi/shelltools.py:81
 msgid "ActionsAPI [chown]: Operation not permitted: %s (uid: %s, gid: %s)"
@@ -304,19 +304,19 @@ msgstr ""
 
 #: pisi/actionsapi/shelltools.py:84
 msgid "ActionsAPI [chown]: File %s doesn't exists."
-msgstr ""
+msgstr "ActionsAPI [chown]: Файл %s не существует."
 
 #: pisi/actionsapi/shelltools.py:91
 msgid "ActionsAPI [sym]: Permission denied: %s to %s"
-msgstr ""
+msgstr "ActionsAPI [sym]: Доступ запрещен: %s в %s"
 
 #: pisi/actionsapi/shelltools.py:105
 msgid "ActionsAPI [unlink]: Permission denied: %s."
-msgstr ""
+msgstr "ActionsAPI [unlink]: Доступ запрещен: %s."
 
 #: pisi/actionsapi/shelltools.py:109
 msgid "ActionsAPI [unlink]: File %s doesn't exists."
-msgstr ""
+msgstr "ActionsAPI [unlink]: Файл %s не существует."
 
 #: pisi/actionsapi/shelltools.py:117
 msgid "ActionsAPI [unlinkDir]: Operation not permitted: %s"
@@ -388,11 +388,11 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:72
 msgid "Installing docs failed"
-msgstr ""
+msgstr "Ошибка установки docs"
 
 #: pisi/actionsapi/texlivemodules.py:76
 msgid "Installing config files failed"
-msgstr ""
+msgstr "Ошибка установки кофигурационных файлов"
 
 #: pisi/actionsapi/texlivemodules.py:82
 msgid "Handle config files failed"
@@ -420,7 +420,7 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:154
 msgid "Creating /etc/texmf/%s.d"
-msgstr ""
+msgstr "Создание /etc/texmf/%s.d"
 
 #: pisi/actionsapi/texlivemodules.py:167
 msgid "Building format file %s"
@@ -436,11 +436,11 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:188
 msgid "p +%s is added to %s/%s-config.ps"
-msgstr ""
+msgstr "p +%s добавлен в %s/%s-config.ps"
 
 #: pisi/actionsapi/texlivemodules.py:191
 msgid "f %s is added to %s/%s-config"
-msgstr ""
+msgstr "f %s добавлен в %s/%s-config"
 
 #: pisi/actionsapi/texlivemodules.py:195
 msgid "Language file  %s  already generated."
@@ -492,7 +492,7 @@ msgstr ""
 
 #: pisi/api.py:734
 msgid "File %s not found"
-msgstr ""
+msgstr "Файл %s не найден"
 
 #: pisi/api.py:774
 msgid "* Building index of PiSi files under %s"
@@ -548,7 +548,7 @@ msgstr ""
 
 #: pisi/api.py:866
 msgid "* Adding '%s' to db... "
-msgstr ""
+msgstr "* Добавление '%s' в db... "
 
 #: pisi/api.py:869
 msgid "OK."
@@ -709,7 +709,7 @@ msgstr ""
 
 #: pisi/cli/addrepo.py:45
 msgid "add-repo options"
-msgstr ""
+msgstr "Опции добавления репозиториев"
 
 #: pisi/cli/addrepo.py:46
 msgid "Ignore repository distribution check"
