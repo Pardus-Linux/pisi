@@ -60,7 +60,7 @@ msgstr "показать справку и выйти"
 
 #: /usr/lib/python2.6/optparse.py:1250
 msgid "show program's version number and exit"
-msgstr ""
+msgstr "Показать версию прораммы и выйти"
 
 #: /usr/lib/python2.6/optparse.py:1273
 msgid "%prog [options]"
@@ -121,6 +121,8 @@ msgid ""
 "Please attach the config.log to your bug report:\n"
 "%s/config.log"
 msgstr ""
+"Пожалуйста отправте config.log в  bug report:\n"
+"%s/config.log"
 
 #: pisi/actionsapi/autotools.py:78 pisi/actionsapi/autotools.py:88
 #: pisi/actionsapi/cmaketools.py:66 pisi/actionsapi/kde.py:65
@@ -210,11 +212,11 @@ msgstr "Ошибка выполнения libtoolize."
 
 #: pisi/actionsapi/perlmodules.py:66
 msgid "perl build failed."
-msgstr ""
+msgstr "ошибка выполнения perl."
 
 #: pisi/actionsapi/perlmodules.py:75
 msgid "perl install failed."
-msgstr ""
+msgstr "ошибка установки perl."
 
 #: pisi/actionsapi/pisitools.py:75 pisi/actionsapi/pisitools.py:132
 msgid "No file matched pattern \"%s\""
@@ -292,7 +294,7 @@ msgstr ""
 
 #: pisi/actionsapi/shelltools.py:70
 msgid "ActionsAPI [chmod]: Operation not permitted: %s (mode: %s)"
-msgstr ""
+msgstr "ActionsAPI [chmod]: Операция не может быть выполнена: %s (mode: %s)"
 
 #: pisi/actionsapi/shelltools.py:73
 msgid "ActionsAPI [chmod]: File %s doesn't exists."
@@ -300,7 +302,7 @@ msgstr "ActionsAPI [chmod]: Файл %s не существует."
 
 #: pisi/actionsapi/shelltools.py:81
 msgid "ActionsAPI [chown]: Operation not permitted: %s (uid: %s, gid: %s)"
-msgstr ""
+msgstr "ActionsAPI [chown]: Операция не может быть выполнена: %s (uid: %s, gid: %s)"
 
 #: pisi/actionsapi/shelltools.py:84
 msgid "ActionsAPI [chown]: File %s doesn't exists."
@@ -320,7 +322,7 @@ msgstr "ActionsAPI [unlink]: Файл %s не существует."
 
 #: pisi/actionsapi/shelltools.py:117
 msgid "ActionsAPI [unlinkDir]: Operation not permitted: %s"
-msgstr ""
+msgstr "ActionsAPI [unlinkDir]: Операция не может быть выполнена: %s"
 
 #: pisi/actionsapi/shelltools.py:121
 msgid "ActionsAPI [unlinkDir]: Directory %s doesn't exists."
@@ -372,7 +374,7 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:54
 msgid "Building format files failed"
-msgstr ""
+msgstr "Неверный формат исполняемого файла"
 
 #: pisi/actionsapi/texlivemodules.py:57
 msgid "Generate config files failed"
@@ -400,23 +402,23 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:93
 msgid "Symlink %s skipped (special case)"
-msgstr ""
+msgstr "Symlink %s skipped (special case)"
 
 #: pisi/actionsapi/texlivemodules.py:95
 msgid "Symlink %s -> %s skipped (texlive-core takes care of it."
-msgstr ""
+msgstr "Symlink %s -> %s skipped (texlive-core takes care of it."
 
 #: pisi/actionsapi/texlivemodules.py:98
 msgid "Symlink %s -> %s skipped."
-msgstr ""
+msgstr "Symlink %s -> %s skipped."
 
 #: pisi/actionsapi/texlivemodules.py:100
 msgid "Symlink %s skipped (file exists.)"
-msgstr ""
+msgstr "Symlink %s skipped (файл не существует.)"
 
 #: pisi/actionsapi/texlivemodules.py:102
 msgid "Making symlink from %s to %s"
-msgstr ""
+msgstr "Создание symlink для %s to %s"
 
 #: pisi/actionsapi/texlivemodules.py:154
 msgid "Creating /etc/texmf/%s.d"
@@ -428,7 +430,7 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:182
 msgid "Map %s is added to %s/%s.cfg"
-msgstr ""
+msgstr "Map %s добавлена в %s/%s.cfg"
 
 #: pisi/actionsapi/texlivemodules.py:185
 msgid "MixedMap %s is added to %s/%s.cfg"
@@ -444,7 +446,7 @@ msgstr "f %s добавлен в %s/%s-config"
 
 #: pisi/actionsapi/texlivemodules.py:195
 msgid "Language file  %s  already generated."
-msgstr ""
+msgstr "Language файл  %s  уже сгенерирован."
 
 #: pisi/actionsapi/texlivemodules.py:197
 msgid "No rule to proccess %s. Please file a bug."
@@ -456,7 +458,7 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:235
 msgid "%s is added to %s/language.%s.dat"
-msgstr ""
+msgstr "%s добавлен в %s/language.%s.dat"
 
 #: pisi/actionsapi/texlivemodules.py:238
 msgid "\\languages{%s}{%s}{}{%s}{%s} is added to %s/language.%s.def "
@@ -464,7 +466,7 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:241
 msgid "%s %s is added to %s/language.%s.dat "
-msgstr ""
+msgstr "%s %s добавлен в %s/language.%s.dat "
 
 #: pisi/api.py:58 pisi/cli/command.py:166
 msgid "You have to be root for this operation."
@@ -476,7 +478,7 @@ msgstr ""
 
 #: pisi/api.py:420
 msgid "%s package found in %s repository"
-msgstr ""
+msgstr "%s пакет найден в %s репозитории"
 
 #: pisi/api.py:424
 msgid "%s package already fetched"
@@ -504,7 +506,7 @@ msgstr ""
 
 #: pisi/api.py:786
 msgid "Not a valid repo name."
-msgstr ""
+msgstr "Неверное имя репозитория."
 
 #: pisi/api.py:789
 msgid "Repo %s already present."
@@ -516,15 +518,15 @@ msgstr ""
 
 #: pisi/api.py:797
 msgid "Repo %s added to system."
-msgstr ""
+msgstr "Репозиторий %s добавлен в систему."
 
 #: pisi/api.py:805
 msgid "Repo %s removed from system."
-msgstr ""
+msgstr "Репозиторий %s удален из системы."
 
 #: pisi/api.py:807
 msgid "Repository %s does not exist. Cannot remove."
-msgstr ""
+msgstr "Репозиторий %s не может быть удален. Он не существует."
 
 #: pisi/api.py:827
 msgid "Updating repository: %s"
