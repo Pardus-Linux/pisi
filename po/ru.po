@@ -16,15 +16,15 @@ msgstr ""
 
 #: /usr/lib/python2.6/optparse.py:140
 msgid "no such option: %s"
-msgstr ""
+msgstr "Нет такой опции: %s"
 
 #: /usr/lib/python2.6/optparse.py:151
 msgid "ambiguous option: %s (%s?)"
-msgstr ""
+msgstr "неоднозначная опция: %s (%s?)"
 
 #: /usr/lib/python2.6/optparse.py:374
 msgid "Usage: %s\n"
-msgstr ""
+msgstr "Использование: %s\n"
 
 #: /usr/lib/python2.6/optparse.py:393
 msgid "Usage"
@@ -185,7 +185,7 @@ msgstr "Утилита %s не найдена"
 
 #: pisi/actionsapi/get.py:176
 msgid "Warning: %s does not exist, using plain name %s"
-msgstr ""
+msgstr "Предупреждение: %s не существует, используя %s"
 
 #: pisi/actionsapi/kde.py:34
 msgid ""
@@ -502,7 +502,7 @@ msgstr ""
 
 #: pisi/api.py:781
 msgid "* Index file written"
-msgstr ""
+msgstr "* index файл записан"
 
 #: pisi/api.py:786
 msgid "Not a valid repo name."
@@ -534,7 +534,7 @@ msgstr "Обновление репозитория: %s"
 
 #: pisi/api.py:836
 msgid "%s repository information is up-to-date."
-msgstr ""
+msgstr "%s Репозиторий не требует обновления."
 
 #: pisi/api.py:838
 msgid "Updating database at any rate as requested"
@@ -562,7 +562,7 @@ msgstr "Пакет %s найден в репозитории %s"
 
 #: pisi/atomicoperations.py:102
 msgid "Package URI: %s"
-msgstr ""
+msgstr "URI пакета: %s"
 
 #: pisi/atomicoperations.py:114
 msgid "Download Error: Package does not match the repository package."
@@ -574,7 +574,7 @@ msgstr ""
 
 #: pisi/atomicoperations.py:144
 msgid "Installing %s, version %s, release %s, build %s"
-msgstr ""
+msgstr "Установка %s, версия %s, релиз %s, билд %s"
 
 #: pisi/atomicoperations.py:190 pisi/operations/build.py:596
 msgid "%s-%s is not a valid PiSi version format"
@@ -708,6 +708,16 @@ msgid ""
 "\n"
 "NB: We support only local files (e.g., /a/b/c) and http:// URIs at the moment\n"
 msgstr ""
+"Добавление репозитозитория\n"
+"\n"
+"Используйте: add-repo <repo> <indexuri>\n"
+"\n"
+"<repo>: имя репозитория для добавления\n"
+"<indexuri>: URI of index file\n"
+"\n"
+"If no repo is given, add-repo pardus-devel repo is added by default\n"
+"\n"
+"NB: We support only local files (e.g., /a/b/c) and http:// URIs at the moment\n"
 
 #: pisi/cli/addrepo.py:45
 msgid "add-repo options"
@@ -734,7 +744,7 @@ msgstr ""
 
 #: pisi/cli/addrepo.py:81
 msgid "%s repository could not be reached. Removing %s from system."
-msgstr ""
+msgstr "%s нет связи с репозиторием. Удаление %s из системы."
 
 #: pisi/cli/blame.py:24
 msgid ""
@@ -743,22 +753,26 @@ msgid ""
 "Usage: blame <package> ... <package>\n"
 "\n"
 msgstr ""
+"информация о владельце пакета и релизе\n"
+"\n"
+"Используйте: blame <package> ... <package>\n"
+"\n"
 
 #: pisi/cli/blame.py:39
 msgid "blame options"
-msgstr ""
+msgstr "blame опции"
 
 #: pisi/cli/blame.py:40
 msgid "Blame for the given release"
-msgstr ""
+msgstr "Blame для релиза"
 
 #: pisi/cli/blame.py:42
 msgid "Blame for all of the releases"
-msgstr ""
+msgstr "Blame для всех релизов"
 
 #: pisi/cli/blame.py:68 pisi/specfile.py:436
 msgid "Name: %s, version: %s, release: %s\n"
-msgstr ""
+msgstr "Имя: %s, версия: %s, релиз: %s\n"
 
 #: pisi/cli/blame.py:70
 msgid "Package Maintainer: %s <%s>\n"
@@ -787,7 +801,7 @@ msgstr ""
 
 #: pisi/cli/build.py:48
 msgid "build options"
-msgstr ""
+msgstr "build опции"
 
 #: pisi/cli/build.py:55 pisi/cli/install.py:49 pisi/cli/listupgrades.py:45
 #: pisi/cli/upgrade.py:55
