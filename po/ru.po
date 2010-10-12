@@ -68,11 +68,11 @@ msgstr "%prog [options]"
 
 #: /usr/lib/python2.6/optparse.py:1493 /usr/lib/python2.6/optparse.py:1532
 msgid "%s option requires an argument"
-msgstr ""
+msgstr "%s опция требует аргумент"
 
 #: /usr/lib/python2.6/optparse.py:1495 /usr/lib/python2.6/optparse.py:1534
 msgid "%s option requires %d arguments"
-msgstr ""
+msgstr "%s опция требует %d аргумент"
 
 #: /usr/lib/python2.6/optparse.py:1504
 msgid "%s option does not take a value"
@@ -286,7 +286,7 @@ msgstr "Директория %s  не создана"
 
 #: pisi/actionsapi/shelltools.py:57
 msgid "ActionsAPI [echo]: Can't append to file %s."
-msgstr ""
+msgstr "ActionsAPI [echo]: Не могу добавить в файл% s."
 
 #: pisi/actionsapi/shelltools.py:63
 msgid "ActionsAPI [chmod]: No file matched pattern \"%s\"."
@@ -570,7 +570,7 @@ msgstr ""
 
 #: pisi/atomicoperations.py:118
 msgid "Package %s not found in any active repository."
-msgstr ""
+msgstr "Пакет %s не найден ни в одном активном репозитории."
 
 #: pisi/atomicoperations.py:144
 msgid "Installing %s, version %s, release %s, build %s"
@@ -578,11 +578,11 @@ msgstr "Установка %s, версия %s, релиз %s, билд %s"
 
 #: pisi/atomicoperations.py:190 pisi/operations/build.py:596
 msgid "%s-%s is not a valid PiSi version format"
-msgstr ""
+msgstr "%s-%s не верный формат PiSi пакета"
 
 #: pisi/atomicoperations.py:196
 msgid "%s package cannot be installed unless the dependencies are satisfied"
-msgstr ""
+msgstr "%s пакет не может быть быть установлен, пока все зависимосте не удовлетварены"
 
 #: pisi/atomicoperations.py:220
 msgid "/%s from %s package\n"
@@ -608,11 +608,11 @@ msgstr ""
 
 #: pisi/atomicoperations.py:266
 msgid "Upgrading to new distribution release"
-msgstr ""
+msgstr "Пакет заменен на более старую версию"
 
 #: pisi/atomicoperations.py:270
 msgid "Upgrading to new distribution build"
-msgstr ""
+msgstr "Пакет обновлен до предыдущей версии"
 
 #: pisi/atomicoperations.py:279
 msgid "Downgrade to old distribution release?"
@@ -637,7 +637,7 @@ msgstr ""
 #: pisi/atomicoperations.py:504 pisi/atomicoperations.py:507
 #: pisi/atomicoperations.py:514
 msgid "Storing %s"
-msgstr ""
+msgstr "Хранение %s"
 
 #: pisi/atomicoperations.py:581
 msgid "File list could not be read for package %s, continuing removal."
@@ -846,7 +846,7 @@ msgstr ""
 
 #: pisi/cli/build.py:77
 msgid "Do not constrain build process inside the build folder"
-msgstr ""
+msgstr "build шаги"
 
 #: pisi/cli/build.py:80
 msgid "build steps"
@@ -882,7 +882,7 @@ msgstr "создание PiSi пакета"
 
 #: pisi/cli/build.py:108
 msgid "package_format must be one of %s "
-msgstr ""
+msgstr "Проверка установленных пакетов по данному компоненту"
 
 #: pisi/cli/build.py:111 pisi/cli/delta.py:59 pisi/cli/emerge.py:71
 msgid "Output directory: %s"
@@ -938,6 +938,8 @@ msgid ""
 "\n"
 "Package %s is corrupt."
 msgstr ""
+"\n"
+"Пакет %s поврежден."
 
 #: pisi/cli/check.py:81 pisi/operations/check.py:48
 msgid "OK"
@@ -959,7 +961,7 @@ msgstr ""
 
 #: pisi/cli/command.py:30
 msgid "Command lacks name"
-msgstr ""
+msgstr "Нет комманды с таким именем"
 
 #: pisi/cli/command.py:34
 msgid "Duplicate command %s"
@@ -1019,7 +1021,7 @@ msgstr ""
 
 #: pisi/cli/command.py:228
 msgid "usage: %s\n"
-msgstr ""
+msgstr "использование: %s\n"
 
 #: pisi/cli/configurepending.py:23
 msgid ""
@@ -1086,7 +1088,7 @@ msgstr ""
 
 #: pisi/cli/emerge.py:44
 msgid "emerge options"
-msgstr ""
+msgstr "emerge опции"
 
 #: pisi/cli/emerge.py:47
 msgid "Emerge available packages under given component"
