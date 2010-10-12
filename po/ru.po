@@ -28,7 +28,7 @@ msgstr "Использование: %s\n"
 
 #: /usr/lib/python2.6/optparse.py:393
 msgid "Usage"
-msgstr ""
+msgstr "Использование"
 
 #: /usr/lib/python2.6/optparse.py:418
 msgid "integer"
@@ -398,7 +398,7 @@ msgstr "Ошибка установки кофигурационных файл�
 
 #: pisi/actionsapi/texlivemodules.py:82
 msgid "Handle config files failed"
-msgstr ""
+msgstr "Ошибка заголовка файла конфигурации"
 
 #: pisi/actionsapi/texlivemodules.py:93
 msgid "Symlink %s skipped (special case)"
@@ -624,7 +624,7 @@ msgstr ""
 
 #: pisi/atomicoperations.py:283
 msgid "Package downgrade declined"
-msgstr ""
+msgstr "Пакет обновлен до более ранеей версии"
 
 #: pisi/atomicoperations.py:322
 msgid "%s configuration failed."
@@ -641,7 +641,7 @@ msgstr "Хранение %s"
 
 #: pisi/atomicoperations.py:581
 msgid "File list could not be read for package %s, continuing removal."
-msgstr ""
+msgstr "Список файлов для пакета не может быть прочитан %s, продолжается удаление."
 
 #: pisi/atomicoperations.py:587
 msgid "Removing package %s"
@@ -798,6 +798,15 @@ msgid ""
 "Alternatively, you can give the name of a source package\n"
 "to be downloaded from a repository containing sources.\n"
 msgstr ""
+"Build PiSi пакетов\n"
+"\n"
+"Использование: build [<pspec.xml> | <sourcename>] ...\n"
+"\n"
+"Вы должны указать URI к файлу pspec.xml. PiSi скачает\n"
+"все необходимое и выполнит пакет для вас.\n"
+"\n"
+"Так же вы можете указать имя исходных кодов для пакета\n"
+" загруженных из репозитория.\n"
 
 #: pisi/cli/build.py:48
 msgid "build options"
@@ -838,7 +847,7 @@ msgstr ""
 
 #: pisi/cli/build.py:73
 msgid "PiSi binary package formats: '1.0', '1.1' (default)"
-msgstr ""
+msgstr "Формат бинарных PiSi пакетов: '1.0', '1.1' (по умолчанию)"
 
 #: pisi/cli/build.py:75
 msgid "Use quilt patch management system instead of GNU patch"
@@ -850,7 +859,7 @@ msgstr "build шаги"
 
 #: pisi/cli/build.py:80
 msgid "build steps"
-msgstr ""
+msgstr "build шаги"
 
 #: pisi/cli/build.py:82
 msgid "Break build after fetching the source archive"
@@ -993,7 +1002,7 @@ msgstr ""
 
 #: pisi/cli/command.py:110
 msgid "Show debugging information"
-msgstr ""
+msgstr "Показать debug информацию"
 
 #: pisi/cli/command.py:112
 msgid "Suppresses all coloring of PiSi's output"
@@ -1047,6 +1056,13 @@ msgid ""
 "under /var directory. Since these accumulate they can\n"
 "consume a lot of disk space."
 msgstr ""
+"Удаление кешированных файлов\n"
+"\n"
+"Использование: delete-cache\n"
+"\n"
+"Исходные и временные файлы будут удалены\n"
+"из дерректории /var. Это позволит осводить\n"
+" дисковое пространство."
 
 #: pisi/cli/delta.py:23
 msgid ""
@@ -1061,7 +1077,7 @@ msgstr ""
 
 #: pisi/cli/delta.py:40
 msgid "delta options"
-msgstr ""
+msgstr "delta опции"
 
 #: pisi/cli/disablerepo.py:21
 msgid ""
@@ -1096,11 +1112,11 @@ msgstr ""
 
 #: pisi/cli/emerge.py:49 pisi/cli/install.py:55 pisi/cli/upgrade.py:61
 msgid "Ignore file conflicts"
-msgstr ""
+msgstr "игнорировать конфликтные файлы"
 
 #: pisi/cli/emerge.py:51 pisi/cli/install.py:57 pisi/cli/upgrade.py:63
 msgid "Ignore package conflicts"
-msgstr ""
+msgstr "игнорировать конфликтные пакеты"
 
 #: pisi/cli/emerge.py:73
 msgid "Outputting binary packages in the package cache."
@@ -1134,7 +1150,7 @@ msgstr ""
 
 #: pisi/cli/fetch.py:47
 msgid "Output directory for the fetched packages"
-msgstr ""
+msgstr "Директория для загрузки пакетов"
 
 #: pisi/cli/graph.py:26
 msgid ""
@@ -1150,7 +1166,7 @@ msgstr ""
 
 #: pisi/cli/graph.py:43
 msgid "graph options"
-msgstr ""
+msgstr "graph опции"
 
 #: pisi/cli/graph.py:47
 msgid "Specify a particular repository"
@@ -1205,7 +1221,7 @@ msgstr ""
 
 #: pisi/cli/history.py:28
 msgid "emerge"
-msgstr ""
+msgstr "emerge"
 
 #: pisi/cli/history.py:28
 msgid "install"
@@ -1221,7 +1237,7 @@ msgstr "обновление ропозиториев"
 
 #: pisi/cli/history.py:28
 msgid "snapshot"
-msgstr ""
+msgstr "snapshot"
 
 #: pisi/cli/history.py:28
 msgid "takeback"
@@ -1229,7 +1245,7 @@ msgstr "трасировка"
 
 #: pisi/cli/history.py:28
 msgid "upgrade"
-msgstr ""
+msgstr "upgrade"
 
 #: pisi/cli/history.py:31
 msgid ""
@@ -1239,10 +1255,15 @@ msgid ""
 "\n"
 "Lists previous operations."
 msgstr ""
+"История операций pisi \n"
+"\n"
+"Использование: history\n"
+"\n"
+"Лист просмотра операций."
 
 #: pisi/cli/history.py:47
 msgid "history options"
-msgstr ""
+msgstr "history опции"
 
 #: pisi/cli/history.py:53
 msgid "Output only the last n operations"
