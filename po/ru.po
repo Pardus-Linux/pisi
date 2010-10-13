@@ -2657,7 +2657,7 @@ msgstr ""
 
 #: pisi/pxml/autoxml.py:372
 msgid "autoxml.check: '%s' errors"
-msgstr ""
+msgstr "autoxml.check: '%s' ошибка"
 
 #: pisi/pxml/autoxml.py:427 pisi/pxml/autoxml.py:437
 msgid "autoxml.parse: String '%s' has errors"
@@ -2697,7 +2697,7 @@ msgstr ""
 
 #: pisi/pxml/autoxml.py:704 pisi/pxml/autoxml.py:825
 msgid "Type mismatch: DOM cannot be decoded"
-msgstr ""
+msgstr "Не соответствие типа: DOM не может быть раскодирован"
 
 #: pisi/pxml/autoxml.py:707 pisi/pxml/autoxml.py:723 pisi/pxml/autoxml.py:737
 #: pisi/pxml/autoxml.py:828 pisi/pxml/autoxml.py:842 pisi/pxml/autoxml.py:856
@@ -2738,7 +2738,7 @@ msgstr ""
 
 #: pisi/scenarioapi/package.py:67
 msgid "No pisi package: %s* found."
-msgstr ""
+msgstr "PiSi пакет: %s* не найден."
 
 #: pisi/scenarioapi/repoops.py:28
 msgid "Repo already has package named %s."
@@ -2778,7 +2778,7 @@ msgstr "распаковка: check_file_hash failed"
 
 #: pisi/specfile.py:164
 msgid "URI: %s, type: %s, sha1sum: %s"
-msgstr ""
+msgstr "URI: %s, тип%s, sha1 сумма: %s"
 
 #: pisi/specfile.py:194 pisi/specfile.py:197
 msgid " or "
@@ -2834,11 +2834,11 @@ msgstr ""
 
 #: pisi/util.py:429
 msgid "Including directory '%s'"
-msgstr ""
+msgstr "Подключение деректории '%s'"
 
 #: pisi/util.py:517
 msgid "Cannot calculate SHA1 hash of %s"
-msgstr ""
+msgstr "Не могу вычислить SHA1 хэш для %s"
 
 #: pisi/util.py:578
 msgid "ERROR: patch (%s) failed"
