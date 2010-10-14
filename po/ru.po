@@ -600,7 +600,7 @@ msgstr ""
 
 #: pisi/atomicoperations.py:251
 msgid "Package re-install declined"
-msgstr ""
+msgstr "Переустановка пакета завершена"
 
 #: pisi/atomicoperations.py:263
 msgid "Upgrading to new upstream version"
@@ -776,11 +776,11 @@ msgstr "Имя: %s, версия: %s, релиз: %s\n"
 
 #: pisi/cli/blame.py:70
 msgid "Package Maintainer: %s <%s>\n"
-msgstr ""
+msgstr "Package Maintainer: %s <%s>\n"
 
 #: pisi/cli/blame.py:71
 msgid "Release Updater: %s <%s>\n"
-msgstr ""
+msgstr "Release Updater: %s <%s>\n"
 
 #: pisi/cli/blame.py:72
 msgid "Update Date: %s\n"
@@ -982,7 +982,7 @@ msgstr ""
 
 #: pisi/cli/command.py:96
 msgid "general options"
-msgstr ""
+msgstr "основные комманды"
 
 #: pisi/cli/command.py:99
 msgid "Change the system root for PiSi commands"
@@ -1143,10 +1143,17 @@ msgid ""
 "\n"
 "Downloads the given pisi packages to working directory\n"
 msgstr ""
+"Загрузка пакета\n"
+"\n"
+"Использование: fetch [<package1> <package2> ... <packagen>]\n"
+"\n"
+"<packagei>: имя пакета\n"
+"\n"
+"Downloads the given pisi packages to working directory\n"
 
 #: pisi/cli/fetch.py:41
 msgid "fetch options"
-msgstr ""
+msgstr "fetch опции"
 
 #: pisi/cli/fetch.py:47
 msgid "Output directory for the fetched packages"
@@ -1182,7 +1189,7 @@ msgstr ""
 
 #: pisi/cli/graph.py:56
 msgid "Dot output file"
-msgstr ""
+msgstr "Dot выходной файл"
 
 #: pisi/cli/graph.py:70
 msgid "Plotting packages in repository %s"
