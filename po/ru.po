@@ -48,7 +48,7 @@ msgstr "complex"
 
 #: /usr/lib/python2.6/optparse.py:429
 msgid "option %s: invalid %s value: %r"
-msgstr ""
+msgstr "опция %s: плохое %s значение: %r"
 
 #: /usr/lib/python2.6/optparse.py:437
 msgid "option %s: invalid choice: %r (choose from %s)"
