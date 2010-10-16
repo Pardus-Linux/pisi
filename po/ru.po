@@ -193,6 +193,9 @@ msgid ""
 "!!! Please attach the config.log to your bug report:\n"
 "%s/config.log"
 msgstr ""
+"\n"
+"!!! Пожалуйста отправте config.log в bug report:\n"
+"%s/config.log"
 
 #: pisi/actionsapi/kerneltools.py:117
 msgid "Can't find kernel version information file %s."
@@ -546,7 +549,7 @@ msgstr "* База данных пакетов обновлена."
 
 #: pisi/api.py:853
 msgid "No repository named %s found."
-msgstr ""
+msgstr "Репозиторий с именем %s  не найден."
 
 #: pisi/api.py:866
 msgid "* Adding '%s' to db... "
@@ -589,10 +592,13 @@ msgid "/%s from %s package\n"
 msgstr "/%s для %s пакета\n"
 
 #: pisi/atomicoperations.py:221
+#, fuzzy
 msgid ""
 "File conflicts:\n"
 "%s"
 msgstr ""
+"File conflicts:\n"
+"%s"
 
 #: pisi/atomicoperations.py:250
 msgid "Re-install same version package?"
@@ -1089,6 +1095,13 @@ msgid ""
 "\n"
 "Disabled repositories are not taken into account in operations\n"
 msgstr ""
+"Блокировка репозитория\n"
+"\n"
+"Использование: disable-repo [<repo1> <repo2> ... <repon>]\n"
+"\n"
+"<repoi>: имя репозитория\n"
+"\n"
+"Disabled repositories are not taken into account in operations\n"
 
 #: pisi/cli/emerge.py:25
 msgid ""
@@ -1313,7 +1326,7 @@ msgstr ""
 
 #: pisi/cli/index.py:44
 msgid "index options"
-msgstr ""
+msgstr "index опции"
 
 #: pisi/cli/index.py:48
 msgid "Store absolute links for indexed files."
@@ -1346,7 +1359,7 @@ msgstr ""
 
 #: pisi/cli/info.py:45
 msgid "info options"
-msgstr ""
+msgstr "info опции"
 
 #: pisi/cli/info.py:52
 msgid "Show a list of package files."
@@ -1381,12 +1394,13 @@ msgid "Package file: %s"
 msgstr ""
 
 #: pisi/cli/info.py:160
+#, fuzzy
 msgid "[inst] "
-msgstr ""
+msgstr "[inst] "
 
 #: pisi/cli/info.py:162
 msgid "Installed package:"
-msgstr ""
+msgstr "установленный пакет:"
 
 #: pisi/cli/info.py:166
 msgid "%s package is not installed"
@@ -1398,11 +1412,11 @@ msgstr "[binary] "
 
 #: pisi/cli/info.py:174 pisi/cli/info.py:186
 msgid "Package found in %s repository:"
-msgstr ""
+msgstr "Пакет найден в репозитории %s:"
 
 #: pisi/cli/info.py:177
 msgid "%s package is not found in binary repositories"
-msgstr ""
+msgstr "%s пакет не найден в бинарных репозиториях"
 
 #: pisi/cli/info.py:184
 msgid "[source] "
@@ -1410,7 +1424,7 @@ msgstr "[source] "
 
 #: pisi/cli/info.py:189
 msgid "%s package is not found in source repositories"
-msgstr ""
+msgstr "%s пекет не найден в репозиториях с исходными кодами"
 
 #: pisi/cli/install.py:25
 msgid ""
@@ -1556,7 +1570,7 @@ msgstr ""
 
 #: pisi/cli/listnewest.py:44
 msgid "list-newest options"
-msgstr ""
+msgstr "list-newest опции"
 
 #: pisi/cli/listnewest.py:46
 msgid "List new packages added to repository after this given date formatted as yyyy-mm-dd"
@@ -1572,7 +1586,7 @@ msgstr ""
 
 #: pisi/cli/listnewest.py:78
 msgid "Packages added to %s:"
-msgstr ""
+msgstr "Пакеты добавлены в %s:"
 
 #: pisi/cli/listpending.py:22
 msgid ""
@@ -1596,15 +1610,15 @@ msgstr ""
 
 #: pisi/cli/listrepo.py:41
 msgid "inactive"
-msgstr ""
+msgstr "inactive"
 
 #: pisi/cli/listrepo.py:41 pisi/cli/listrepo.py:42
 msgid "active"
-msgstr ""
+msgstr "active"
 
 #: pisi/cli/listrepo.py:43 pisi/cli/listrepo.py:45
 msgid "%s [%s]"
-msgstr ""
+msgstr "%s [%s]"
 
 #: pisi/cli/listsources.py:24
 msgid ""
@@ -1617,7 +1631,7 @@ msgstr ""
 
 #: pisi/cli/listsources.py:39
 msgid "list-sources options"
-msgstr ""
+msgstr "list-sources опции"
 
 #: pisi/cli/listupgrades.py:26
 msgid ""
@@ -1630,7 +1644,7 @@ msgstr ""
 
 #: pisi/cli/listupgrades.py:42
 msgid "list-upgrades options"
-msgstr ""
+msgstr "list-upgrades опции"
 
 #: pisi/cli/listupgrades.py:49
 msgid "List upgradable packages under given component"
@@ -1666,7 +1680,7 @@ msgstr ""
 
 #: pisi/cli/rebuilddb.py:42
 msgid "rebuild-db options"
-msgstr ""
+msgstr "rebuild-db опции"
 
 #: pisi/cli/rebuilddb.py:45
 msgid "Rebuild files database"
@@ -1690,7 +1704,7 @@ msgstr ""
 
 #: pisi/cli/remove.py:43
 msgid "remove options"
-msgstr ""
+msgstr "remove опции"
 
 #: pisi/cli/remove.py:46
 msgid "Removes everything including changed config files of the package"
@@ -1724,7 +1738,7 @@ msgstr ""
 
 #: pisi/cli/search.py:43
 msgid "search options"
-msgstr ""
+msgstr "search опции"
 
 #: pisi/cli/search.py:45
 msgid "Summary and description language"
