@@ -52,7 +52,7 @@ msgstr "опция %s: плохое %s значение: %r"
 
 #: /usr/lib/python2.6/optparse.py:437
 msgid "option %s: invalid choice: %r (choose from %s)"
-msgstr ""
+msgstr "опция %s: неверный выбор: %r (выбирайте из %s)"
 
 #: /usr/lib/python2.6/optparse.py:1245
 msgid "show this help message and exit"
@@ -76,7 +76,7 @@ msgstr "%s опция требует %d аргумент"
 
 #: /usr/lib/python2.6/optparse.py:1504
 msgid "%s option does not take a value"
-msgstr ""
+msgstr "%s опция не требует аргумент"
 
 #: /usr/lib/python2.6/optparse.py:1621
 msgid "Options"
