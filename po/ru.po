@@ -94,7 +94,7 @@ msgstr "Программа закрыта."
 msgid ""
 "Unhandled internal exception.\n"
 "Please file a bug report to <http://bugs.pardus.org.tr>."
-msgstr ""
+msgstr "Необработанные внутренние исключение. \\ NПожалуйста отпавте отчет об ошибке в <http://bugs.pardus.org.tr> ."
 
 #: pisi-cli:54
 msgid "System error. Program terminated."
@@ -389,7 +389,7 @@ msgstr ""
 
 #: pisi/actionsapi/texlivemodules.py:68
 msgid "Installing texmf files failed"
-msgstr ""
+msgstr "ошибка установки texmf файлов"
 
 #: pisi/actionsapi/texlivemodules.py:72
 msgid "Installing docs failed"
@@ -477,7 +477,7 @@ msgstr "Вы дожны иметь права root  для этой операц
 
 #: pisi/api.py:65
 msgid "Another instance of PiSi is running. Only one instance is allowed."
-msgstr ""
+msgstr "Другой экземпляр Pisi уже запущен. Может быть запущен только один экземпляр."
 
 #: pisi/api.py:420
 msgid "%s package found in %s repository"
@@ -513,7 +513,7 @@ msgstr "Неверное имя репозитория."
 
 #: pisi/api.py:789
 msgid "Repo %s already present."
-msgstr ""
+msgstr "Репозиторий %s уже присутствует."
 
 #: pisi/api.py:792
 msgid "Repo already present with name %s."
@@ -592,7 +592,6 @@ msgid "/%s from %s package\n"
 msgstr "/%s для %s пакета\n"
 
 #: pisi/atomicoperations.py:221
-#, fuzzy
 msgid ""
 "File conflicts:\n"
 "%s"
@@ -928,7 +927,7 @@ msgstr "проверка опций"
 
 #: pisi/cli/check.py:49
 msgid "Check installed packages under given component"
-msgstr ""
+msgstr "Проверка установленных пакетов по данному компоненту"
 
 #: pisi/cli/check.py:51
 msgid "Checks only changed config files of the packages"
@@ -1004,7 +1003,7 @@ msgstr ""
 
 #: pisi/cli/command.py:108
 msgid "Detailed output"
-msgstr ""
+msgstr "Подробный вывод"
 
 #: pisi/cli/command.py:110
 msgid "Show debugging information"
@@ -1024,7 +1023,7 @@ msgstr "Пароль: "
 
 #: pisi/cli/command.py:191
 msgid "Command terminated abnormally."
-msgstr ""
+msgstr "Команда завершилась неудачей."
 
 #: pisi/cli/command.py:206 pisi/cli/emerge.py:53
 msgid "Bypass comar configuration agent"
@@ -1050,7 +1049,7 @@ msgstr ""
 
 #: pisi/cli/configurepending.py:39
 msgid "configure-pending options"
-msgstr ""
+msgstr "configure-pending опции"
 
 #: pisi/cli/deletecache.py:22
 msgid ""
@@ -1198,7 +1197,7 @@ msgstr ""
 
 #: pisi/cli/graph.py:53
 msgid "Do not show installed packages"
-msgstr ""
+msgstr "Не показывать установленные пакеты"
 
 #: pisi/cli/graph.py:56
 msgid "Dot output file"
@@ -1299,7 +1298,7 @@ msgstr ""
 
 #: pisi/cli/history.py:67
 msgid "Operation #%d: %s"
-msgstr ""
+msgstr "Операция #%d: %s"
 
 #: pisi/cli/history.py:68
 msgid "Date: %s %s"
@@ -1404,7 +1403,7 @@ msgstr "установленный пакет:"
 
 #: pisi/cli/info.py:166
 msgid "%s package is not installed"
-msgstr ""
+msgstr "пакет %s не установлен"
 
 #: pisi/cli/info.py:172
 msgid "[binary] "
@@ -1445,7 +1444,7 @@ msgstr "опции установки"
 
 #: pisi/cli/install.py:51
 msgid "Reinstall already installed packages"
-msgstr ""
+msgstr "Переустановить установленные пакеты"
 
 #: pisi/cli/install.py:53
 msgid "Skip distribution release and architecture check"
@@ -1652,7 +1651,7 @@ msgstr ""
 
 #: pisi/cli/listupgrades.py:67 pisi/operations/upgrade.py:155
 msgid "No packages to upgrade."
-msgstr ""
+msgstr "Нет пакетов для обновления"
 
 #: pisi/cli/pisicli.py:86
 msgid "Options must precede non-option arguments"
@@ -1775,7 +1774,7 @@ msgstr ""
 
 #: pisi/cli/searchfile.py:38
 msgid "search-file options"
-msgstr ""
+msgstr "search-file опции"
 
 #: pisi/cli/searchfile.py:42
 msgid "Show only package name"
@@ -1807,7 +1806,7 @@ msgstr ""
 
 #: pisi/cli/updaterepo.py:42
 msgid "update-repo options"
-msgstr ""
+msgstr "update-repo опции"
 
 #: pisi/cli/updaterepo.py:46
 msgid "Update database in any case"
@@ -1835,7 +1834,7 @@ msgstr ""
 
 #: pisi/cli/upgrade.py:50
 msgid "upgrade options"
-msgstr ""
+msgstr "upgrade опции"
 
 #: pisi/cli/upgrade.py:57
 msgid "Security related package upgrades only"
@@ -2181,7 +2180,7 @@ msgstr ""
 
 #: pisi/operations/build.py:179
 msgid "Source URI: %s"
-msgstr ""
+msgstr "Исходный URI: %s"
 
 #: pisi/operations/build.py:183
 msgid "Source %s not found in any active repository."
@@ -2265,7 +2264,7 @@ msgstr ""
 
 #: pisi/operations/build.py:549 pisi/util.py:552
 msgid "ERROR: WorkDir (%s) does not exist\n"
-msgstr ""
+msgstr "Ошибка: Рабочая папка (%s) не существует\n"
 
 #: pisi/operations/build.py:557
 msgid "Sandbox enabled build..."
@@ -2353,7 +2352,7 @@ msgstr ""
 
 #: pisi/operations/build.py:958
 msgid "No user named '%s' found on the system"
-msgstr ""
+msgstr "User с именем '%s' не найден в системе"
 
 #: pisi/operations/build.py:964
 msgid "No group named '%s' found on the system"
