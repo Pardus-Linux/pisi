@@ -48,7 +48,7 @@ msgstr "complex"
 
 #: /usr/lib/python2.6/optparse.py:429
 msgid "option %s: invalid %s value: %r"
-msgstr "опция %s: плохое %s значение: %r"
+msgstr "опция %s: некорректное %s значение: %r"
 
 #: /usr/lib/python2.6/optparse.py:437
 msgid "option %s: invalid choice: %r (choose from %s)"
@@ -84,7 +84,7 @@ msgstr "Настройки"
 
 #: pisi-cli:42
 msgid "Keyboard Interrupt: Exiting..."
-msgstr "Прерываний от клавиатуры: выход ..."
+msgstr "Прерывание от клавиатуры: Выход ..."
 
 #: pisi-cli:45
 msgid "Program terminated."
@@ -94,7 +94,9 @@ msgstr "Программа закрыта."
 msgid ""
 "Unhandled internal exception.\n"
 "Please file a bug report to <http://bugs.pardus.org.tr>."
-msgstr "Необработанные внутренние исключение. \\ NПожалуйста отпавте отчет об ошибке в <http://bugs.pardus.org.tr> ."
+msgstr ""
+"Необработанное внутреннее исключение. \n"
+"Пожалуйста отпавьте отчет об ошибке в <http://bugs.pardus.org.tr> ."
 
 #: pisi-cli:54
 msgid "System error. Program terminated."
@@ -140,7 +142,7 @@ msgstr "Файл конфигурации не найден."
 #: pisi/actionsapi/perlmodules.py:72 pisi/actionsapi/pythonmodules.py:62
 #: pisi/actionsapi/scons.py:39
 msgid "Make failed."
-msgstr "Ошибка компиляции."
+msgstr "Ошибка сборки."
 
 #: pisi/actionsapi/autotools.py:127 pisi/actionsapi/autotools.py:138
 #: pisi/actionsapi/cmaketools.py:102 pisi/actionsapi/cmaketools.py:112
@@ -153,7 +155,7 @@ msgstr "Ошибка установки."
 #: pisi/actionsapi/cmaketools.py:81 pisi/actionsapi/cmaketools.py:106
 #: pisi/actionsapi/cmaketools.py:116 pisi/actionsapi/kde.py:81
 msgid "No Makefile found."
-msgstr "Makefile найден."
+msgstr "Makefile не найден."
 
 #: pisi/actionsapi/autotools.py:147
 msgid "Running aclocal failed."
@@ -223,15 +225,15 @@ msgstr "ошибка установки perl."
 
 #: pisi/actionsapi/pisitools.py:75 pisi/actionsapi/pisitools.py:132
 msgid "No file matched pattern \"%s\""
-msgstr ""
+msgstr "Нет файла, соответствующего шаблону \"%s\""
 
 #: pisi/actionsapi/pisitools.py:142
 msgid "ActionsAPI [doman]: Wrong man page file: %s"
-msgstr ""
+msgstr "ActionsAPI [doman]: Неверная страница man: %s"
 
 #: pisi/actionsapi/pisitools.py:169
 msgid "No file matched pattern \"%s\". 'domove' operation failed."
-msgstr ""
+msgstr "Нет файла, соответствующего шаблону \"%s\". 'domove' операция отменена."
 
 #: pisi/actionsapi/pisitools.py:188
 msgid "ActionsAPI [rename]: %s: %s"
@@ -239,11 +241,11 @@ msgstr "ActionsAPI [rename]: %s: %s"
 
 #: pisi/actionsapi/pisitools.py:203
 msgid "No such file matching pattern: \"%s\". 'dosed' operation failed."
-msgstr ""
+msgstr "Нет файла, соответствующего шаблону: \"%s\". 'dosed' операция отменена."
 
 #: pisi/actionsapi/pisitools.py:216
 msgid "dosed method has not changed file '%s'."
-msgstr ""
+msgstr "dosed метод не поменял файл '%s'."
 
 #: pisi/actionsapi/pisitools.py:219
 msgid "File does not exist or permission denied: %s"
@@ -255,15 +257,15 @@ msgstr "ActionsAPI [dosym]: Файл уже существует: %s"
 
 #: pisi/actionsapi/pisitools.py:245 pisi/actionsapi/pisitoolsfunctions.py:71
 msgid "No file matched pattern \"%s\"."
-msgstr ""
+msgstr "Нет файла, соответствующего шаблону \"%s\"."
 
 #: pisi/actionsapi/pisitools.py:272 pisi/actionsapi/shelltools.py:97
 msgid "No file matched pattern \"%s\". Remove operation failed."
-msgstr ""
+msgstr "Нет файла, соответствующего шаблону \"%s\". Операция удаления отменена."
 
 #: pisi/actionsapi/pisitools.py:281
 msgid "No directory matched pattern \"%s\". Remove directory operation failed."
-msgstr ""
+msgstr "Нет директории, соответствующего шаблону \"%s\". Операция удаления директории отменена."
 
 #: pisi/actionsapi/pisitoolsfunctions.py:45
 #: pisi/actionsapi/pisitoolsfunctions.py:63
@@ -273,7 +275,7 @@ msgstr "Недостаточно аргументов."
 
 #: pisi/actionsapi/pisitoolsfunctions.py:53
 msgid "No executable file matched pattern \"%s\"."
-msgstr ""
+msgstr "Нет запускаемого файла, соответствующего шаблону \"%s\"."
 
 #: pisi/actionsapi/pythonmodules.py:56
 msgid "Configuration failed."
