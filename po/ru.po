@@ -611,7 +611,7 @@ msgstr "Переустановка пакета завершена"
 
 #: pisi/atomicoperations.py:263
 msgid "Upgrading to new upstream version"
-msgstr ""
+msgstr "Обновление до новой версии"
 
 #: pisi/atomicoperations.py:266
 msgid "Upgrading to new distribution release"
@@ -623,11 +623,11 @@ msgstr "Пакет обновлен до предыдущей версии"
 
 #: pisi/atomicoperations.py:279
 msgid "Downgrade to old distribution release?"
-msgstr ""
+msgstr "Откатиться к более старой версии?"
 
 #: pisi/atomicoperations.py:281
 msgid "Downgrade to old distribution build?"
-msgstr ""
+msgstr "Откатиться к более старой версии?"
 
 #: pisi/atomicoperations.py:283
 msgid "Package downgrade declined"
@@ -639,7 +639,7 @@ msgstr "%s ошибка конфигурирования."
 
 #: pisi/atomicoperations.py:413
 msgid "Unable to relocate following files. Reinstallation of this package is strongly recommended."
-msgstr ""
+msgstr "Невозможно найти следующие файлы. Настоятельно рекомендуется переустановка данного пакета."
 
 #: pisi/atomicoperations.py:504 pisi/atomicoperations.py:507
 #: pisi/atomicoperations.py:514
@@ -656,11 +656,11 @@ msgstr "Удаление пакета %s"
 
 #: pisi/atomicoperations.py:590
 msgid "Trying to remove nonexistent package "
-msgstr ""
+msgstr "Попытка удалить несуществующий пакет."
 
 #: pisi/atomicoperations.py:631
 msgid "Not removing conflicted file : %s"
-msgstr ""
+msgstr "Не удаляется конфликтующий файл: %s"
 
 #: pisi/atomicoperations.py:659
 msgid "Installed file %s does not exist on system [Probably you manually deleted]"
@@ -736,7 +736,7 @@ msgstr "Игнорировать проверку репозиториев ди�
 
 #: pisi/cli/addrepo.py:47
 msgid "Does not fetch repository index and does not check distribution match"
-msgstr ""
+msgstr "Не получить индекс репозитория и не проверить соответствие распределения."
 
 #: pisi/cli/addrepo.py:50
 msgid "Add repository at given position (0 is first)"
@@ -748,6 +748,9 @@ msgid ""
 "By confirming this you are also adding the repository to your system without checking the distribution of the repository.\n"
 "Do you want to continue?"
 msgstr ""
+"Добавить репозиторий %s без обновления в базу данных?\n"
+"Соглашаясь с этим вы добавляете репозиторий в систему без проверки целостности репозитория.\n"
+"Вы хотите продолжить?"
 
 #: pisi/cli/addrepo.py:81
 msgid "%s repository could not be reached. Removing %s from system."
@@ -822,11 +825,11 @@ msgstr "build опции"
 #: pisi/cli/build.py:55 pisi/cli/install.py:49 pisi/cli/listupgrades.py:45
 #: pisi/cli/upgrade.py:55
 msgid "Do not take build no into account."
-msgstr ""
+msgstr "Не добавлять сборку в аккаунт."
 
 #: pisi/cli/build.py:57
 msgid "Run pisi build operation without printing extra debug information"
-msgstr ""
+msgstr "Запустить операцию создания pisi без вывода дополнительной отладочной информации."
 
 #: pisi/cli/build.py:60 pisi/cli/command.py:204
 msgid "Do not take dependency information into account"
