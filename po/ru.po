@@ -295,7 +295,7 @@ msgstr "ActionsAPI [echo]: Не могу добавить в файл% s."
 
 #: pisi/actionsapi/shelltools.py:63
 msgid "ActionsAPI [chmod]: No file matched pattern \"%s\"."
-msgstr ""
+msgstr "ActionsAPI [chmod]: Нет файла, соответствующего шаблону \"%s\"."
 
 #: pisi/actionsapi/shelltools.py:70
 msgid "ActionsAPI [chmod]: Operation not permitted: %s (mode: %s)"
@@ -335,7 +335,7 @@ msgstr "ActionsAPI [unlinkDir]: Каталог %s не существует."
 
 #: pisi/actionsapi/shelltools.py:127
 msgid "ActionsAPI [move]: No file matched pattern \"%s\"."
-msgstr ""
+msgstr "ActionsAPI [move]: Нет файла, соответствующего шаблону \"%s\"."
 
 #: pisi/actionsapi/shelltools.py:134
 msgid "ActionsAPI [move]: Permission denied: %s to %s"
@@ -347,7 +347,7 @@ msgstr "ActionsAPI [move]: Файл %s не существует."
 
 #: pisi/actionsapi/shelltools.py:143
 msgid "ActionsAPI [copy]: No file matched pattern \"%s\"."
-msgstr ""
+msgstr "ActionsAPI [copy]: Нет файла, соответствующего шаблону \"%s\"."
 
 #: pisi/actionsapi/shelltools.py:150
 msgid "ActionsAPI [copy]: Permission denied: %s to %s"
@@ -367,7 +367,7 @@ msgstr "ActionsAPI [copytree]: Каталог %s не существует."
 
 #: pisi/actionsapi/shelltools.py:191
 msgid "ActionsAPI [touch]: No file matched pattern \"%s\"."
-msgstr ""
+msgstr "ActionsAPI [touch]: Нет файла, соответствующего шаблону \"%s\"."
 
 #: pisi/actionsapi/shelltools.py:200
 msgid "ActionsAPI [touch]: Permission denied: %s"
@@ -664,7 +664,7 @@ msgstr ""
 
 #: pisi/atomicoperations.py:659
 msgid "Installed file %s does not exist on system [Probably you manually deleted]"
-msgstr ""
+msgstr "Установленный файл %s не существует в системе [Probably you manually deleted]"
 
 #: pisi/cli/__init__.py:115
 msgid "Warning: "
@@ -700,7 +700,7 @@ msgstr "Сконфигурированно %s"
 
 #: pisi/cli/__init__.py:194
 msgid "Extracting the files of %s"
-msgstr ""
+msgstr "Извлечение файлов из %s"
 
 #: pisi/cli/addrepo.py:24
 msgid ""
@@ -732,7 +732,7 @@ msgstr "Опции добавления репозиториев"
 
 #: pisi/cli/addrepo.py:46
 msgid "Ignore repository distribution check"
-msgstr ""
+msgstr "Игнорировать проверку репозиториев дистрибутива"
 
 #: pisi/cli/addrepo.py:47
 msgid "Does not fetch repository index and does not check distribution match"
@@ -740,7 +740,7 @@ msgstr ""
 
 #: pisi/cli/addrepo.py:50
 msgid "Add repository at given position (0 is first)"
-msgstr ""
+msgstr "Добавить репозиторий в текущую позицию (0 первый)"
 
 #: pisi/cli/addrepo.py:69
 msgid ""
@@ -830,7 +830,7 @@ msgstr ""
 
 #: pisi/cli/build.py:60 pisi/cli/command.py:204
 msgid "Do not take dependency information into account"
-msgstr ""
+msgstr "Не принимайте информацию о зависимостях во внимание"
 
 #: pisi/cli/build.py:62 pisi/cli/delta.py:46
 msgid "Output directory for produced packages"
