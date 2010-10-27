@@ -375,7 +375,7 @@ msgstr "ActionsAPI [touch]: Доступ запрещен: %s"
 
 #: pisi/actionsapi/shelltools.py:255
 msgid "Command \"%s\" failed, return value was %d."
-msgstr ""
+msgstr "Команда \"%s\" не выполнена, код ошибки: %d."
 
 #: pisi/actionsapi/texlivemodules.py:54
 msgid "Building format files failed"
@@ -387,7 +387,7 @@ msgstr "Ошибка создание конфигурационных файл�
 
 #: pisi/actionsapi/texlivemodules.py:64
 msgid "Creating symlinks from format to engines failed"
-msgstr ""
+msgstr "Ошибка создания ссылок из формата"
 
 #: pisi/actionsapi/texlivemodules.py:68
 msgid "Installing texmf files failed"
@@ -407,23 +407,23 @@ msgstr "Ошибка заголовка файла конфигурации"
 
 #: pisi/actionsapi/texlivemodules.py:93
 msgid "Symlink %s skipped (special case)"
-msgstr "Symlink %s skipped (special case)"
+msgstr "Ссылка %s пропущена (особый случай)"
 
 #: pisi/actionsapi/texlivemodules.py:95
 msgid "Symlink %s -> %s skipped (texlive-core takes care of it."
-msgstr "Symlink %s -> %s skipped (texlive-core takes care of it."
+msgstr "Ссылка %s -> %s пропущена (texlive-core обработает это."
 
 #: pisi/actionsapi/texlivemodules.py:98
 msgid "Symlink %s -> %s skipped."
-msgstr "Symlink %s -> %s skipped."
+msgstr "Ссылка %s -> %s пропущена"
 
 #: pisi/actionsapi/texlivemodules.py:100
 msgid "Symlink %s skipped (file exists.)"
-msgstr "Symlink %s skipped (файл не существует.)"
+msgstr "Ссылка %s пропущена (файл не существует.)"
 
 #: pisi/actionsapi/texlivemodules.py:102
 msgid "Making symlink from %s to %s"
-msgstr "Создание symlink для %s to %s"
+msgstr "Создание ссылки для %s to %s"
 
 #: pisi/actionsapi/texlivemodules.py:154
 msgid "Creating /etc/texmf/%s.d"
@@ -431,15 +431,15 @@ msgstr "Создание /etc/texmf/%s.d"
 
 #: pisi/actionsapi/texlivemodules.py:167
 msgid "Building format file %s"
-msgstr ""
+msgstr "Создание файла формата %s"
 
 #: pisi/actionsapi/texlivemodules.py:182
 msgid "Map %s is added to %s/%s.cfg"
-msgstr "Map %s добавлена в %s/%s.cfg"
+msgstr "Карта %s добавлена в %s/%s.cfg"
 
 #: pisi/actionsapi/texlivemodules.py:185
 msgid "MixedMap %s is added to %s/%s.cfg"
-msgstr ""
+msgstr "СмешаннаяКарта %s добавлена в %s/%s.cfg"
 
 #: pisi/actionsapi/texlivemodules.py:188
 msgid "p +%s is added to %s/%s-config.ps"
@@ -451,15 +451,15 @@ msgstr "f %s добавлен в %s/%s-config"
 
 #: pisi/actionsapi/texlivemodules.py:195
 msgid "Language file  %s  already generated."
-msgstr "Language файл  %s  уже сгенерирован."
+msgstr "Файл языка %s  уже сгенерирован."
 
 #: pisi/actionsapi/texlivemodules.py:197
 msgid "No rule to proccess %s. Please file a bug."
-msgstr ""
+msgstr "Нет правила, чтобы обработать %s. Пожалуйста, напишите об этой ошибке."
 
 #: pisi/actionsapi/texlivemodules.py:232
 msgid "\\languages{%s}{%s}{}{%s}{%s} is added to %s/language.%s.def"
-msgstr ""
+msgstr "\\languages{%s}{%s}{}{%s}{%s} добавлен в %s/language.%s.def"
 
 #: pisi/actionsapi/texlivemodules.py:235
 msgid "%s is added to %s/language.%s.dat"
@@ -467,7 +467,7 @@ msgstr "%s добавлен в %s/language.%s.dat"
 
 #: pisi/actionsapi/texlivemodules.py:238
 msgid "\\languages{%s}{%s}{}{%s}{%s} is added to %s/language.%s.def "
-msgstr ""
+msgstr "\\languages{%s}{%s}{}{%s}{%s} добавлен в %s/language.%s.def "
 
 #: pisi/actionsapi/texlivemodules.py:241
 msgid "%s %s is added to %s/language.%s.dat "
@@ -475,7 +475,7 @@ msgstr "%s %s добавлен в %s/language.%s.dat "
 
 #: pisi/api.py:58 pisi/cli/command.py:166
 msgid "You have to be root for this operation."
-msgstr "Вы дожны иметь права root  для этой операции."
+msgstr "Вы дожны иметь права суперпользователя для этой операции."
 
 #: pisi/api.py:65
 msgid "Another instance of PiSi is running. Only one instance is allowed."
@@ -491,11 +491,11 @@ msgstr "%s пакет уже получен"
 
 #: pisi/api.py:566
 msgid "Taking snapshot of the system"
-msgstr ""
+msgstr "Снятие образа системы"
 
 #: pisi/api.py:722
 msgid "comar package is not fully installed"
-msgstr ""
+msgstr "Пакет comar установлен не полностью"
 
 #: pisi/api.py:734
 msgid "File %s not found"
@@ -503,7 +503,7 @@ msgstr "Файл %s не найден"
 
 #: pisi/api.py:774
 msgid "* Building index of PiSi files under %s"
-msgstr ""
+msgstr "Постоение индекса PiSi - файлов для %s"
 
 #: pisi/api.py:781
 msgid "* Index file written"
@@ -519,7 +519,7 @@ msgstr "Репозиторий %s уже присутствует."
 
 #: pisi/api.py:792
 msgid "Repo already present with name %s."
-msgstr ""
+msgstr "Репозиторий уже присутствует с именем %s."
 
 #: pisi/api.py:797
 msgid "Repo %s added to system."
@@ -543,7 +543,7 @@ msgstr "%s Репозиторий не требует обновления."
 
 #: pisi/api.py:838
 msgid "Updating database at any rate as requested"
-msgstr ""
+msgstr "Обновление базы данных на любом уровне как требуется"
 
 #: pisi/api.py:851
 msgid "* Package database updated."
@@ -571,7 +571,7 @@ msgstr "URI пакета: %s"
 
 #: pisi/atomicoperations.py:114
 msgid "Download Error: Package does not match the repository package."
-msgstr ""
+msgstr "Ошибка скачивания: Пакет не совпадает с пакетом из репозитория."
 
 #: pisi/atomicoperations.py:118
 msgid "Package %s not found in any active repository."
@@ -603,7 +603,7 @@ msgstr ""
 
 #: pisi/atomicoperations.py:250
 msgid "Re-install same version package?"
-msgstr ""
+msgstr "Переустановить пакет той же версии?"
 
 #: pisi/atomicoperations.py:251
 msgid "Package re-install declined"
