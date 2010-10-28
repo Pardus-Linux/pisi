@@ -2838,11 +2838,11 @@ msgstr "Пакет %s не доступен в репозиториях."
 
 #: pisi/operations/upgrade.py:106
 msgid "Package %s is already at the latest release %s."
-msgstr ""
+msgstr "Package %s is already at the latest release %s."
 
 #: pisi/operations/upgrade.py:112
 msgid "Package %s is already at the latest build %s."
-msgstr ""
+msgstr "Package %s is already at the latest build %s."
 
 #: pisi/operations/upgrade.py:173
 msgid "The following packages will be upgraded:"
@@ -2850,7 +2850,7 @@ msgstr "Следующие пакеты будут обновлены:"
 
 #: pisi/operations/upgrade.py:183
 msgid "There are extra packages due to dependencies."
-msgstr ""
+msgstr "There are extra packages due to dependencies."
 
 #: pisi/operations/upgrade.py:263
 msgid "Dependency %s of %s cannot be satisfied"
@@ -2862,21 +2862,23 @@ msgstr "Обновление невозможно."
 
 #: pisi/operations/upgrade.py:326
 msgid "Safety switch forces the installation of following packages:"
-msgstr ""
+msgstr "Safety switch forces the installation of following packages:"
 
 #: pisi/operations/upgrade.py:342
 msgid "Safety switch forces the upgrade of following packages:"
-msgstr ""
+msgstr "Safety switch forces the upgrade of following packages:"
 
 #: pisi/package.py:56
 msgid ""
 "There was a problem while fetching '%s'.\n"
 "The package may have been upgraded. Please try to upgrade the package."
 msgstr ""
+"There was a problem while fetching '%s'.\n"
+"The package may have been upgraded. Please try to upgrade the package."
 
 #: pisi/pxml/autoxml.py:78
 msgid "At least one '%s' tag should have local text"
-msgstr ""
+msgstr "At least one '%s' tag should have local text"
 
 #: pisi/pxml/autoxml.py:85
 msgid "'%s' language of tag '%s' is empty"
@@ -2884,11 +2886,11 @@ msgstr "'%s' language of tag '%s' is empty"
 
 #: pisi/pxml/autoxml.py:113
 msgid "LocalText: unable to get either current or default locale"
-msgstr ""
+msgstr "LocalText: unable to get either current or default locale"
 
 #: pisi/pxml/autoxml.py:119 pisi/pxml/autoxml.py:134
 msgid "Tag should have at least the current locale, or failing that an English or Turkish version"
-msgstr ""
+msgstr "Tag should have at least the current locale, or failing that an English or Turkish version"
 
 #: pisi/pxml/autoxml.py:372
 msgid "autoxml.check: '%s' errors"
@@ -3040,7 +3042,6 @@ msgid "Provides: "
 msgstr ""
 
 #: pisi/specfile.py:374
-#, fuzzy
 msgid "Dependencies: "
 msgstr "Зависимости:"
 
