@@ -2742,7 +2742,7 @@ msgstr "Установка %d / %d"
 
 #: pisi/operations/install.py:121
 msgid "Mixing file names and package names not supported yet."
-msgstr ""
+msgstr "Mixing file names and package names not supported yet."
 
 #: pisi/operations/install.py:165
 msgid "Package %s is not compatible with your distribution release %s %s."
@@ -2774,7 +2774,7 @@ msgstr "%s dependency of package %s is not satisfied"
 
 #: pisi/operations/remove.py:43
 msgid "Safety switch prevents the removal of following packages:\n"
-msgstr ""
+msgstr "Safety switch prevents the removal of following packages:\n"
 
 #: pisi/operations/remove.py:48 pisi/operations/upgrade.py:349
 msgid "Safety switch: The component system.base cannot be found."
