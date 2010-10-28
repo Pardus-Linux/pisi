@@ -3055,7 +3055,7 @@ msgstr "Сборка зависимостей:"
 
 #: pisi/uri.py:78
 msgid "setAuthInfo needs a tuple (user, pass)"
-msgstr ""
+msgstr "setAuthInfo needs a tuple (user, pass)"
 
 #: pisi/util.py:208 pisi/util.py:229
 msgid "Running "
@@ -3087,19 +3087,19 @@ msgstr "Ошибка: не верный путь (%s): %s"
 
 #: pisi/util.py:590
 msgid "strip command failed for file '%s'!"
-msgstr ""
+msgstr "strip command failed for file '%s'!"
 
 #: pisi/util.py:597
 msgid "chrpath command failed for file '%s'!"
-msgstr ""
+msgstr "chrpath command failed for file '%s'!"
 
 #: pisi/util.py:604
 msgid "objcopy (keep-debug) command failed for file '%s'!"
-msgstr ""
+msgstr "objcopy (keep-debug) command failed for file '%s'!"
 
 #: pisi/util.py:610
 msgid "objcopy (add-debuglink) command failed for file '%s'!"
-msgstr ""
+msgstr "objcopy (add-debuglink) command failed for file '%s'!"
 
 #: pisi/version.py:64
 msgid "Invalid version string: '%s'"
