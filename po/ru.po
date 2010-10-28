@@ -3027,7 +3027,7 @@ msgstr "Имя: %s, версия: %s, релиз: %s, билд %s\n"
 
 #: pisi/specfile.py:367 pisi/specfile.py:438
 msgid "Summary: %s\n"
-msgstr ""
+msgstr "Summary: %s\n"
 
 #: pisi/specfile.py:368 pisi/specfile.py:439
 msgid "Description: %s\n"
@@ -3039,7 +3039,7 @@ msgstr "Компонент: %s\n"
 
 #: pisi/specfile.py:370
 msgid "Provides: "
-msgstr ""
+msgstr "Provides: "
 
 #: pisi/specfile.py:374
 msgid "Dependencies: "
@@ -3047,7 +3047,7 @@ msgstr "Зависимости:"
 
 #: pisi/specfile.py:414
 msgid "translations.xml file is badly formed."
-msgstr ""
+msgstr "translations.xml file is badly formed."
 
 #: pisi/specfile.py:441
 msgid "Build Dependencies: "
