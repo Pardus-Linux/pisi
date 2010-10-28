@@ -1649,23 +1649,23 @@ msgstr ""
 
 #: pisi/cli/listinstalled.py:40
 msgid "list-installed options"
-msgstr ""
+msgstr "list-installed options"
 
 #: pisi/cli/listinstalled.py:43
 msgid "Only list the installed packages without build nos"
-msgstr ""
+msgstr "Only list the installed packages without build nos"
 
 #: pisi/cli/listinstalled.py:47
 msgid "List installed packages under given component"
-msgstr ""
+msgstr "List installed packages under given component"
 
 #: pisi/cli/listinstalled.py:49 pisi/cli/listupgrades.py:51
 msgid "Show detailed install info"
-msgstr ""
+msgstr "Show detailed install info"
 
 #: pisi/cli/listinstalled.py:74 pisi/cli/listupgrades.py:76
 msgid "Package Name     |St|   Version|  Rel.| Build|  Distro|             Date"
-msgstr ""
+msgstr "Package Name     |St|   Version|  Rel.| Build|  Distro|             Date"
 
 #: pisi/cli/listnewest.py:25
 msgid ""
@@ -1677,6 +1677,13 @@ msgid ""
 "repositories. If no repository is specified, we list the new\n"
 "packages from all repositories.\n"
 msgstr ""
+"List newest packages in the repositories\n"
+"\n"
+"Usage: list-newest [ <repo1> <repo2> ... repon ]\n"
+"\n"
+"Gives a list of PiSi newly published packages in the specified\n"
+"repositories. If no repository is specified, we list the new\n"
+"packages from all repositories.\n"
 
 #: pisi/cli/listnewest.py:44
 msgid "list-newest options"
@@ -1684,15 +1691,15 @@ msgstr "list-newest опции"
 
 #: pisi/cli/listnewest.py:46
 msgid "List new packages added to repository after this given date formatted as yyyy-mm-dd"
-msgstr ""
+msgstr "List new packages added to repository after this given date formatted as yyyy-mm-dd"
 
 #: pisi/cli/listnewest.py:48
 msgid "List new packages added to repository after last nth previous repository update"
-msgstr ""
+msgstr "List new packages added to repository after last nth previous repository update"
 
 #: pisi/cli/listnewest.py:76
 msgid "Packages added to %s since %s:\n"
-msgstr ""
+msgstr "Packages added to %s since %s:\n"
 
 #: pisi/cli/listnewest.py:78
 msgid "Packages added to %s:"
@@ -1704,10 +1711,13 @@ msgid ""
 "\n"
 "Lists packages waiting to be configured.\n"
 msgstr ""
+"List pending packages\n"
+"\n"
+"Lists packages waiting to be configured.\n"
 
 #: pisi/cli/listpending.py:41
 msgid "There are no packages waiting to be configured"
-msgstr ""
+msgstr "There are no packages waiting to be configured"
 
 #: pisi/cli/listrepo.py:23
 msgid ""
@@ -1717,6 +1727,11 @@ msgid ""
 "\n"
 "Lists currently tracked repositories.\n"
 msgstr ""
+"List repositories\n"
+"\n"
+"Usage: list-repo\n"
+"\n"
+"Lists currently tracked repositories.\n"
 
 #: pisi/cli/listrepo.py:41
 msgid "inactive"
@@ -1738,6 +1753,11 @@ msgid ""
 "\n"
 "Gives a brief list of sources published in the repositories.\n"
 msgstr ""
+"List available sources\n"
+"\n"
+"Usage: list-sources\n"
+"\n"
+"Gives a brief list of sources published in the repositories.\n"
 
 #: pisi/cli/listsources.py:39
 msgid "list-sources options"
@@ -1751,6 +1771,11 @@ msgid ""
 "\n"
 "Lists the packages that will be upgraded.\n"
 msgstr ""
+"List packages to be upgraded\n"
+"\n"
+"Usage: list-upgrades\n"
+"\n"
+"Lists the packages that will be upgraded.\n"
 
 #: pisi/cli/listupgrades.py:42
 msgid "list-upgrades options"
@@ -1758,7 +1783,7 @@ msgstr "list-upgrades опции"
 
 #: pisi/cli/listupgrades.py:49
 msgid "List upgradable packages under given component"
-msgstr ""
+msgstr "List upgradable packages under given component"
 
 #: pisi/cli/listupgrades.py:67 pisi/operations/upgrade.py:155
 msgid "No packages to upgrade."
@@ -1766,15 +1791,15 @@ msgstr "Нет пакетов для обновления"
 
 #: pisi/cli/pisicli.py:86
 msgid "Options must precede non-option arguments"
-msgstr ""
+msgstr "Options must precede non-option arguments"
 
 #: pisi/cli/pisicli.py:127
 msgid "No command given"
-msgstr ""
+msgstr "No command given"
 
 #: pisi/cli/pisicli.py:130
 msgid "Command line parsing error"
-msgstr ""
+msgstr "Command line parsing error"
 
 #: pisi/cli/rebuilddb.py:24
 msgid ""
@@ -1787,6 +1812,14 @@ msgid ""
 "If package specs are given, they should be the names of package\n"
 "dirs under /var/lib/pisi\n"
 msgstr ""
+"Rebuild Databases\n"
+"\n"
+"Usage: rebuilddb [ <package1> <package2> ... <packagen> ]\n"
+"\n"
+"Rebuilds the PiSi databases\n"
+"\n"
+"If package specs are given, they should be the names of package\n"
+"dirs under /var/lib/pisi\n"
 
 #: pisi/cli/rebuilddb.py:42
 msgid "rebuild-db options"
@@ -1794,7 +1827,7 @@ msgstr "rebuild-db опции"
 
 #: pisi/cli/rebuilddb.py:45
 msgid "Rebuild files database"
-msgstr ""
+msgstr "Rebuild files database"
 
 #: pisi/cli/rebuilddb.py:51
 msgid "Rebuild PiSi databases?"
@@ -2230,23 +2263,23 @@ msgstr "Proxy configuration has been found for '%s' protocol"
 
 #: pisi/fetcher.py:198
 msgid "Bandwidth usage is limited to %s KB/s"
-msgstr ""
+msgstr "Bandwidth usage is limited to %s KB/s"
 
 #: pisi/fetcher.py:211
 msgid "Remote file can not be reached. Previously downloaded part of the file will be removed."
-msgstr ""
+msgstr "Remote file can not be reached. Previously downloaded part of the file will be removed."
 
 #: pisi/fetcher.py:220
 msgid "Server doesn't support partial downloads. Previously downloaded part of the file will be over-written."
-msgstr ""
+msgstr "Server doesn't support partial downloads. Previously downloaded part of the file will be over-written."
 
 #: pisi/file.py:66
 msgid "uri must have type either URI or string"
-msgstr ""
+msgstr "uri must have type either URI or string"
 
 #: pisi/file.py:89
 msgid "zip compression not supported yet"
-msgstr ""
+msgstr "zip compression not supported yet"
 
 #: pisi/file.py:117
 msgid "Fetching %s"
@@ -2266,15 +2299,15 @@ msgstr ""
 
 #: pisi/file.py:155
 msgid "File mode must be either File.read or File.write"
-msgstr ""
+msgstr "File mode must be either File.read or File.write"
 
 #: pisi/file.py:160
 msgid "Remote write not implemented"
-msgstr ""
+msgstr "Remote write not implemented"
 
 #: pisi/file.py:187
 msgid "gzip compression not supported yet"
-msgstr ""
+msgstr "gzip compression not supported yet"
 
 #: pisi/file.py:202 pisi/file.py:205
 msgid "ERROR: gpg --detach-sig %s failed"
@@ -2282,7 +2315,7 @@ msgstr "Ошибка: gpg --detach-sig %s failed"
 
 #: pisi/graph.py:30
 msgid "Encountered cycle %s"
-msgstr ""
+msgstr "Encountered cycle %s"
 
 #: pisi/history.py:44
 msgid "%s repository is updated."
@@ -2290,11 +2323,11 @@ msgstr "%s репозиторий обновлен."
 
 #: pisi/history.py:64
 msgid "%s is upgraded from %s to %s with delta."
-msgstr ""
+msgstr "%s is upgraded from %s to %s with delta."
 
 #: pisi/history.py:66
 msgid "%s is upgraded from %s to %s."
-msgstr ""
+msgstr "%s is upgraded from %s to %s."
 
 #: pisi/history.py:68
 msgid "%s %s is removed."
@@ -2310,27 +2343,27 @@ msgstr "%s %s переустановлен."
 
 #: pisi/history.py:74
 msgid "%s is downgraded from %s to %s."
-msgstr ""
+msgstr "%s is downgraded from %s to %s."
 
 #: pisi/index.py:115
 msgid "Adding %s to package index"
-msgstr ""
+msgstr "Adding %s to package index"
 
 #: pisi/index.py:132
 msgid "Package %s: metadata corrupt, skipping..."
-msgstr ""
+msgstr "Package %s: metadata corrupt, skipping..."
 
 #: pisi/index.py:184
 msgid "Adding %s to source index"
-msgstr ""
+msgstr "Adding %s to source index"
 
 #: pisi/metadata.py:76
 msgid "Distribution: %s, Dist. Release: %s\n"
-msgstr ""
+msgstr "Distribution: %s, Dist. Release: %s\n"
 
 #: pisi/metadata.py:78
 msgid "Architecture: %s, Installed Size: %s"
-msgstr ""
+msgstr "Architecture: %s, Installed Size: %s"
 
 #: pisi/metadata.py:84
 msgid ", Package Size: %s"
@@ -2338,7 +2371,7 @@ msgstr ", Размер пакета: %s"
 
 #: pisi/mirrors.py:46
 msgid "Mirrors file %s does not exist. Could not resolve mirrors://"
-msgstr ""
+msgstr "Mirrors file %s does not exist. Could not resolve mirrors://"
 
 #: pisi/operations/build.py:106
 msgid "Path %s belongs in multiple packages"
@@ -2454,19 +2487,19 @@ msgstr "Safety switch: following extra packages in system.devel will be installe
 
 #: pisi/operations/build.py:615
 msgid "Safety switch: system.devel is already installed"
-msgstr ""
+msgstr "Safety switch: system.devel is already installed"
 
 #: pisi/operations/build.py:617
 msgid "Safety switch: the component system.devel cannot be found"
-msgstr ""
+msgstr "Safety switch: the component system.devel cannot be found"
 
 #: pisi/operations/build.py:626
 msgid "Unsatisfied Build Dependencies:"
-msgstr ""
+msgstr "Unsatisfied Build Dependencies:"
 
 #: pisi/operations/build.py:630
 msgid "Cannot build package due to unsatisfied build dependencies"
-msgstr ""
+msgstr "Cannot build package due to unsatisfied build dependencies"
 
 #: pisi/operations/build.py:635
 msgid "Build dependency %s cannot be satisfied"
@@ -2474,7 +2507,7 @@ msgstr "Выполнение зависимостей %s не может быт�
 
 #: pisi/operations/build.py:637
 msgid "Do you want to install the unsatisfied build dependencies"
-msgstr ""
+msgstr "Do you want to install the unsatisfied build dependencies"
 
 #: pisi/operations/build.py:638
 msgid "Installing build dependencies."
@@ -2486,7 +2519,7 @@ msgstr "Игнорирование Выполнения зависимостей
 
 #: pisi/operations/build.py:654
 msgid "Patch file is missing: %s\n"
-msgstr ""
+msgstr "Patch file is missing: %s\n"
 
 #: pisi/operations/build.py:670
 msgid "* Applying patch: %s"
@@ -2494,7 +2527,7 @@ msgstr "* Применение патча: %s"
 
 #: pisi/operations/build.py:784
 msgid "/%s has suid bit set"
-msgstr ""
+msgstr "/%s has suid bit set"
 
 #: pisi/operations/build.py:820
 msgid "(found old version %s)"
@@ -2502,19 +2535,19 @@ msgstr "(найдена старая версия %s)"
 
 #: pisi/operations/build.py:845
 msgid "(no previous build found, setting build no to 1.)"
-msgstr ""
+msgstr "(no previous build found, setting build no to 1.)"
 
 #: pisi/operations/build.py:890
 msgid "(old package lacks a build no, setting build no to 1.)"
-msgstr ""
+msgstr "(old package lacks a build no, setting build no to 1.)"
 
 #: pisi/operations/build.py:893
 msgid "There are changes, incrementing build no to %d"
-msgstr ""
+msgstr "There are changes, incrementing build no to %d"
 
 #: pisi/operations/build.py:896
 msgid "There is no change from previous build %d"
-msgstr ""
+msgstr "There is no change from previous build %d"
 
 #: pisi/operations/build.py:958
 msgid "No user named '%s' found on the system"
@@ -2526,7 +2559,7 @@ msgstr "Группа с именем '%s'  не существует в сист
 
 #: pisi/operations/build.py:971
 msgid "There are abandoned files under the install dir (%s):"
-msgstr ""
+msgstr "There are abandoned files under the install dir (%s):"
 
 #: pisi/operations/build.py:1000
 msgid "** Building package %s"
@@ -2538,7 +2571,7 @@ msgstr "Создание %s,"
 
 #: pisi/operations/build.py:1011
 msgid "Build number is not available. For repo builds you must enable buildno in pisi.conf."
-msgstr ""
+msgstr "Build number is not available. For repo builds you must enable buildno in pisi.conf."
 
 #: pisi/operations/build.py:1029
 msgid "Creating PiSi package %s."
@@ -2550,7 +2583,7 @@ msgstr "Готово."
 
 #: pisi/operations/build.py:1081
 msgid "All of the files under the install dir (%s) has been collected by package(s)"
-msgstr ""
+msgstr "All of the files under the install dir (%s) has been collected by package(s)"
 
 #: pisi/operations/build.py:1085
 msgid "Cleaning Build Directory..."
@@ -2573,12 +2606,16 @@ msgid ""
 "\n"
 "Changed config file: %s"
 msgstr ""
+"\n"
+"Changed config file: %s"
 
 #: pisi/operations/check.py:44
 msgid ""
 "\n"
 "Corrupt file: %s"
 msgstr ""
+"\n"
+"Corrupt file: %s"
 
 #: pisi/operations/check.py:50
 msgid ""
@@ -2590,15 +2627,15 @@ msgstr ""
 
 #: pisi/operations/delta.py:26
 msgid "Cannot create delta for same package!"
-msgstr ""
+msgstr "Cannot create delta for same package!"
 
 #: pisi/operations/delta.py:40
 msgid "Creating delta PiSi package between %s %s"
-msgstr ""
+msgstr "Creating delta PiSi package between %s %s"
 
 #: pisi/operations/emerge.py:35
 msgid "No packages to emerge."
-msgstr ""
+msgstr "No packages to emerge."
 
 #: pisi/operations/emerge.py:50
 msgid ""
@@ -2853,35 +2890,35 @@ msgstr ""
 
 #: pisi/pxml/autoxml.py:451 pisi/pxml/autoxml.py:461
 msgid "autoxml.read: File '%s' has errors"
-msgstr ""
+msgstr "autoxml.read: File '%s' has errors"
 
 #: pisi/pxml/autoxml.py:469
 msgid "autoxml.write: object validation has failed"
-msgstr ""
+msgstr "autoxml.write: object validation has failed"
 
 #: pisi/pxml/autoxml.py:477
 msgid "autoxml.write: File encoding '%s' has errors"
-msgstr ""
+msgstr "autoxml.write: File encoding '%s' has errors"
 
 #: pisi/pxml/autoxml.py:527
 msgid "gen_tag: unrecognized tag type %s in spec"
-msgstr ""
+msgstr "gen_tag: unrecognized tag type %s in spec"
 
 #: pisi/pxml/autoxml.py:575 pisi/pxml/autoxml.py:586
 msgid "Mandatory variable %s not available"
-msgstr ""
+msgstr "Mandatory variable %s not available"
 
 #: pisi/pxml/autoxml.py:656
 msgid "Type mismatch: read text cannot be decoded"
-msgstr ""
+msgstr "Type mismatch: read text cannot be decoded"
 
 #: pisi/pxml/autoxml.py:660 pisi/pxml/autoxml.py:669
 msgid "Mandatory token %s not available"
-msgstr ""
+msgstr "Mandatory token %s not available"
 
 #: pisi/pxml/autoxml.py:674
 msgid "Type mismatch. Expected %s, got %s"
-msgstr ""
+msgstr "Type mismatch. Expected %s, got %s"
 
 #: pisi/pxml/autoxml.py:704 pisi/pxml/autoxml.py:825
 msgid "Type mismatch: DOM cannot be decoded"
@@ -2890,7 +2927,7 @@ msgstr "Не соответствие типа: DOM не может быть р�
 #: pisi/pxml/autoxml.py:707 pisi/pxml/autoxml.py:723 pisi/pxml/autoxml.py:737
 #: pisi/pxml/autoxml.py:828 pisi/pxml/autoxml.py:842 pisi/pxml/autoxml.py:856
 msgid "Mandatory argument not available"
-msgstr ""
+msgstr "Mandatory argument not available"
 
 #: pisi/pxml/autoxml.py:720 pisi/pxml/autoxml.py:839
 msgid "Object cannot be encoded"
@@ -2902,27 +2939,27 @@ msgstr "Объект не может быть отформатирован"
 
 #: pisi/pxml/autoxml.py:750
 msgid "List type must contain only one element"
-msgstr ""
+msgstr "List type must contain only one element"
 
 #: pisi/pxml/autoxml.py:763 pisi/pxml/autoxml.py:784
 msgid "Mandatory list \"%s\" under \"%s\" node is empty."
-msgstr ""
+msgstr "Mandatory list \"%s\" under \"%s\" node is empty."
 
 #: pisi/pxml/xmlext.py:79
 msgid "getNodeText: Expected text node, got something else!"
-msgstr ""
+msgstr "getNodeText: Expected text node, got something else!"
 
 #: pisi/pxml/xmlfile.py:60
 msgid "String '%s' has invalid XML"
-msgstr ""
+msgstr "String '%s' has invalid XML"
 
 #: pisi/pxml/xmlfile.py:83
 msgid "Unable to read file (%s): %s"
-msgstr ""
+msgstr "Unable to read file (%s): %s"
 
 #: pisi/pxml/xmlfile.py:85 pisi/specfile.py:423
 msgid "File '%s' has invalid XML"
-msgstr ""
+msgstr "File '%s' has invalid XML"
 
 #: pisi/scenarioapi/package.py:67
 msgid "No pisi package: %s* found."
@@ -2930,11 +2967,11 @@ msgstr "PiSi пакет: %s* не найден."
 
 #: pisi/scenarioapi/repoops.py:28
 msgid "Repo already has package named %s."
-msgstr ""
+msgstr "Repo already has package named %s."
 
 #: pisi/scenarioapi/repoops.py:52 pisi/scenarioapi/repoops.py:59
 msgid "Repo does not have package named %s."
-msgstr ""
+msgstr "Repo does not have package named %s."
 
 #: pisi/sourcearchive.py:63
 msgid "Fetching source from: %s"
@@ -2942,15 +2979,15 @@ msgstr "Получение исходных кодов: %s"
 
 #: pisi/sourcearchive.py:74
 msgid "Source archive is stored: %s/%s"
-msgstr ""
+msgstr "Source archive is stored: %s/%s"
 
 #: pisi/sourcearchive.py:80
 msgid "Trying fallback address: %s"
-msgstr ""
+msgstr "Trying fallback address: %s"
 
 #: pisi/sourcearchive.py:91
 msgid "%s mirrors are not defined."
-msgstr ""
+msgstr "%s mirrors are not defined."
 
 #: pisi/sourcearchive.py:96
 msgid "Fetching source from mirror: %s"
