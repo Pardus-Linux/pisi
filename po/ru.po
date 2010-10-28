@@ -2746,23 +2746,23 @@ msgstr ""
 
 #: pisi/operations/install.py:165
 msgid "Package %s is not compatible with your distribution release %s %s."
-msgstr ""
+msgstr "Package %s is not compatible with your distribution release %s %s."
 
 #: pisi/operations/install.py:169
 msgid "Package %s (%s) is not compatible with your %s architecture."
-msgstr ""
+msgstr "Package %s (%s) is not compatible with your %s architecture."
 
 #: pisi/operations/install.py:192
 msgid "External dependencies not satisfied: %s"
-msgstr ""
+msgstr "External dependencies not satisfied: %s"
 
 #: pisi/operations/install.py:197
 msgid "The following packages will be installed in order to satisfy dependencies:"
-msgstr ""
+msgstr "The following packages will be installed in order to satisfy dependencies:"
 
 #: pisi/operations/install.py:201
 msgid "External dependencies not satisfied"
-msgstr ""
+msgstr "External dependencies not satisfied"
 
 #: pisi/operations/install.py:244
 msgid "Installation order: "
@@ -2770,7 +2770,7 @@ msgstr "Порядок установки:"
 
 #: pisi/operations/install.py:279 pisi/specfile.py:265
 msgid "%s dependency of package %s is not satisfied"
-msgstr ""
+msgstr "%s dependency of package %s is not satisfied"
 
 #: pisi/operations/remove.py:43
 msgid "Safety switch prevents the removal of following packages:\n"
