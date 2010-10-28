@@ -2898,7 +2898,7 @@ msgstr "autoxml.check: '%s' ошибка"
 
 #: pisi/pxml/autoxml.py:427 pisi/pxml/autoxml.py:437
 msgid "autoxml.parse: String '%s' has errors"
-msgstr ""
+msgstr "autoxml.parse: String '%s' has errors"
 
 #: pisi/pxml/autoxml.py:451 pisi/pxml/autoxml.py:461
 msgid "autoxml.read: File '%s' has errors"
