@@ -837,11 +837,11 @@ msgstr "Не принимайте информацию о зависимостя
 
 #: pisi/cli/build.py:62 pisi/cli/delta.py:46
 msgid "Output directory for produced packages"
-msgstr ""
+msgstr "Output directory for produced packages"
 
 #: pisi/cli/build.py:65
 msgid "Bypass errors from ActionsAPI"
-msgstr ""
+msgstr "Bypass ошибка из ActionsAPI"
 
 #: pisi/cli/build.py:67 pisi/cli/command.py:208
 msgid "Bypass safety switch"
@@ -849,11 +849,11 @@ msgstr ""
 
 #: pisi/cli/build.py:69
 msgid "Bypass testing step"
-msgstr ""
+msgstr "Bypass шаг тестирования"
 
 #: pisi/cli/build.py:71
 msgid "Create a static package with ar files"
-msgstr ""
+msgstr "Create a static package with ar files"
 
 #: pisi/cli/build.py:73
 msgid "PiSi binary package formats: '1.0', '1.1' (default)"
@@ -861,7 +861,7 @@ msgstr "Формат бинарных PiSi пакетов: '1.0', '1.1' (по у
 
 #: pisi/cli/build.py:75
 msgid "Use quilt patch management system instead of GNU patch"
-msgstr ""
+msgstr "Use quilt patch management system instead of GNU patch"
 
 #: pisi/cli/build.py:77
 msgid "Do not constrain build process inside the build folder"
@@ -873,27 +873,27 @@ msgstr "build шаги"
 
 #: pisi/cli/build.py:82
 msgid "Break build after fetching the source archive"
-msgstr ""
+msgstr "Break build after fetching the source archive"
 
 #: pisi/cli/build.py:84
 msgid "Break build after unpacking the source archive, checking sha1sum and applying patches"
-msgstr ""
+msgstr "Break build after unpacking the source archive, checking sha1sum and applying patches"
 
 #: pisi/cli/build.py:86
 msgid "Break build after running configure step"
-msgstr ""
+msgstr "Break build after running configure step"
 
 #: pisi/cli/build.py:88
 msgid "Break build after running compile step"
-msgstr ""
+msgstr "Break build after running compile step"
 
 #: pisi/cli/build.py:90
 msgid "Break build after running check step"
-msgstr ""
+msgstr "Break build after running check step"
 
 #: pisi/cli/build.py:92
 msgid "Break build after running install step"
-msgstr ""
+msgstr "Break build after running install step"
 
 #: pisi/cli/build.py:94
 msgid "create PiSi package"
@@ -909,7 +909,7 @@ msgstr "Конечная папка: %s"
 
 #: pisi/cli/build.py:113 pisi/cli/delta.py:61
 msgid "Outputting packages in the working directory."
-msgstr ""
+msgstr "Outputting packages in the working directory."
 
 #: pisi/cli/check.py:25
 msgid ""
@@ -925,6 +925,17 @@ msgid ""
 "\n"
 "If no packages are given, checks all installed packages.\n"
 msgstr ""
+"Verify installation\n"
+"\n"
+"Использование: check [<package1> <package2> ... <packagen>]\n"
+"\n"
+"<packagei>: package name\n"
+"\n"
+"A cryptographic checksum is stored for each installed\n"
+"file. Check command uses the checksums to verify a package.\n"
+"Just give the names of packages.\n"
+"\n"
+"If no packages are given, checks all installed packages.\n"
 
 #: pisi/cli/check.py:47
 msgid "check options"
@@ -936,7 +947,7 @@ msgstr "Проверка установленных пакетов по данн
 
 #: pisi/cli/check.py:51
 msgid "Checks only changed config files of the packages"
-msgstr ""
+msgstr "Checks only changed config files of the packages"
 
 #: pisi/cli/check.py:66
 msgid "Checking all installed packages"
@@ -951,6 +962,8 @@ msgid ""
 "\n"
 "Package %s has changed config files."
 msgstr ""
+"\n"
+"Package %s has changed config files."
 
 #: pisi/cli/check.py:79
 msgid ""
@@ -977,6 +990,12 @@ msgid ""
 "PiSi uses filesystem locks for managing database access.\n"
 "This command deletes unused locks from the database directory."
 msgstr ""
+"Clean stale locks\n"
+"\n"
+"Использование: clean\n"
+"\n"
+"PiSi uses filesystem locks for managing database access.\n"
+"This command deletes unused locks from the database directory."
 
 #: pisi/cli/command.py:30
 msgid "Command lacks name"
@@ -984,11 +1003,11 @@ msgstr "Нет комманды с таким именем"
 
 #: pisi/cli/command.py:34
 msgid "Duplicate command %s"
-msgstr ""
+msgstr "Duplicate command %s"
 
 #: pisi/cli/command.py:71 pisi/cli/pisicli.py:134
 msgid "Unrecognized command: %s"
-msgstr ""
+msgstr "Unrecognized command: %s"
 
 #: pisi/cli/command.py:96
 msgid "general options"
@@ -996,7 +1015,7 @@ msgstr "основные комманды"
 
 #: pisi/cli/command.py:99
 msgid "Change the system root for PiSi commands"
-msgstr ""
+msgstr "Change the system root for PiSi commands"
 
 #: pisi/cli/command.py:101
 msgid "Assume yes in all yes/no queries"
@@ -1236,12 +1255,18 @@ msgid ""
 "where <command> is one of:\n"
 "\n"
 msgstr ""
+"%prog [options] <command> [arguments]\n"
+"\n"
+"where <command> is one of:\n"
+"\n"
 
 #: pisi/cli/help.py:55
 msgid ""
 "\n"
 "Use \"%prog help <command>\" for help on a specific command.\n"
 msgstr ""
+"\n"
+"Используйте \"%prog help <command>\" for help on a specific command.\n"
 
 #: pisi/cli/history.py:28
 msgid "emerge"
@@ -1291,15 +1316,15 @@ msgstr "history опции"
 
 #: pisi/cli/history.py:53
 msgid "Output only the last n operations"
-msgstr ""
+msgstr "Output only the last n operations"
 
 #: pisi/cli/history.py:55
 msgid "Take snapshot of the current system"
-msgstr ""
+msgstr "Take snapshot of the current system"
 
 #: pisi/cli/history.py:57
 msgid "Takeback to the state after the given operation finished"
-msgstr ""
+msgstr "Takeback to the state after the given operation finished"
 
 #: pisi/cli/history.py:67
 msgid "Operation #%d: %s"
@@ -1311,7 +1336,7 @@ msgstr "Дата: %s %s"
 
 #: pisi/cli/history.py:72
 msgid "    * There are %d packages in this snapshot."
-msgstr ""
+msgstr "    * There are %d packages in this snapshot."
 
 #: pisi/cli/index.py:23
 msgid ""
@@ -1327,6 +1352,17 @@ msgid ""
 "If you give multiple directories, the command still works, but puts\n"
 "everything in a single index file.\n"
 msgstr ""
+"Index PiSi files in a given directory\n"
+"\n"
+"Использование: index <directory> ...\n"
+"\n"
+"This command searches for all PiSi files in a directory, collects PiSi\n"
+"tags from them and accumulates the information in an output XML file,\n"
+"named by default 'pisi-index.xml'. In particular, it indexes both\n"
+"source and binary packages.\n"
+"\n"
+"If you give multiple directories, the command still works, but puts\n"
+"everything in a single index file.\n"
 
 #: pisi/cli/index.py:44
 msgid "index options"
@@ -1334,23 +1370,23 @@ msgstr "index опции"
 
 #: pisi/cli/index.py:48
 msgid "Store absolute links for indexed files."
-msgstr ""
+msgstr "Store absolute links for indexed files."
 
 #: pisi/cli/index.py:51
 msgid "Index output file"
-msgstr ""
+msgstr "Index output file"
 
 #: pisi/cli/index.py:54
 msgid "Do not index PiSi spec files."
-msgstr ""
+msgstr "Do not index PiSi spec files."
 
 #: pisi/cli/index.py:57
 msgid "Do not sign index."
-msgstr ""
+msgstr "Do not sign index."
 
 #: pisi/cli/index.py:70
 msgid "Indexing current directory."
-msgstr ""
+msgstr "Indexing current directory."
 
 #: pisi/cli/info.py:26
 msgid ""
@@ -1360,6 +1396,11 @@ msgid ""
 "\n"
 "<packagei> is either a package name or a .pisi file,\n"
 msgstr ""
+"Display package information\n"
+"\n"
+"Использование: info <package1> <package2> ... <packagen>\n"
+"\n"
+"<packagei> is either a package name or a .pisi file,\n"
 
 #: pisi/cli/info.py:45
 msgid "info options"
@@ -1367,38 +1408,37 @@ msgstr "info опции"
 
 #: pisi/cli/info.py:52
 msgid "Show a list of package files."
-msgstr ""
+msgstr "Показать список файлов пакета."
 
 #: pisi/cli/info.py:54
 msgid "Info about the given component"
-msgstr ""
+msgstr "Info about the given component"
 
 #: pisi/cli/info.py:57
 msgid "Show only paths."
-msgstr ""
+msgstr "Показать только путь"
 
 #: pisi/cli/info.py:59
 msgid "Do not show details"
-msgstr ""
+msgstr "Do not show details"
 
 #: pisi/cli/info.py:61
 msgid "Output in xml format"
-msgstr ""
+msgstr "Output in xml format"
 
 #: pisi/cli/info.py:129
 msgid "Reverse Dependencies:"
-msgstr ""
+msgstr "Reverse Dependencies:"
 
 #: pisi/cli/info.py:140
 msgid "Reverse Build Dependencies:"
-msgstr ""
+msgstr "Reverse Build Dependencies:"
 
 #: pisi/cli/info.py:145
 msgid "Package file: %s"
-msgstr ""
+msgstr "Файл пакета: %s"
 
 #: pisi/cli/info.py:160
-#, fuzzy
 msgid "[inst] "
 msgstr "[inst] "
 
@@ -1442,6 +1482,15 @@ msgid ""
 "You can also specify components instead of package names, which will be\n"
 "expanded to package names.\n"
 msgstr ""
+"Установка PiSi пакеов\n"
+"\n"
+"Использование: install <package1> <package2> ... <packagen>\n"
+"\n"
+"Вы должны использовать имя пакета, ссылку на пакет. If you have\n"
+"specified a package name, it should exist in a specified repository.\n"
+"\n"
+"You can also specify components instead of package names, which will be\n"
+"expanded to package names.\n"
 
 #: pisi/cli/install.py:44
 msgid "install options"
@@ -1453,31 +1502,31 @@ msgstr "Переустановить установленные пакеты"
 
 #: pisi/cli/install.py:53
 msgid "Skip distribution release and architecture check"
-msgstr ""
+msgstr "Skip distribution release and architecture check"
 
 #: pisi/cli/install.py:59
 msgid "Install component's and recursive components' packages"
-msgstr ""
+msgstr "Install component's and recursive components' packages"
 
 #: pisi/cli/install.py:61
 msgid "Name of the component's repository"
-msgstr ""
+msgstr "Name of the component's repository"
 
 #: pisi/cli/install.py:63 pisi/cli/upgrade.py:69
 msgid "Fetch upgrades but do not install."
-msgstr ""
+msgstr "Загрузка обновлений без установкиl."
 
 #: pisi/cli/install.py:65
 msgid "When installing packages, ignore packages and components whose basenames match pattern."
-msgstr ""
+msgstr "When installing packages, ignore packages and components whose basenames match pattern."
 
 #: pisi/cli/install.py:68
 msgid "When installing packages, ignore packages and components whose basenames match any pattern contained in file."
-msgstr ""
+msgstr "When installing packages, ignore packages and components whose basenames match any pattern contained in file."
 
 #: pisi/cli/install.py:95
 msgid "There is no component named %s"
-msgstr ""
+msgstr "There is no component named %s"
 
 #: pisi/cli/listavailable.py:26
 msgid ""
@@ -1489,28 +1538,35 @@ msgid ""
 "repositories. If no repository is specified, we list packages in\n"
 "all repositories.\n"
 msgstr ""
+"List available packages in the repositories\n"
+"\n"
+"Usage: list-available [ <repo1> <repo2> ... repon ]\n"
+"\n"
+"Gives a brief list of PiSi packages published in the specified\n"
+"repositories. If no repository is specified, we list packages in\n"
+"all repositories.\n"
 
 #: pisi/cli/listavailable.py:45
 msgid "list-available options"
-msgstr ""
+msgstr "list-available options"
 
 #: pisi/cli/listavailable.py:47 pisi/cli/listcomponents.py:42
 #: pisi/cli/listinstalled.py:45 pisi/cli/listsources.py:41
 #: pisi/cli/listupgrades.py:47 pisi/cli/searchfile.py:40
 msgid "Show in long format"
-msgstr ""
+msgstr "Show in long format"
 
 #: pisi/cli/listavailable.py:49
 msgid "List available packages under given component"
-msgstr ""
+msgstr "List available packages under given component"
 
 #: pisi/cli/listavailable.py:51
 msgid "Show uninstalled packages only"
-msgstr ""
+msgstr "Show uninstalled packages only"
 
 #: pisi/cli/listavailable.py:59
 msgid "Installed packages are shown in this color"
-msgstr ""
+msgstr "Installed packages are shown in this color"
 
 #: pisi/cli/listavailable.py:67
 msgid "Repository : %s\n"
@@ -1525,14 +1581,20 @@ msgid ""
 "Gives a brief list of PiSi components published in the\n"
 "repositories.\n"
 msgstr ""
+"List available components\n"
+"\n"
+"Usage: list-components\n"
+"\n"
+"Gives a brief list of PiSi components published in the\n"
+"repositories.\n"
 
 #: pisi/cli/listcomponents.py:40
 msgid "list-components options"
-msgstr ""
+msgstr "list-components options"
 
 #: pisi/cli/listcomponents.py:44 pisi/cli/search.py:47
 msgid "Name of the source or package repository"
-msgstr ""
+msgstr "Name of the source or package repository"
 
 #: pisi/cli/listinstalled.py:24
 msgid ""
@@ -1540,6 +1602,9 @@ msgid ""
 "\n"
 "Usage: list-installed\n"
 msgstr ""
+"Print the list of all installed packages\n"
+"\n"
+"Usage: list-installed\n"
 
 #: pisi/cli/listinstalled.py:40
 msgid "list-installed options"
@@ -1692,7 +1757,7 @@ msgstr ""
 
 #: pisi/cli/rebuilddb.py:51
 msgid "Rebuild PiSi databases?"
-msgstr ""
+msgstr "Rebuild PiSi databases?"
 
 #: pisi/cli/remove.py:25
 msgid ""
@@ -1705,6 +1770,14 @@ msgid ""
 "You can also specify components instead of package names, which will be\n"
 "expanded to package names.\n"
 msgstr ""
+"Удаление PiSi пакетов\n"
+"\n"
+"Использование: remove <package1> <package2> ... <packagen>\n"
+"\n"
+"Remove package(s) from your system. Just give the package names to remove.\n"
+"\n"
+"You can also specify components instead of package names, which will be\n"
+"expanded to package names.\n"
 
 #: pisi/cli/remove.py:43
 msgid "remove options"
@@ -1712,11 +1785,11 @@ msgstr "remove опции"
 
 #: pisi/cli/remove.py:46
 msgid "Removes everything including changed config files of the package"
-msgstr ""
+msgstr "Removes everything including changed config files of the package"
 
 #: pisi/cli/remove.py:48
 msgid "Remove component's and recursive components' packages"
-msgstr ""
+msgstr "Remove component's and recursive components' packages"
 
 #: pisi/cli/removerepo.py:21
 msgid ""
@@ -1726,6 +1799,11 @@ msgid ""
 "\n"
 "Remove all repository information from the system.\n"
 msgstr ""
+"Remove repositories\n"
+"\n"
+"Usage: remove-repo <repo1> <repo2> ... <repon>\n"
+"\n"
+"Remove all repository information from the system.\n"
 
 #: pisi/cli/search.py:25
 msgid ""
@@ -1739,6 +1817,15 @@ msgid ""
 "options to search in install database or source\n"
 "database.\n"
 msgstr ""
+"Поиск пакетов\n"
+"\n"
+"Использование: search <term1> <term2> ... <termn>\n"
+"\n"
+"Finds a package containing specified search terms\n"
+"in summary, description, and package name fields.\n"
+"Default search is done in package database. Use\n"
+"options to search in install database or source\n"
+"database.\n"
 
 #: pisi/cli/search.py:43
 msgid "search options"
@@ -1746,27 +1833,27 @@ msgstr "search опции"
 
 #: pisi/cli/search.py:45
 msgid "Summary and description language"
-msgstr ""
+msgstr "Summary and description language"
 
 #: pisi/cli/search.py:49
 msgid "Search in installdb"
-msgstr ""
+msgstr "Поиск в installdb"
 
 #: pisi/cli/search.py:51
 msgid "Search in sourcedb"
-msgstr ""
+msgstr "Поиск в sourcedb"
 
 #: pisi/cli/search.py:53
 msgid "Search in the package name"
-msgstr ""
+msgstr "Поиск в именах пакетов"
 
 #: pisi/cli/search.py:55
 msgid "Search in the package summary"
-msgstr ""
+msgstr "Поиск в package summary"
 
 #: pisi/cli/search.py:57
 msgid "Search in the package description"
-msgstr ""
+msgstr "Поиск в описаниях пакетов"
 
 #: pisi/cli/searchfile.py:24
 msgid ""
@@ -1776,6 +1863,11 @@ msgid ""
 "\n"
 "Finds the installed package which contains the specified file.\n"
 msgstr ""
+"Поиск файлов\n"
+"\n"
+"Использование: search-file <path1> <path2> ... <pathn>\n"
+"\n"
+"Finds the installed package which contains the specified file.\n"
 
 #: pisi/cli/searchfile.py:38
 msgid "search-file options"
@@ -1783,19 +1875,19 @@ msgstr "search-file опции"
 
 #: pisi/cli/searchfile.py:42
 msgid "Show only package name"
-msgstr ""
+msgstr "Показать только имя пакета"
 
 #: pisi/cli/searchfile.py:49
 msgid "Package %s has file /%s"
-msgstr ""
+msgstr "Пакет %s содержит файл /%s"
 
 #: pisi/cli/searchfile.py:52
 msgid "Path '%s' does not belong to an installed package"
-msgstr ""
+msgstr "Path '%s' does not belong to an installed package"
 
 #: pisi/cli/searchfile.py:65
 msgid "Searching for %s"
-msgstr ""
+msgstr "Поиск для %s"
 
 #: pisi/cli/updaterepo.py:24
 msgid ""
@@ -1808,6 +1900,14 @@ msgid ""
 "Synchronizes the PiSi databases with the current repository.\n"
 "If no repository is given, all repositories are updated.\n"
 msgstr ""
+"Обновление базы репозиториев\n"
+"\n"
+"Использование: update-repo [<repo1> <repo2> ... <repon>]\n"
+"\n"
+"<repoi>: repository name\n"
+"\n"
+"Synchronizes the PiSi databases with the current repository.\n"
+"If no repository is given, all repositories are updated.\n"
 
 #: pisi/cli/updaterepo.py:42
 msgid "update-repo options"
@@ -1815,7 +1915,7 @@ msgstr "update-repo опции"
 
 #: pisi/cli/updaterepo.py:46
 msgid "Update database in any case"
-msgstr ""
+msgstr "Update database in any case"
 
 #: pisi/cli/upgrade.py:25
 msgid ""
@@ -1836,6 +1936,22 @@ msgid ""
 "You can also specify components instead of package names, which will be\n"
 "expanded to package names.\n"
 msgstr ""
+"Обновление PiSi пкетов\n"
+"\n"
+"Использование: Upgrade [<package1> <package2> ... <packagen>]\n"
+"\n"
+"<packagei>: package name\n"
+"\n"
+"Upgrades the entire system if no package names are given\n"
+"\n"
+"You may use only package names to specify packages because\n"
+"the package upgrade operation is defined only with respect\n"
+"to repositories. If you have specified a package name, it\n"
+"should exist in the package repositories. If you just want to\n"
+"reinstall a package from a PiSi file, use the install command.\n"
+"\n"
+"You can also specify components instead of package names, which will be\n"
+"expanded to package names.\n"
 
 #: pisi/cli/upgrade.py:50
 msgid "upgrade options"
