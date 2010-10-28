@@ -2798,7 +2798,7 @@ msgstr ""
 
 #: pisi/operations/remove.py:73
 msgid "Package removal declined"
-msgstr ""
+msgstr "Package removal declined"
 
 #: pisi/operations/remove.py:85
 msgid "Package %s is not installed. Cannot remove."
@@ -2806,27 +2806,27 @@ msgstr "Пакет %s не установлен. Не могу удалить."
 
 #: pisi/operations/remove.py:120
 msgid "Conflicts remain"
-msgstr ""
+msgstr "Conflicts remain"
 
 #: pisi/operations/remove.py:128
 msgid "Obsoleted packages remaining"
-msgstr ""
+msgstr "Obsoleted packages remaining"
 
 #: pisi/operations/remove.py:132
 msgid "Replaced package remains"
-msgstr ""
+msgstr "Replaced package remains"
 
 #: pisi/operations/upgrade.py:52
 msgid "You must restart the following service(s) manually for the updated software to take effect:"
-msgstr ""
+msgstr "You must restart the following service(s) manually for the updated software to take effect:"
 
 #: pisi/operations/upgrade.py:59
 msgid "You must restart your system for the updates in the following package(s) to take effect:"
-msgstr ""
+msgstr "You must restart your system for the updates in the following package(s) to take effect:"
 
 #: pisi/operations/upgrade.py:82
 msgid "Warning: package *name* ends with '.pisi'"
-msgstr ""
+msgstr "Warning: package *name* ends with '.pisi'"
 
 #: pisi/operations/upgrade.py:85
 msgid "Package %s is not installed."
