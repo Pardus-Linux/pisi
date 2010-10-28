@@ -2698,7 +2698,6 @@ msgid "Following packages will be installed:\n"
 msgstr "Following packages will be installed:\n"
 
 #: pisi/operations/history.py:150
-#, fuzzy
 msgid "Following packages will be removed:\n"
 msgstr "Following packages will be removed:\n"
 
@@ -2718,10 +2717,12 @@ msgid ""
 "\n"
 "Following packages could not be found in repositories and are not cached:\n"
 msgstr ""
+"\n"
+"Following packages could not be found in repositories and are not cached:\n"
 
 #: pisi/operations/install.py:47 pisi/operations/install.py:134
 msgid "The following package(s) are already installed and are not going to be installed again:"
-msgstr ""
+msgstr "The following package(s) are already installed and are not going to be installed again:"
 
 #: pisi/operations/install.py:53 pisi/operations/install.py:213
 msgid "No packages to install."
