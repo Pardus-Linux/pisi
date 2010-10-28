@@ -2287,7 +2287,7 @@ msgstr "Закачка %s"
 
 #: pisi/file.py:122
 msgid "Copying %s to transfer dir"
-msgstr ""
+msgstr "Copying %s to transfer dir"
 
 #: pisi/file.py:127
 msgid "File '%s' not found."
@@ -2295,7 +2295,7 @@ msgstr "Файл '%s' не найден."
 
 #: pisi/file.py:135
 msgid "File integrity of %s compromised."
-msgstr ""
+msgstr "File integrity of %s compromised."
 
 #: pisi/file.py:155
 msgid "File mode must be either File.read or File.write"
@@ -2642,16 +2642,20 @@ msgid ""
 "The following list of packages will be installed\n"
 "from repository in the respective order to satisfy dependencies:\n"
 msgstr ""
+"The following list of packages will be installed\n"
+"from repository in the respective order to satisfy dependencies:\n"
 
 #: pisi/operations/emerge.py:53
 msgid ""
 "The following list of packages will be built and\n"
 "installed in the respective order to satisfy dependencies:\n"
 msgstr ""
+"The following list of packages will be built and\n"
+"installed in the respective order to satisfy dependencies:\n"
 
 #: pisi/operations/emerge.py:61 pisi/operations/install.py:82
 msgid "There are extra packages due to dependencies. Do you want to continue?"
-msgstr ""
+msgstr "There are extra packages due to dependencies. Do you want to continue?"
 
 #: pisi/operations/emerge.py:95
 msgid "Cannot find source package: %s"
@@ -2659,7 +2663,7 @@ msgstr "Не найден исходный пакет: %s"
 
 #: pisi/operations/helper.py:51
 msgid "Selected packages [%s] are in conflict with each other."
-msgstr ""
+msgstr "Selected packages [%s] are in conflict with each other."
 
 #: pisi/operations/helper.py:57
 msgid "[%s conflicts with: %s]\n"
@@ -2670,14 +2674,16 @@ msgid ""
 "The following packages have conflicts:\n"
 "%s"
 msgstr ""
+"The following packages have conflicts:\n"
+"%s"
 
 #: pisi/operations/helper.py:62
 msgid "Remove the following conflicting packages?"
-msgstr ""
+msgstr "Remove the following conflicting packages?"
 
 #: pisi/operations/helper.py:63
 msgid "Conflicting packages should be removed to continue"
-msgstr ""
+msgstr "Conflicting packages should be removed to continue"
 
 #: pisi/operations/history.py:86 pisi/operations/history.py:96
 msgid "%s could not be found"
@@ -2689,11 +2695,12 @@ msgstr "%s [cached]"
 
 #: pisi/operations/history.py:147
 msgid "Following packages will be installed:\n"
-msgstr ""
+msgstr "Following packages will be installed:\n"
 
 #: pisi/operations/history.py:150
+#, fuzzy
 msgid "Following packages will be removed:\n"
-msgstr ""
+msgstr "Following packages will be removed:\n"
 
 #: pisi/operations/history.py:152 pisi/operations/history.py:166
 #: pisi/operations/install.py:200 pisi/operations/remove.py:72
