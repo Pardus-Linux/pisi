@@ -845,7 +845,7 @@ msgstr "Bypass ошибка из ActionsAPI"
 
 #: pisi/cli/build.py:67 pisi/cli/command.py:208
 msgid "Bypass safety switch"
-msgstr ""
+msgstr "Bypass safety switch"
 
 #: pisi/cli/build.py:69
 msgid "Bypass testing step"
@@ -1019,11 +1019,11 @@ msgstr "Change the system root for PiSi commands"
 
 #: pisi/cli/command.py:101
 msgid "Assume yes in all yes/no queries"
-msgstr ""
+msgstr "Assume yes in all yes/no queries"
 
 #: pisi/cli/command.py:105
 msgid "Keep bandwidth usage under specified KB's"
-msgstr ""
+msgstr "Keep bandwidth usage under specified KB's"
 
 #: pisi/cli/command.py:108
 msgid "Detailed output"
@@ -1035,11 +1035,11 @@ msgstr "Показать debug информацию"
 
 #: pisi/cli/command.py:112
 msgid "Suppresses all coloring of PiSi's output"
-msgstr ""
+msgstr "Suppresses all coloring of PiSi's output"
 
 #: pisi/cli/command.py:130
 msgid "Destination directory %s does not exist. Creating directory.\n"
-msgstr ""
+msgstr "Destination directory %s does not exist. Creating directory.\n"
 
 #: pisi/cli/command.py:152
 msgid "Password: "
@@ -1051,11 +1051,11 @@ msgstr "Команда завершилась неудачей."
 
 #: pisi/cli/command.py:206 pisi/cli/emerge.py:53
 msgid "Bypass comar configuration agent"
-msgstr ""
+msgstr "Bypass comar configuration agent"
 
 #: pisi/cli/command.py:210
 msgid "Do not perform any action, just show what would be done"
-msgstr ""
+msgstr "Do not perform any action, just show what would be done"
 
 #: pisi/cli/command.py:228
 msgid "usage: %s\n"
@@ -1070,6 +1070,12 @@ msgid ""
 "of packages waiting to be configured. This command\n"
 "configures those packages.\n"
 msgstr ""
+"Configure pending packages\n"
+"\n"
+"If COMAR configuration of some packages were not\n"
+"done at installation time, they are added to a list\n"
+"of packages waiting to be configured. This command\n"
+"configures those packages.\n"
 
 #: pisi/cli/configurepending.py:39
 msgid "configure-pending options"
@@ -1103,6 +1109,13 @@ msgid ""
 "and creates a delta pisi package with the changed files between two releases.\n"
 "\n"
 msgstr ""
+"Creates delta PiSi packages\n"
+"\n"
+"Usage: delta oldpackage newpackage\n"
+"\n"
+"Delta command finds the changed files between the given packages by comparing the sha1sum of the files\n"
+"and creates a delta pisi package with the changed files between two releases.\n"
+"\n"
 
 #: pisi/cli/delta.py:40
 msgid "delta options"
@@ -1137,6 +1150,14 @@ msgid ""
 "\n"
 "You can also give the name of a component.\n"
 msgstr ""
+"Build and install PiSi source packages from repository\n"
+"\n"
+"Usage: emerge <sourcename> ...\n"
+"\n"
+"You should give the name of a source package to be\n"
+"downloaded from a repository containing sources.\n"
+"\n"
+"You can also give the name of a component.\n"
 
 #: pisi/cli/emerge.py:44
 msgid "emerge options"
@@ -1144,7 +1165,7 @@ msgstr "emerge опции"
 
 #: pisi/cli/emerge.py:47
 msgid "Emerge available packages under given component"
-msgstr ""
+msgstr "Emerge available packages under given component"
 
 #: pisi/cli/emerge.py:49 pisi/cli/install.py:55 pisi/cli/upgrade.py:61
 msgid "Ignore file conflicts"
@@ -1156,7 +1177,7 @@ msgstr "игнорировать конфликтные пакеты"
 
 #: pisi/cli/emerge.py:73
 msgid "Outputting binary packages in the package cache."
-msgstr ""
+msgstr "Outputting binary packages in the package cache."
 
 #: pisi/cli/enablerepo.py:21
 msgid ""
@@ -1168,6 +1189,13 @@ msgid ""
 "\n"
 "Disabled repositories are not taken into account in operations\n"
 msgstr ""
+"Enable repository\n"
+"\n"
+"Usage: enable-repo [<repo1> <repo2> ... <repon>]\n"
+"\n"
+"<repoi>: repository name\n"
+"\n"
+"Disabled repositories are not taken into account in operations\n"
 
 #: pisi/cli/fetch.py:25
 msgid ""
@@ -1206,6 +1234,14 @@ msgid ""
 "shows the package relations among repository packages, and writes\n"
 "the package in graphviz format to 'pgraph.dot'.\n"
 msgstr ""
+"Graph package relations\n"
+"\n"
+"Usage: graph [<package1> <package2> ...]\n"
+"\n"
+"Write a graph of package relations, tracking dependency and\n"
+"conflicts relations starting from given packages. By default\n"
+"shows the package relations among repository packages, and writes\n"
+"the package in graphviz format to 'pgraph.dot'.\n"
 
 #: pisi/cli/graph.py:43
 msgid "graph options"
@@ -1213,11 +1249,11 @@ msgstr "graph опции"
 
 #: pisi/cli/graph.py:47
 msgid "Specify a particular repository"
-msgstr ""
+msgstr "Specify a particular repository"
 
 #: pisi/cli/graph.py:50
 msgid "Graph of installed packages"
-msgstr ""
+msgstr "Graph of installed packages"
 
 #: pisi/cli/graph.py:53
 msgid "Do not show installed packages"
@@ -1229,15 +1265,15 @@ msgstr "Dot выходной файл"
 
 #: pisi/cli/graph.py:70
 msgid "Plotting packages in repository %s"
-msgstr ""
+msgstr "Plotting packages in repository %s"
 
 #: pisi/cli/graph.py:73
 msgid "Plotting a graph of relations among all repository packages"
-msgstr ""
+msgstr "Plotting a graph of relations among all repository packages"
 
 #: pisi/cli/graph.py:87
 msgid "Plotting a graph of relations among all installed packages"
-msgstr ""
+msgstr "Plotting a graph of relations among all installed packages"
 
 #: pisi/cli/help.py:22
 msgid ""
@@ -1247,6 +1283,11 @@ msgid ""
 "\n"
 "If run without parameters, it prints the general help."
 msgstr ""
+"Prints help for given commands\n"
+"\n"
+"Usage: help [ <command1> <command2> ... <commandn> ]\n"
+"\n"
+"If run without parameters, it prints the general help."
 
 #: pisi/cli/help.py:49
 msgid ""
@@ -1959,27 +2000,27 @@ msgstr "upgrade опции"
 
 #: pisi/cli/upgrade.py:57
 msgid "Security related package upgrades only"
-msgstr ""
+msgstr "Security related package upgrades only"
 
 #: pisi/cli/upgrade.py:59
 msgid "Do not update repositories"
-msgstr ""
+msgstr "Do not update repositories"
 
 #: pisi/cli/upgrade.py:65
 msgid "Upgrade component's and recursive components' packages"
-msgstr ""
+msgstr "Upgrade component's and recursive components' packages"
 
 #: pisi/cli/upgrade.py:67
 msgid "Name of the to be upgraded packages' repository"
-msgstr ""
+msgstr "Name of the to be upgraded packages' repository"
 
 #: pisi/cli/upgrade.py:71
 msgid "When upgrading system, ignore packages and components whose basenames match pattern."
-msgstr ""
+msgstr "When upgrading system, ignore packages and components whose basenames match pattern."
 
 #: pisi/cli/upgrade.py:74
 msgid "When upgrading system, ignore packages and components whose basenames match any pattern contained in file."
-msgstr ""
+msgstr "When upgrading system, ignore packages and components whose basenames match any pattern contained in file."
 
 #: pisi/cli/upgrade.py:88
 msgid "Updating repositories"
@@ -1987,29 +2028,31 @@ msgstr "Обновление репозиториев"
 
 #: pisi/cli/upgrade.py:92
 msgid "Will not update repositories"
-msgstr ""
+msgstr "Will not update repositories"
 
 #: pisi/comariface.py:31
 msgid "comar-api package is not fully installed"
-msgstr ""
+msgstr "comar-api package is not fully installed"
 
 #: pisi/comariface.py:87
 msgid ""
 "Cannot connect to COMAR: \n"
 "  %s\n"
 msgstr ""
+"Cannot connect to COMAR: \n"
+"  %s\n"
 
 #: pisi/comariface.py:92
 msgid "Configuring %s package"
-msgstr ""
+msgstr "Configuring %s package"
 
 #: pisi/comariface.py:98
 msgid "COMAR package updated. From now on, using new COMAR daemon."
-msgstr ""
+msgstr "COMAR package updated. From now on, using new COMAR daemon."
 
 #: pisi/comariface.py:104
 msgid "Registering %s comar script"
-msgstr ""
+msgstr "Registering %s comar script"
 
 #: pisi/comariface.py:111 pisi/comariface.py:116 pisi/comariface.py:125
 #: pisi/comariface.py:139 pisi/comariface.py:156 pisi/comariface.py:165
@@ -2019,47 +2062,47 @@ msgstr "Ошибка скрипта: %s"
 
 #: pisi/comariface.py:118
 msgid "Calling post install handlers"
-msgstr ""
+msgstr "Calling post install handlers"
 
 #: pisi/comariface.py:133
 msgid "Running package's post install script"
-msgstr ""
+msgstr "Running package's post install script"
 
 #: pisi/comariface.py:144
 msgid "Running pre removal operations for %s"
-msgstr ""
+msgstr "Running pre removal operations for %s"
 
 #: pisi/comariface.py:150
 msgid "Running package's pre remove script"
-msgstr ""
+msgstr "Running package's pre remove script"
 
 #: pisi/comariface.py:158
 msgid "Calling pre remove handlers"
-msgstr ""
+msgstr "Calling pre remove handlers"
 
 #: pisi/comariface.py:170
 msgid "Running post removal operations for %s"
-msgstr ""
+msgstr "Running post removal operations for %s"
 
 #: pisi/comariface.py:178
 msgid "Running package's postremove script"
-msgstr ""
+msgstr "Running package's postremove script"
 
 #: pisi/comariface.py:186
 msgid "Calling post remove handlers"
-msgstr ""
+msgstr "Calling post remove handlers"
 
 #: pisi/comariface.py:195
 msgid "Unregistering comar scripts"
-msgstr ""
+msgstr "Unregistering comar scripts"
 
 #: pisi/config.py:85
 msgid "Destination directory %s does not exist. Creating it."
-msgstr ""
+msgstr "Destination directory %s does not exist. Creating it."
 
 #: pisi/configfile.py:126
 msgid "No section by name '%s'"
-msgstr ""
+msgstr "No section by name '%s'"
 
 #: pisi/conflict.py:26 pisi/dependency.py:26 pisi/replace.py:24
 msgid " version >= "
@@ -2087,11 +2130,11 @@ msgstr "релиз"
 
 #: pisi/constants.py:30
 msgid "Can't rebind constant: %s"
-msgstr ""
+msgstr "Can't rebind constant: %s"
 
 #: pisi/constants.py:36
 msgid "Can't unbind constant: %s"
-msgstr ""
+msgstr "Can't unbind constant: %s"
 
 #: pisi/db/componentdb.py:87
 msgid "Component %s not found"
@@ -2107,21 +2150,23 @@ msgstr "установлен"
 
 #: pisi/db/installdb.py:37
 msgid "installed-pending"
-msgstr ""
+msgstr "installed-pending"
 
 #: pisi/db/installdb.py:56
 msgid ""
 "State: %s\n"
 "Version: %s, Release: %s, Build: %s\n"
 msgstr ""
+"State: %s\n"
+"Version: %s, Release: %s, Build: %s\n"
 
 #: pisi/db/installdb.py:61
 msgid "Distribution: %s, Install Time: %s\n"
-msgstr ""
+msgstr "Distribution: %s, Install Time: %s\n"
 
 #: pisi/db/installdb.py:89
 msgid "Installation info for package '%s' is broken. Reinstall it to fix this problem."
-msgstr ""
+msgstr "Installation info for package '%s' is broken. Reinstall it to fix this problem."
 
 #: pisi/db/installdb.py:326
 msgid "Package %s is not installed"
@@ -2129,11 +2174,11 @@ msgstr "Пакет %s не установлен"
 
 #: pisi/db/itembyrepo.py:40
 msgid "%s not found in any repository."
-msgstr ""
+msgstr "%s not found in any repository."
 
 #: pisi/db/itembyrepo.py:50
 msgid "Repo item %s not found"
-msgstr ""
+msgstr "Repo item %s not found"
 
 #: pisi/db/itembyrepo.py:60 pisi/db/itembyrepo.py:71 pisi/db/itembyrepo.py:81
 msgid "Repository %s does not exist."
@@ -2145,19 +2190,19 @@ msgstr "Пакет %s не найден."
 
 #: pisi/db/repodb.py:167
 msgid "%s repository needs to be updated"
-msgstr ""
+msgstr "%s repository needs to be updated"
 
 #: pisi/db/repodb.py:173
 msgid "Error parsing repository index information. Index file does not exist or is malformed."
-msgstr ""
+msgstr "Error parsing repository index information. Index file does not exist or is malformed."
 
 #: pisi/db/repodb.py:263
 msgid "Repository '%s' is not compatible with your distribution. Repository is disabled."
-msgstr ""
+msgstr "Repository '%s' is not compatible with your distribution. Repository is disabled."
 
 #: pisi/fetcher.py:131
 msgid "Urlgrabber needs to be installed to run this command"
-msgstr ""
+msgstr "Urlgrabber needs to be installed to run this command"
 
 #: pisi/fetcher.py:134
 msgid "Filename error"
@@ -2165,23 +2210,23 @@ msgstr "Ошибка имени файла"
 
 #: pisi/fetcher.py:137
 msgid "Access denied to write to destination directory: \"%s\""
-msgstr ""
+msgstr "Access denied to write to destination directory: \"%s\""
 
 #: pisi/fetcher.py:140
 msgid "Access denied to destination file: \"%s\""
-msgstr ""
+msgstr "Access denied to destination file: \"%s\""
 
 #: pisi/fetcher.py:154
 msgid "Could not fetch destination file \"%s\": %s"
-msgstr ""
+msgstr "Could not fetch destination file \"%s\": %s"
 
 #: pisi/fetcher.py:158
 msgid "A problem occurred. Please check the archive address and/or permissions again."
-msgstr ""
+msgstr "A problem occurred. Please check the archive address and/or permissions again."
 
 #: pisi/fetcher.py:191
 msgid "Proxy configuration has been found for '%s' protocol"
-msgstr ""
+msgstr "Proxy configuration has been found for '%s' protocol"
 
 #: pisi/fetcher.py:198
 msgid "Bandwidth usage is limited to %s KB/s"
@@ -2297,7 +2342,7 @@ msgstr ""
 
 #: pisi/operations/build.py:106
 msgid "Path %s belongs in multiple packages"
-msgstr ""
+msgstr "Path %s belongs in multiple packages"
 
 #: pisi/operations/build.py:179
 msgid "Source URI: %s"
@@ -2305,39 +2350,39 @@ msgstr "Исходный URI: %s"
 
 #: pisi/operations/build.py:183
 msgid "Source %s not found in any active repository."
-msgstr ""
+msgstr "Source %s not found in any active repository."
 
 #: pisi/operations/build.py:261
 msgid "pspec.xml avoids this package from building for '%s'"
-msgstr ""
+msgstr "pspec.xml avoids this package from building for '%s'"
 
 #: pisi/operations/build.py:264
 msgid "Building PiSi source package: %s"
-msgstr ""
+msgstr "Building PiSi source package: %s"
 
 #: pisi/operations/build.py:309
 msgid "IceCream detected. Make sure your daemon is up and running..."
-msgstr ""
+msgstr "IceCream detected. Make sure your daemon is up and running..."
 
 #: pisi/operations/build.py:317
 msgid "CCache detected..."
-msgstr ""
+msgstr "CCache detected..."
 
 #: pisi/operations/build.py:383
 msgid "PartOf tag not defined, looking for component"
-msgstr ""
+msgstr "PartOf tag not defined, looking for component"
 
 #: pisi/operations/build.py:392
 msgid "Cannot find component.xml in remote directory, Source is now part of unknown component"
-msgstr ""
+msgstr "Cannot find component.xml in remote directory, Source is now part of unknown component"
 
 #: pisi/operations/build.py:398
 msgid "Cannot find component.xml in upper directory, Source is now part of unknown component"
-msgstr ""
+msgstr "Cannot find component.xml in upper directory, Source is now part of unknown component"
 
 #: pisi/operations/build.py:404
 msgid "Source is part of %s component"
-msgstr ""
+msgstr "Source is part of %s component"
 
 #: pisi/operations/build.py:411
 msgid "Unpacking archive(s)..."
@@ -2365,23 +2410,23 @@ msgstr "Установка..."
 
 #: pisi/operations/build.py:503
 msgid "Unable to read Actions Script (%s): %s"
-msgstr ""
+msgstr "Unable to read Actions Script (%s): %s"
 
 #: pisi/operations/build.py:505
 msgid "SyntaxError in Actions Script (%s): %s"
-msgstr ""
+msgstr "SyntaxError in Actions Script (%s): %s"
 
 #: pisi/operations/build.py:522
 msgid "Unable to read COMAR script (%s): %s"
-msgstr ""
+msgstr "Unable to read COMAR script (%s): %s"
 
 #: pisi/operations/build.py:524
 msgid "SyntaxError in COMAR file (%s): %s"
-msgstr ""
+msgstr "SyntaxError in COMAR file (%s): %s"
 
 #: pisi/operations/build.py:536
 msgid "Sandbox violation: %s (%s -> %s)"
-msgstr ""
+msgstr "Sandbox violation: %s (%s -> %s)"
 
 #: pisi/operations/build.py:549 pisi/util.py:552
 msgid "ERROR: WorkDir (%s) does not exist\n"
@@ -2389,23 +2434,23 @@ msgstr "Ошибка: Рабочая папка (%s) не существует\n
 
 #: pisi/operations/build.py:557
 msgid "Sandbox enabled build..."
-msgstr ""
+msgstr "Sandbox enabled build..."
 
 #: pisi/operations/build.py:577
 msgid "Sandbox violation result:"
-msgstr ""
+msgstr "Sandbox violation result:"
 
 #: pisi/operations/build.py:580
 msgid "Sandbox violations!"
-msgstr ""
+msgstr "Sandbox violations!"
 
 #: pisi/operations/build.py:586
 msgid "unable to call function from actions: %s"
-msgstr ""
+msgstr "unable to call function from actions: %s"
 
 #: pisi/operations/build.py:610
 msgid "Safety switch: following extra packages in system.devel will be installed: "
-msgstr ""
+msgstr "Safety switch: following extra packages in system.devel will be installed: "
 
 #: pisi/operations/build.py:615
 msgid "Safety switch: system.devel is already installed"
