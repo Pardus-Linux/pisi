@@ -2778,7 +2778,7 @@ msgstr "Safety switch prevents the removal of following packages:\n"
 
 #: pisi/operations/remove.py:48 pisi/operations/upgrade.py:349
 msgid "Safety switch: The component system.base cannot be found."
-msgstr ""
+msgstr "Safety switch: The component system.base cannot be found."
 
 #: pisi/operations/remove.py:55
 msgid "Package %s does not exist. Cannot remove."
@@ -2793,6 +2793,8 @@ msgid ""
 "The following list of packages will be removed\n"
 "in the respective order to satisfy dependencies:\n"
 msgstr ""
+"The following list of packages will be removed\n"
+"in the respective order to satisfy dependencies:\n"
 
 #: pisi/operations/remove.py:73
 msgid "Package removal declined"
