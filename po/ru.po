@@ -2229,7 +2229,7 @@ msgstr "Распаковка архива (ов)"
 
 #: pisi/operations/build.py:417
 msgid " unpacked (%s)"
-msgstr ""
+msgstr " распаковка (%s)"
 
 #: pisi/operations/build.py:422
 msgid "Setting up source..."
@@ -2309,7 +2309,7 @@ msgstr ""
 
 #: pisi/operations/build.py:635
 msgid "Build dependency %s cannot be satisfied"
-msgstr ""
+msgstr "Выполнение зависимостей %s не может быть удовлетварено"
 
 #: pisi/operations/build.py:637
 msgid "Do you want to install the unsatisfied build dependencies"
@@ -2317,11 +2317,11 @@ msgstr ""
 
 #: pisi/operations/build.py:638
 msgid "Installing build dependencies."
-msgstr ""
+msgstr "Установка выполнения зависимостей."
 
 #: pisi/operations/build.py:644
 msgid "Ignoring build dependencies."
-msgstr ""
+msgstr "Игнорирование Выполнения зависимостей."
 
 #: pisi/operations/build.py:654
 msgid "Patch file is missing: %s\n"
@@ -2329,7 +2329,7 @@ msgstr ""
 
 #: pisi/operations/build.py:670
 msgid "* Applying patch: %s"
-msgstr ""
+msgstr "* Применение патча: %s"
 
 #: pisi/operations/build.py:784
 msgid "/%s has suid bit set"
@@ -2361,7 +2361,7 @@ msgstr "User с именем '%s' не найден в системе"
 
 #: pisi/operations/build.py:964
 msgid "No group named '%s' found on the system"
-msgstr ""
+msgstr "Группа с именем '%s'  не существует в системе"
 
 #: pisi/operations/build.py:971
 msgid "There are abandoned files under the install dir (%s):"
@@ -2369,7 +2369,7 @@ msgstr ""
 
 #: pisi/operations/build.py:1000
 msgid "** Building package %s"
-msgstr ""
+msgstr "** Выполнение пакета %s"
 
 #: pisi/operations/build.py:1002 pisi/operations/build.py:1005
 msgid "Generating %s,"
@@ -2381,7 +2381,7 @@ msgstr ""
 
 #: pisi/operations/build.py:1029
 msgid "Creating PiSi package %s."
-msgstr ""
+msgstr "Создание PiSi пакета %s."
 
 #: pisi/operations/build.py:1079 pisi/operations/delta.py:97
 msgid "Done."
@@ -2397,7 +2397,7 @@ msgstr "Очистка Build директории ..."
 
 #: pisi/operations/build.py:1088
 msgid "Keeping Build Directory"
-msgstr ""
+msgstr "Создание директории для сборки"
 
 #: pisi/operations/build.py:1114
 msgid "*** %d error(s), %d warning(s)"
@@ -2424,6 +2424,8 @@ msgid ""
 "\n"
 "Missing file: /%s"
 msgstr ""
+"\n"
+"Файл отсутствует: /%s"
 
 #: pisi/operations/delta.py:26
 msgid "Cannot create delta for same package!"
@@ -2463,7 +2465,7 @@ msgstr ""
 
 #: pisi/operations/helper.py:57
 msgid "[%s conflicts with: %s]\n"
-msgstr ""
+msgstr "[%s conflicts with: %s]\n"
 
 #: pisi/operations/helper.py:59
 msgid ""
@@ -2522,11 +2524,11 @@ msgstr "Нет пакетов для установки."
 
 #: pisi/operations/install.py:71
 msgid "Following packages will be installed:"
-msgstr ""
+msgstr "Следующие пакеты будут установлены:"
 
 #: pisi/operations/install.py:76 pisi/operations/upgrade.py:178
 msgid "Total size of package(s): %.2f %s"
-msgstr ""
+msgstr "Общий размер пакета (ов): %.2f %s"
 
 #: pisi/operations/install.py:107 pisi/operations/upgrade.py:215
 msgid "Installing %d / %d"
@@ -2574,7 +2576,7 @@ msgstr ""
 
 #: pisi/operations/remove.py:55
 msgid "Package %s does not exist. Cannot remove."
-msgstr ""
+msgstr "Пакет %s не существует. Не могу удалить."
 
 #: pisi/operations/remove.py:59
 msgid "No packages to remove."
@@ -2592,7 +2594,7 @@ msgstr ""
 
 #: pisi/operations/remove.py:85
 msgid "Package %s is not installed. Cannot remove."
-msgstr ""
+msgstr "Пакет %s не установлен. Не могу удалить."
 
 #: pisi/operations/remove.py:120
 msgid "Conflicts remain"
@@ -2624,7 +2626,7 @@ msgstr "Пакет %s не установлен."
 
 #: pisi/operations/upgrade.py:89
 msgid "Package %s is not available in repositories."
-msgstr ""
+msgstr "Пакет %s не доступен в репозиториях."
 
 #: pisi/operations/upgrade.py:106
 msgid "Package %s is already at the latest release %s."
@@ -2644,7 +2646,7 @@ msgstr ""
 
 #: pisi/operations/upgrade.py:263
 msgid "Dependency %s of %s cannot be satisfied"
-msgstr ""
+msgstr "Зависимости %s of %s не могут быть выполнены"
 
 #: pisi/operations/upgrade.py:264
 msgid "Upgrade is not possible."
@@ -2670,7 +2672,7 @@ msgstr ""
 
 #: pisi/pxml/autoxml.py:85
 msgid "'%s' language of tag '%s' is empty"
-msgstr ""
+msgstr "'%s' language of tag '%s' is empty"
 
 #: pisi/pxml/autoxml.py:113
 msgid "LocalText: unable to get either current or default locale"
@@ -2731,11 +2733,11 @@ msgstr ""
 
 #: pisi/pxml/autoxml.py:720 pisi/pxml/autoxml.py:839
 msgid "Object cannot be encoded"
-msgstr ""
+msgstr "Объект не может быть закодирован"
 
 #: pisi/pxml/autoxml.py:734 pisi/pxml/autoxml.py:853
 msgid "Object cannot be formatted"
-msgstr ""
+msgstr "Объект не может быть отформатирован"
 
 #: pisi/pxml/autoxml.py:750
 msgid "List type must contain only one element"
@@ -2791,11 +2793,11 @@ msgstr ""
 
 #: pisi/sourcearchive.py:96
 msgid "Fetching source from mirror: %s"
-msgstr ""
+msgstr "Загрузка кода из зеркала: %s"
 
 #: pisi/sourcearchive.py:102
 msgid "Could not fetch source from %s mirrors."
-msgstr ""
+msgstr "Код не может быть загружен из %s источника."
 
 #: pisi/sourcearchive.py:120
 msgid "unpack: check_file_hash failed"
@@ -2830,8 +2832,9 @@ msgid "Provides: "
 msgstr ""
 
 #: pisi/specfile.py:374
+#, fuzzy
 msgid "Dependencies: "
-msgstr ""
+msgstr "Зависимости:"
 
 #: pisi/specfile.py:414
 msgid "translations.xml file is badly formed."
@@ -2839,7 +2842,7 @@ msgstr ""
 
 #: pisi/specfile.py:441
 msgid "Build Dependencies: "
-msgstr ""
+msgstr "Сборка зависимостей:"
 
 #: pisi/uri.py:78
 msgid "setAuthInfo needs a tuple (user, pass)"
@@ -2851,11 +2854,11 @@ msgstr "Запуск"
 
 #: pisi/util.py:212 pisi/util.py:247
 msgid "return value for \"%s\" is %s"
-msgstr ""
+msgstr "return value for \"%s\" is %s"
 
 #: pisi/util.py:427
 msgid "Including external link '%s'"
-msgstr ""
+msgstr "Including external link '%s'"
 
 #: pisi/util.py:429
 msgid "Including directory '%s'"
@@ -2891,4 +2894,4 @@ msgstr ""
 
 #: pisi/version.py:64
 msgid "Invalid version string: '%s'"
-msgstr ""
+msgstr "Invalid version string: '%s'"
