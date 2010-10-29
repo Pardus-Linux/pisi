@@ -724,7 +724,7 @@ msgstr ""
 "\n"
 "If no repo is given, add-repo pardus-devel repo is added by default\n"
 "\n"
-"NB: We support only local files (e.g., /a/b/c) and http:// URIs at the moment\n"
+"Примечение: в настоящий момент поддерживаются только локальные файлы и ссылки вида http://\n"
 
 #: pisi/cli/addrepo.py:45
 msgid "add-repo options"
@@ -861,11 +861,11 @@ msgstr "Формат бинарных PiSi пакетов: '1.0', '1.1' (по у
 
 #: pisi/cli/build.py:75
 msgid "Use quilt patch management system instead of GNU patch"
-msgstr "Use quilt patch management system instead of GNU patch"
+msgstr "Использовать quilt-патч систему вместо GNU patch"
 
 #: pisi/cli/build.py:77
 msgid "Do not constrain build process inside the build folder"
-msgstr "build шаги"
+msgstr "Не ограничивать процесс сборки внутри build директории"
 
 #: pisi/cli/build.py:80
 msgid "build steps"
@@ -1023,7 +1023,7 @@ msgstr "Принимать ДА во всех ДА/НЕТ запросах"
 
 #: pisi/cli/command.py:105
 msgid "Keep bandwidth usage under specified KB's"
-msgstr "Keep bandwidth usage under specified KB's"
+msgstr "Ограничить пропускную способность заданными рамками"
 
 #: pisi/cli/command.py:108
 msgid "Detailed output"
@@ -1035,11 +1035,11 @@ msgstr "Показать debug информацию"
 
 #: pisi/cli/command.py:112
 msgid "Suppresses all coloring of PiSi's output"
-msgstr "Suppresses all coloring of PiSi's output"
+msgstr "Подавляет весь цветной вывод PiSi"
 
 #: pisi/cli/command.py:130
 msgid "Destination directory %s does not exist. Creating directory.\n"
-msgstr "Destination directory %s does not exist. Creating directory.\n"
+msgstr "Целевая директория %s не существует. Создание директории.\n"
 
 #: pisi/cli/command.py:152
 msgid "Password: "
@@ -1051,11 +1051,11 @@ msgstr "Команда завершилась неудачей."
 
 #: pisi/cli/command.py:206 pisi/cli/emerge.py:53
 msgid "Bypass comar configuration agent"
-msgstr "Bypass comar configuration agent"
+msgstr "Bypass comar агент подтверждения"
 
 #: pisi/cli/command.py:210
 msgid "Do not perform any action, just show what would be done"
-msgstr "Do not perform any action, just show what would be done"
+msgstr "Ничего не делать, просто показывать, что должно быть сделано"
 
 #: pisi/cli/command.py:228
 msgid "usage: %s\n"
@@ -1070,12 +1070,12 @@ msgid ""
 "of packages waiting to be configured. This command\n"
 "configures those packages.\n"
 msgstr ""
-"Configure pending packages\n"
+"Конфигурирование отложенных пакетов\n"
 "\n"
-"If COMAR configuration of some packages were not\n"
-"done at installation time, they are added to a list\n"
-"of packages waiting to be configured. This command\n"
-"configures those packages.\n"
+"If COMAR конфигурация некоторых пакетов не\n"
+"была произведена во время установки\n"
+"Они были занесены в список для конфигурирования. Эта команда\n"
+"настраивает такие пакеты.\n"
 
 #: pisi/cli/configurepending.py:39
 msgid "configure-pending options"
@@ -1109,12 +1109,12 @@ msgid ""
 "and creates a delta pisi package with the changed files between two releases.\n"
 "\n"
 msgstr ""
-"Creates delta PiSi packages\n"
+"Создает delta PiSi пакеты\n"
 "\n"
-"Usage: delta oldpackage newpackage\n"
+"Использовангие: delta старыйпакет новыйпакет\n"
 "\n"
-"Delta command finds the changed files between the given packages by comparing the sha1sum of the files\n"
-"and creates a delta pisi package with the changed files between two releases.\n"
+"Delta команда находит измененные файлы между двумя заданными, сравнивая sha1sum файлов\n"
+"и создает delta pisi пакет с разницей между ними.\n"
 "\n"
 
 #: pisi/cli/delta.py:40
