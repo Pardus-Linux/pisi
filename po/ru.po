@@ -96,7 +96,7 @@ msgid ""
 "Please file a bug report to <http://bugs.pardus.org.tr>."
 msgstr ""
 "Необработанное внутреннее исключение. \n"
-"Пожалуйста отпавьте отчет об ошибке в <http://bugs.pardus.org.tr> ."
+"Пожалуйста отправьте отчет об ошибке в <http://bugs.pardus.org.tr> ."
 
 #: pisi-cli:54
 msgid "System error. Program terminated."
