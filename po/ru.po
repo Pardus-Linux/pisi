@@ -837,7 +837,7 @@ msgstr "Не принимайте информацию о зависимостя
 
 #: pisi/cli/build.py:62 pisi/cli/delta.py:46
 msgid "Output directory for produced packages"
-msgstr "Output directory for produced packages"
+msgstr "Директория для созданных пакетов"
 
 #: pisi/cli/build.py:65
 msgid "Bypass errors from ActionsAPI"
@@ -853,7 +853,7 @@ msgstr "Bypass шаг тестирования"
 
 #: pisi/cli/build.py:71
 msgid "Create a static package with ar files"
-msgstr "Create a static package with ar files"
+msgstr "Создать статический пакет с ar файлами"
 
 #: pisi/cli/build.py:73
 msgid "PiSi binary package formats: '1.0', '1.1' (default)"
@@ -873,27 +873,27 @@ msgstr "build шаги"
 
 #: pisi/cli/build.py:82
 msgid "Break build after fetching the source archive"
-msgstr "Break build after fetching the source archive"
+msgstr "Прервать создание после получения архива с исходниками"
 
 #: pisi/cli/build.py:84
 msgid "Break build after unpacking the source archive, checking sha1sum and applying patches"
-msgstr "Break build after unpacking the source archive, checking sha1sum and applying patches"
+msgstr "Прервать создание после распаковки архива с исходниками, проверка контрольной суммы и применение патчей"
 
 #: pisi/cli/build.py:86
 msgid "Break build after running configure step"
-msgstr "Break build after running configure step"
+msgstr "Прервать создание после запуска шага настройки"
 
 #: pisi/cli/build.py:88
 msgid "Break build after running compile step"
-msgstr "Break build after running compile step"
+msgstr "Прервать создание после запуска шага компиляции"
 
 #: pisi/cli/build.py:90
 msgid "Break build after running check step"
-msgstr "Break build after running check step"
+msgstr "Прервать создание после запуска шага проверки"
 
 #: pisi/cli/build.py:92
 msgid "Break build after running install step"
-msgstr "Break build after running install step"
+msgstr "Прервать создание после запуска шага установки"
 
 #: pisi/cli/build.py:94
 msgid "create PiSi package"
@@ -909,7 +909,7 @@ msgstr "Конечная папка: %s"
 
 #: pisi/cli/build.py:113 pisi/cli/delta.py:61
 msgid "Outputting packages in the working directory."
-msgstr "Outputting packages in the working directory."
+msgstr "Вывод пакетов в рабочую директорию."
 
 #: pisi/cli/check.py:25
 msgid ""
@@ -925,17 +925,17 @@ msgid ""
 "\n"
 "If no packages are given, checks all installed packages.\n"
 msgstr ""
-"Verify installation\n"
+"Проверка установки\n"
 "\n"
-"Использование: check [<package1> <package2> ... <packagen>]\n"
+"Использование: check [<пакет1> <пакет2> ... <packagen>]\n"
 "\n"
-"<packagei>: package name\n"
+"<packagei>: имя пакета\n"
 "\n"
-"A cryptographic checksum is stored for each installed\n"
-"file. Check command uses the checksums to verify a package.\n"
-"Just give the names of packages.\n"
+"Криптографические контрольные суммы хранятся для каждого установленного\n"
+"файла. Команда проверки используется для проверки контрольных сумм\n"
+"при верификации пакетов. Просто задайте имена пакетов.\n"
 "\n"
-"If no packages are given, checks all installed packages.\n"
+"Если пакеты не заданы, то проверяются все установленные пакеты.\n"
 
 #: pisi/cli/check.py:47
 msgid "check options"
@@ -947,7 +947,7 @@ msgstr "Проверка установленных пакетов по данн
 
 #: pisi/cli/check.py:51
 msgid "Checks only changed config files of the packages"
-msgstr "Checks only changed config files of the packages"
+msgstr "Проверять только измененные конфигурационные файлы из пакетов"
 
 #: pisi/cli/check.py:66
 msgid "Checking all installed packages"
@@ -963,7 +963,7 @@ msgid ""
 "Package %s has changed config files."
 msgstr ""
 "\n"
-"Package %s has changed config files."
+"Пакет %s имеет измененные конфигурационные файлы."
 
 #: pisi/cli/check.py:79
 msgid ""
@@ -1003,11 +1003,11 @@ msgstr "Нет комманды с таким именем"
 
 #: pisi/cli/command.py:34
 msgid "Duplicate command %s"
-msgstr "Duplicate command %s"
+msgstr "Дубликат комманды %s"
 
 #: pisi/cli/command.py:71 pisi/cli/pisicli.py:134
 msgid "Unrecognized command: %s"
-msgstr "Unrecognized command: %s"
+msgstr "Непонятная комманда: %s"
 
 #: pisi/cli/command.py:96
 msgid "general options"
@@ -1019,7 +1019,7 @@ msgstr "Change the system root for PiSi commands"
 
 #: pisi/cli/command.py:101
 msgid "Assume yes in all yes/no queries"
-msgstr "Assume yes in all yes/no queries"
+msgstr "Принимать ДА во всех ДА/НЕТ запросах"
 
 #: pisi/cli/command.py:105
 msgid "Keep bandwidth usage under specified KB's"
