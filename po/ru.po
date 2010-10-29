@@ -2898,11 +2898,11 @@ msgstr "autoxml.check: '%s' ошибка"
 
 #: pisi/pxml/autoxml.py:427 pisi/pxml/autoxml.py:437
 msgid "autoxml.parse: String '%s' has errors"
-msgstr "autoxml.parse: String '%s' has errors"
+msgstr "autoxml.parse: Строка '%s' содержит ошибки"
 
 #: pisi/pxml/autoxml.py:451 pisi/pxml/autoxml.py:461
 msgid "autoxml.read: File '%s' has errors"
-msgstr "autoxml.read: File '%s' has errors"
+msgstr "autoxml.read: Файл '%s' содержит ошибки"
 
 #: pisi/pxml/autoxml.py:469
 msgid "autoxml.write: object validation has failed"
@@ -2910,7 +2910,7 @@ msgstr "autoxml.write: object validation has failed"
 
 #: pisi/pxml/autoxml.py:477
 msgid "autoxml.write: File encoding '%s' has errors"
-msgstr "autoxml.write: File encoding '%s' has errors"
+msgstr "autoxml.write: Кодирока файла '%s' содержит ошибки"
 
 #: pisi/pxml/autoxml.py:527
 msgid "gen_tag: unrecognized tag type %s in spec"
@@ -2963,15 +2963,15 @@ msgstr "getNodeText: Expected text node, got something else!"
 
 #: pisi/pxml/xmlfile.py:60
 msgid "String '%s' has invalid XML"
-msgstr "String '%s' has invalid XML"
+msgstr "Строка '%s' имеет неверный код XML"
 
 #: pisi/pxml/xmlfile.py:83
 msgid "Unable to read file (%s): %s"
-msgstr "Unable to read file (%s): %s"
+msgstr "Невозможно прочитать файл (%s): %s"
 
 #: pisi/pxml/xmlfile.py:85 pisi/specfile.py:423
 msgid "File '%s' has invalid XML"
-msgstr "File '%s' has invalid XML"
+msgstr "Файл '%s' содержит неверный код XML"
 
 #: pisi/scenarioapi/package.py:67
 msgid "No pisi package: %s* found."
@@ -2979,11 +2979,11 @@ msgstr "PiSi пакет: %s* не найден."
 
 #: pisi/scenarioapi/repoops.py:28
 msgid "Repo already has package named %s."
-msgstr "Repo already has package named %s."
+msgstr "Репозиторий уже имеет пакет с именем %s."
 
 #: pisi/scenarioapi/repoops.py:52 pisi/scenarioapi/repoops.py:59
 msgid "Repo does not have package named %s."
-msgstr "Repo does not have package named %s."
+msgstr "Репозиторий не содержит пакет с именем %s."
 
 #: pisi/sourcearchive.py:63
 msgid "Fetching source from: %s"
@@ -2991,7 +2991,7 @@ msgstr "Получение исходных кодов: %s"
 
 #: pisi/sourcearchive.py:74
 msgid "Source archive is stored: %s/%s"
-msgstr "Source archive is stored: %s/%s"
+msgstr "Архив исходников сохранен: %s/%s"
 
 #: pisi/sourcearchive.py:80
 msgid "Trying fallback address: %s"
@@ -2999,7 +2999,7 @@ msgstr "Trying fallback address: %s"
 
 #: pisi/sourcearchive.py:91
 msgid "%s mirrors are not defined."
-msgstr "%s mirrors are not defined."
+msgstr "%s зеркала не определены."
 
 #: pisi/sourcearchive.py:96
 msgid "Fetching source from mirror: %s"
@@ -3027,7 +3027,7 @@ msgstr "Имя: %s, версия: %s, релиз: %s, билд %s\n"
 
 #: pisi/specfile.py:367 pisi/specfile.py:438
 msgid "Summary: %s\n"
-msgstr "Summary: %s\n"
+msgstr "Суммарно: %s\n"
 
 #: pisi/specfile.py:368 pisi/specfile.py:439
 msgid "Description: %s\n"
@@ -3047,7 +3047,7 @@ msgstr "Зависимости:"
 
 #: pisi/specfile.py:414
 msgid "translations.xml file is badly formed."
-msgstr "translations.xml file is badly formed."
+msgstr "Файл translations.xml неправильно сформирован."
 
 #: pisi/specfile.py:441
 msgid "Build Dependencies: "
@@ -3063,11 +3063,11 @@ msgstr "Запуск"
 
 #: pisi/util.py:212 pisi/util.py:247
 msgid "return value for \"%s\" is %s"
-msgstr "return value for \"%s\" is %s"
+msgstr "возвращение значения для \"%s\" есть %s"
 
 #: pisi/util.py:427
 msgid "Including external link '%s'"
-msgstr "Including external link '%s'"
+msgstr "Включая внешнюю ссылку '%s'"
 
 #: pisi/util.py:429
 msgid "Including directory '%s'"
@@ -3103,4 +3103,4 @@ msgstr "objcopy (add-debuglink) command failed for file '%s'!"
 
 #: pisi/version.py:64
 msgid "Invalid version string: '%s'"
-msgstr "Invalid version string: '%s'"
+msgstr "Недопустимая строка версии: '%s'"
