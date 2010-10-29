@@ -112,7 +112,7 @@ msgid ""
 "Traceback:"
 msgstr ""
 "\n"
-"Трассировеа:"
+"Трассировка:"
 
 #: pisi-cli:69
 msgid "Use --debug to see a traceback."
@@ -123,7 +123,7 @@ msgid ""
 "Please attach the config.log to your bug report:\n"
 "%s/config.log"
 msgstr ""
-"Пожалуйста отправте config.log в  bug report:\n"
+"Пожалуйста отправьте config.log в  bug report:\n"
 "%s/config.log"
 
 #: pisi/actionsapi/autotools.py:78 pisi/actionsapi/autotools.py:88
@@ -196,7 +196,7 @@ msgid ""
 "%s/config.log"
 msgstr ""
 "\n"
-"!!! Пожалуйста отправте config.log в bug report:\n"
+"!!! Пожалуйста отправьте config.log в bug report:\n"
 "%s/config.log"
 
 #: pisi/actionsapi/kerneltools.py:117
