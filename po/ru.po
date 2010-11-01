@@ -2663,23 +2663,23 @@ msgstr "Не найден исходный пакет: %s"
 
 #: pisi/operations/helper.py:51
 msgid "Selected packages [%s] are in conflict with each other."
-msgstr "Selected packages [%s] are in conflict with each other."
+msgstr "Выбранные пакеты [%s] имеют конфликты друг с другом."
 
 #: pisi/operations/helper.py:57
 msgid "[%s conflicts with: %s]\n"
-msgstr "[%s conflicts with: %s]\n"
+msgstr "[%s конфликтует с: %s]\n"
 
 #: pisi/operations/helper.py:59
 msgid ""
 "The following packages have conflicts:\n"
 "%s"
 msgstr ""
-"The following packages have conflicts:\n"
+"Следующие пакеты имеют конфликты:\n"
 "%s"
 
 #: pisi/operations/helper.py:62
 msgid "Remove the following conflicting packages?"
-msgstr "Remove the following conflicting packages?"
+msgstr "Удалить следующие конфликтующие пакеты?"
 
 #: pisi/operations/helper.py:63
 msgid "Conflicting packages should be removed to continue"
@@ -2695,11 +2695,11 @@ msgstr "%s [cached]"
 
 #: pisi/operations/history.py:147
 msgid "Following packages will be installed:\n"
-msgstr "Following packages will be installed:\n"
+msgstr "Следующие пакеты будут установлены:\n"
 
 #: pisi/operations/history.py:150
 msgid "Following packages will be removed:\n"
-msgstr "Following packages will be removed:\n"
+msgstr "Следующие пакеты будут удалены:\n"
 
 #: pisi/operations/history.py:152 pisi/operations/history.py:166
 #: pisi/operations/install.py:200 pisi/operations/remove.py:72
