@@ -1327,7 +1327,7 @@ msgstr "обновление ропозиториев"
 
 #: pisi/cli/history.py:28
 msgid "snapshot"
-msgstr "snapshot"
+msgstr "снапшот"
 
 #: pisi/cli/history.py:28
 msgid "takeback"
@@ -1335,7 +1335,7 @@ msgstr "трасировка"
 
 #: pisi/cli/history.py:28
 msgid "upgrade"
-msgstr "upgrade"
+msgstr "апгрейд"
 
 #: pisi/cli/history.py:31
 msgid ""
@@ -1353,15 +1353,15 @@ msgstr ""
 
 #: pisi/cli/history.py:47
 msgid "history options"
-msgstr "history опции"
+msgstr "опции истории"
 
 #: pisi/cli/history.py:53
 msgid "Output only the last n operations"
-msgstr "Output only the last n operations"
+msgstr "Выводить только последние n операций"
 
 #: pisi/cli/history.py:55
 msgid "Take snapshot of the current system"
-msgstr "Take snapshot of the current system"
+msgstr "Сделать снапшот из существующей системы"
 
 #: pisi/cli/history.py:57
 msgid "Takeback to the state after the given operation finished"
@@ -1377,7 +1377,7 @@ msgstr "Дата: %s %s"
 
 #: pisi/cli/history.py:72
 msgid "    * There are %d packages in this snapshot."
-msgstr "    * There are %d packages in this snapshot."
+msgstr "    * Всего %d пакетов в этом снапшоте."
 
 #: pisi/cli/index.py:23
 msgid ""
@@ -1509,7 +1509,7 @@ msgstr "[source] "
 
 #: pisi/cli/info.py:189
 msgid "%s package is not found in source repositories"
-msgstr "%s пекет не найден в репозиториях с исходными кодами"
+msgstr "%s пакет не найден в репозиториях с исходными кодами"
 
 #: pisi/cli/install.py:25
 msgid ""
