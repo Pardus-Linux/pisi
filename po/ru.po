@@ -339,11 +339,11 @@ msgstr "ActionsAPI [move]: Нет файла, соответствующего �
 
 #: pisi/actionsapi/shelltools.py:134
 msgid "ActionsAPI [move]: Permission denied: %s to %s"
-msgstr "ActionsAPI [move]: Доступ запрещен: %s в %s"
+msgstr "ActionsAPI [move]:  Доступ запрещен: %s в %s"
 
 #: pisi/actionsapi/shelltools.py:136
 msgid "ActionsAPI [move]: File %s doesn't exists."
-msgstr "ActionsAPI [move]: Файл %s не существует."
+msgstr "ActionsAPI [move]:  Файл %s не существует."
 
 #: pisi/actionsapi/shelltools.py:143
 msgid "ActionsAPI [copy]: No file matched pattern \"%s\"."
