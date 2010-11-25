@@ -1108,10 +1108,15 @@ msgid ""
 "of packages waiting to be configured. This command\n"
 "configures those packages.\n"
 msgstr ""
+"Beállításra váró csomagok\n"
+"Ha néhány csomag comar-beállítása nem történt meg\n"
+"a telepítés során, akkor egy a beállításra váró fájlok\n"
+"listájába kerülnek. Ez a parancs elvégzi ezen csomagok\n"
+"beállítását.\n"
 
 #: pisi/cli/configurepending.py:39
 msgid "configure-pending options"
-msgstr "konfigurálás alatt álló opciók"
+msgstr "configure-pending opciók"
 
 #: pisi/cli/deletecache.py:22
 msgid ""
