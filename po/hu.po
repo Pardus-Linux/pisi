@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PiSi\n"
 "POT-Creation-Date: 2010-06-03 09:08+EEST\n"
-"PO-Revision-Date: 2010-11-27 13:39+0100\n"
+"PO-Revision-Date: 2010-11-28 21:43+0100\n"
 "Last-Translator: Zoltan Siposs <zoltan.siposs@gmail.com>\n"
 "Language-Team: Hungarian <pardus-translators@pardus.org.tr>\n"
 "MIME-Version: 1.0\n"
@@ -2063,8 +2063,7 @@ msgid ""
 "expanded to package names.\n"
 msgstr ""
 "PiSi csomagok frissítése\n"
-"\b "
-"Használata: upgrade [<csomag1> <csomag2> ... <csomagN>]\n"
+"\b Használata: upgrade [<csomag1> <csomag2> ... <csomagN>]\n"
 "\n"
 "<csomagX>: csomag neve\n"
 "\n"
@@ -2104,9 +2103,7 @@ msgstr "A rendszer frissítése során lépje át azokat a csomagokat és kompon
 
 #: pisi/cli/upgrade.py:74
 msgid "When upgrading system, ignore packages and components whose basenames match any pattern contained in file."
-msgstr ""
-"A rendszer frissítése során lépje át azokat a csomagokat és komponenseket amelyek neve illeszkedik a megadott fájlban található valamelyik "
-"mintára."
+msgstr "A rendszer frissítése során lépje át azokat a csomagokat és komponenseket amelyek neve illeszkedik a megadott fájlban található valamelyik mintára."
 
 #: pisi/cli/upgrade.py:88
 msgid "Updating repositories"
@@ -3055,167 +3052,166 @@ msgstr "Az objektum nem formázható"
 
 #: pisi/pxml/autoxml.py:750
 msgid "List type must contain only one element"
-msgstr ""
+msgstr "A lista típus csak egy elemet tartalmazhat"
 
 #: pisi/pxml/autoxml.py:763
 #: pisi/pxml/autoxml.py:784
 msgid "Mandatory list \"%s\" under \"%s\" node is empty."
-msgstr ""
+msgstr "Üres az alapvető \"%s\" lista a(z) \"%s\" node alatt."
 
 #: pisi/pxml/xmlext.py:79
 msgid "getNodeText: Expected text node, got something else!"
-msgstr ""
+msgstr "getNodeText: Szöveges node-ot vártam, de valami mást kaptam!"
 
 #: pisi/pxml/xmlfile.py:60
 msgid "String '%s' has invalid XML"
-msgstr ""
+msgstr "A(z) '%s' sztring hibás XML adatot tartalmaz"
 
 #: pisi/pxml/xmlfile.py:83
 msgid "Unable to read file (%s): %s"
-msgstr ""
+msgstr "Nem olvasható a fájl (%s): %s"
 
 #: pisi/pxml/xmlfile.py:85
 #: pisi/specfile.py:423
 msgid "File '%s' has invalid XML"
-msgstr ""
+msgstr "A(z) '%s' fájl hibás XML adatot tartalmaz"
 
 #: pisi/scenarioapi/package.py:67
 msgid "No pisi package: %s* found."
-msgstr ""
+msgstr "Nem található %s* pisi csomag."
 
 #: pisi/scenarioapi/repoops.py:28
 msgid "Repo already has package named %s."
-msgstr ""
+msgstr "A tároló már tartalmaz egy %s nevű csomagot."
 
 #: pisi/scenarioapi/repoops.py:52
 #: pisi/scenarioapi/repoops.py:59
 msgid "Repo does not have package named %s."
-msgstr ""
+msgstr "A tároló nem tartalmaz %s nevű csomagot."
 
 #: pisi/sourcearchive.py:63
 msgid "Fetching source from: %s"
-msgstr ""
+msgstr "A forrás letöltése innen: %s"
 
 #: pisi/sourcearchive.py:74
 msgid "Source archive is stored: %s/%s"
-msgstr ""
+msgstr "A forrás csomag eltárolva: %s/%s"
 
 #: pisi/sourcearchive.py:80
 msgid "Trying fallback address: %s"
-msgstr ""
+msgstr "Próbálom a tartalék címet: %s"
 
 #: pisi/sourcearchive.py:91
 msgid "%s mirrors are not defined."
-msgstr ""
+msgstr "%s nevű tükörkiszolgálók nincsenek definiálva."
 
 #: pisi/sourcearchive.py:96
 msgid "Fetching source from mirror: %s"
-msgstr ""
+msgstr "Forrás letöltése egy tükörszerverről: %s"
 
 #: pisi/sourcearchive.py:102
 msgid "Could not fetch source from %s mirrors."
-msgstr ""
+msgstr "Nem tudom letölteni a forrás a(z) %s tükörkiszolgálóról."
 
 #: pisi/sourcearchive.py:120
 msgid "unpack: check_file_hash failed"
-msgstr ""
+msgstr "kicsomagolás: check_file_hash művelet sikertelen"
 
 #: pisi/specfile.py:164
 msgid "URI: %s, type: %s, sha1sum: %s"
-msgstr ""
+msgstr "URI: %s, típus: %s, sha1sum: %s"
 
 #: pisi/specfile.py:194
 #: pisi/specfile.py:197
 msgid " or "
-msgstr ""
+msgstr "vagy"
 
 #: pisi/specfile.py:365
 msgid "Name: %s, version: %s, release: %s, build %s\n"
-msgstr ""
+msgstr "Név: %s, verzió: %s, kiadás: %s, build: %s\n"
 
 #: pisi/specfile.py:367
 #: pisi/specfile.py:438
 msgid "Summary: %s\n"
-msgstr ""
+msgstr "Összefoglalás: %s\n"
 
 #: pisi/specfile.py:368
 #: pisi/specfile.py:439
 msgid "Description: %s\n"
-msgstr ""
+msgstr "Leírás: %s\n"
 
 #: pisi/specfile.py:369
 #: pisi/specfile.py:440
 msgid "Component: %s\n"
-msgstr ""
+msgstr "Komponens: %s\n"
 
 #: pisi/specfile.py:370
 msgid "Provides: "
-msgstr ""
+msgstr "Szolgáltat:"
 
 #: pisi/specfile.py:374
 msgid "Dependencies: "
-msgstr ""
+msgstr "Függőségek:"
 
 #: pisi/specfile.py:414
 msgid "translations.xml file is badly formed."
-msgstr ""
+msgstr "a translation.xml fájl hibás formátumú"
 
 #: pisi/specfile.py:441
 msgid "Build Dependencies: "
-msgstr ""
+msgstr "Build függőségek:"
 
 #: pisi/uri.py:78
 msgid "setAuthInfo needs a tuple (user, pass)"
-msgstr ""
+msgstr "a setAuthInfo bemenete egy tuple (user, pass)"
 
 #: pisi/util.py:208
 #: pisi/util.py:229
 msgid "Running "
-msgstr ""
+msgstr "Folyamatban"
 
 #: pisi/util.py:212
 #: pisi/util.py:247
 msgid "return value for \"%s\" is %s"
-msgstr ""
+msgstr "\"%s\" visszatéréis értéke %s"
 
 #: pisi/util.py:427
 msgid "Including external link '%s'"
-msgstr ""
+msgstr "A(z) '%s' külső hivatkozás hozzáadva"
 
 #: pisi/util.py:429
 msgid "Including directory '%s'"
-msgstr ""
+msgstr "A(z) '%s' könyvtár hozzáadva"
 
 #: pisi/util.py:517
 msgid "Cannot calculate SHA1 hash of %s"
-msgstr ""
+msgstr "Nem tudom kiszámítani %s SHA1 értékét"
 
 #: pisi/util.py:578
 msgid "ERROR: patch (%s) failed"
-msgstr ""
+msgstr "HIBA: a patch (%s) alkalmazása nem sikerült"
 
 #: pisi/util.py:580
 msgid "ERROR: patch (%s) failed: %s"
-msgstr ""
+msgstr "HIBA: a patch (%s) alkalmazása nem sikerült: %s"
 
 #: pisi/util.py:590
 msgid "strip command failed for file '%s'!"
-msgstr ""
+msgstr "A strip parancsot nem tudtam végrehajtani a(z) %s fájlon!"
 
 #: pisi/util.py:597
 msgid "chrpath command failed for file '%s'!"
-msgstr ""
+msgstr "A chrpath parancsot nem tudtam végrehajtani a(z) %s fájlon!"
 
 #: pisi/util.py:604
 msgid "objcopy (keep-debug) command failed for file '%s'!"
-msgstr ""
+msgstr "Az objcopy (keep-debug) parancsot nem tudtam végrehajtani a(z) %s fájlon!"
 
 #: pisi/util.py:610
 msgid "objcopy (add-debuglink) command failed for file '%s'!"
-msgstr ""
+msgstr "Az objcopy (add-debuglink) parancsot nem tudtam végrehajtani a(z) %s fájlon!"
 
 #: pisi/version.py:64
 msgid "Invalid version string: '%s'"
-msgstr ""
-
+msgstr "Érvénytelen verzió-sztring: '%s'"
 
