@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: pisi\n"
@@ -613,9 +614,8 @@ msgid "%s package cannot be installed unless the dependencies are satisfied"
 msgstr "%s pakiet nie może zostać zainstalowany, dopóki nie zostaną spełnione zależności"
 
 #: pisi/atomicoperations.py:220
-#, fuzzy
 msgid "/%s from %s package\n"
-msgstr "/%s z pakietu %s"
+msgstr "/%s z pakietu %s \n"
 
 #: pisi/atomicoperations.py:221
 msgid ""
@@ -1598,12 +1598,12 @@ msgid ""
 "Lists currently tracked repositories.\n"
 msgstr ""
 
-#: pisi/cli/listrepo.py:41 pisi/cli/listrepo.py:42
-msgid "active"
-msgstr ""
-
 #: pisi/cli/listrepo.py:41
 msgid "inactive"
+msgstr ""
+
+#: pisi/cli/listrepo.py:41 pisi/cli/listrepo.py:42
+msgid "active"
 msgstr ""
 
 #: pisi/cli/listrepo.py:43 pisi/cli/listrepo.py:45
@@ -2909,7 +2909,6 @@ msgstr ""
 msgid "Invalid version string: '%s'"
 msgstr ""
 
-#, fuzzy
 #~ msgid "Repository distribution does not match. Removing %s from system."
 #~ msgstr "Repozytorium %s nie istnieje. Nie można usunąć."
 
@@ -2941,7 +2940,6 @@ msgstr ""
 #~ msgid "Invalid %s"
 #~ msgstr "Niepoprawny %s"
 
-#, fuzzy
 #~ msgid "Item not found"
 #~ msgstr "Plik %s nie został znaleziony"
 
@@ -3089,14 +3087,12 @@ msgstr ""
 #~ msgid "ActionsAPI [rename]: No such file or directory: %s"
 #~ msgstr "ActionsAPI [rename]: Niema takiego pliku lub katalogu: %s"
 
-#, fuzzy
 #~ msgid "dbus-python package is not fully installed"
 #~ msgstr "pakiet comar nie jest w pełni zainstalowana"
 
 #~ msgid "Stripping files.."
 #~ msgstr "Odchudzam pliki..."
 
-#, fuzzy
 #~ msgid "Repository architecture does not match. Removing %s from system."
 #~ msgstr "Repozytorium %s nie istnieje. Nie można usunąć."
 
