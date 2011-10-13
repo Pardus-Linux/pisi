@@ -14,11 +14,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Country: CROATIA\n"
 "Language: \n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Croatian\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-Country: CROATIA\n"
 
 #: /usr/lib/python2.7/optparse.py:140
 #, python-format
@@ -2413,7 +2413,7 @@ msgstr ""
 #: pisi/metadata.py:78
 #, python-format
 msgid "Distribution: %s, Dist. Release: %s\n"
-msgstr ""
+msgstr "Distribucija: %s, Dist. izdanje: %s\n"
 
 #: pisi/metadata.py:80
 #, python-format
@@ -2470,11 +2470,11 @@ msgstr ""
 
 #: pisi/operations/build.py:494
 msgid "Cannot find component.xml in remote directory, Source is now part of unknown component"
-msgstr ""
+msgstr "Ne mogu pronaći component.xml u udaljenom direktoriju, Izvor je sada dio nepoznate komponente"
 
 #: pisi/operations/build.py:502
 msgid "Cannot find component.xml in upper directory, Source is now part of unknown component"
-msgstr ""
+msgstr "Ne mogu pronaći component.xml u gornjemdirektoriju, Izvor je sada dio nepoznate komponente"
 
 #: pisi/operations/build.py:516
 msgid "Unpacking archive(s)..."
@@ -2487,7 +2487,7 @@ msgstr "raspakiran (%s)"
 
 #: pisi/operations/build.py:529
 msgid "Setting up source..."
-msgstr ""
+msgstr "Postavljanje izvora ..."
 
 #: pisi/operations/build.py:534
 msgid "Building source..."
@@ -2594,12 +2594,12 @@ msgstr ""
 #: pisi/operations/build.py:826
 #, python-format
 msgid "Patch file is missing: %s\n"
-msgstr ""
+msgstr "Patch datoteka nedostaje: %s\n"
 
 #: pisi/operations/build.py:828
 #, python-format
 msgid "Patch file is empty: %s"
-msgstr ""
+msgstr "Patch datoteka je prazna:%s"
 
 #: pisi/operations/build.py:844
 #, python-format
@@ -2614,12 +2614,12 @@ msgstr ""
 #: pisi/operations/build.py:1039
 #, python-format
 msgid "No user named '%s' found on the system"
-msgstr ""
+msgstr "Nijedan korisnik po imenu '%s' nije nađen u sustavu"
 
 #: pisi/operations/build.py:1045
 #, python-format
 msgid "No group named '%s' found on the system"
-msgstr ""
+msgstr "Nijedna grupa po imenu '%s'nije nađena u sustavu "
 
 #: pisi/operations/build.py:1052
 #, python-format
@@ -2629,7 +2629,7 @@ msgstr ""
 #: pisi/operations/build.py:1080
 #, python-format
 msgid "Ignoring empty package %s"
-msgstr ""
+msgstr "Ignoriranje praznog paketa %s"
 
 #: pisi/operations/build.py:1084
 #, python-format
@@ -2671,17 +2671,17 @@ msgstr ""
 #: pisi/operations/delta.py:49
 #, python-format
 msgid "Package '%s' has the same release number with the new package. Skipping it..."
-msgstr ""
+msgstr "Paket '%s' ima isti broj izdanja s novim paketom. Preskoči ..."
 
 #: pisi/operations/delta.py:69
 #, python-format
 msgid "All files in the package '%s' are different from the files in the new package. Skipping it..."
-msgstr ""
+msgstr "Svi datoteke u paketu '%s' razlikuju se od datoteka u novom paketu. Preskoči ..."
 
 #: pisi/operations/delta.py:113
 #, python-format
 msgid "New package '%s' exists in the list of old packages. Skipping it..."
-msgstr ""
+msgstr "Novi paket '%s' postoji na popisu starih paketa. Preskoči ..."
 
 #: pisi/operations/emerge.py:35
 msgid "No packages to emerge."
@@ -2726,6 +2726,8 @@ msgid ""
 "The following packages have conflicts:\n"
 "%s"
 msgstr ""
+"Sljedeći paketi su u sukobu:\n"
+"%s"
 
 #: pisi/operations/helper.py:62
 msgid "Remove the following conflicting packages?"
@@ -2743,7 +2745,7 @@ msgstr "%s nije moguće pronaći"
 #: pisi/operations/history.py:95 pisi/package.py:107 pisi/sourcearchive.py:110
 #, python-format
 msgid "%s [cached]"
-msgstr ""
+msgstr "%s [spremljeno]"
 
 #: pisi/operations/history.py:143
 msgid "Following packages will be installed:\n"
@@ -2770,6 +2772,8 @@ msgid ""
 "\n"
 "Following packages could not be found in repositories and are not cached:\n"
 msgstr ""
+"\n"
+"Slijedeće pakete nije moguće pronaći u spremištima i nisu spremljene:\n"
 
 #: pisi/operations/install.py:47 pisi/operations/install.py:134
 msgid "The following package(s) are already installed and are not going to be installed again:"
@@ -2795,7 +2799,7 @@ msgstr "Instaliram  %d / %d"
 
 #: pisi/operations/install.py:121
 msgid "Mixing file names and package names not supported yet."
-msgstr ""
+msgstr "Miješanje imena datoteka i imena paketa još nije podržano."
 
 #: pisi/operations/install.py:165
 #, python-format
@@ -2854,7 +2858,7 @@ msgstr ""
 
 #: pisi/operations/remove.py:73
 msgid "Package removal declined"
-msgstr ""
+msgstr "Odbijeno uklanjanje paketa"
 
 #: pisi/operations/remove.py:85
 #, python-format
@@ -2879,7 +2883,7 @@ msgstr "Morate ponovno pokrenuti sljedeće uslugu(e) ručno za dopunjeni  softwa
 
 #: pisi/operations/upgrade.py:59
 msgid "You must restart your system for the updates in the following package(s) to take effect:"
-msgstr ""
+msgstr "Morate ponovo pokrenuti vaš sustav da bi dopune u sljedećim paketu(a) stupile na snagu:"
 
 #: pisi/operations/upgrade.py:81
 msgid "Warning: package *name* ends with '.pisi'"
@@ -2963,7 +2967,7 @@ msgstr ""
 #: pisi/pxml/autoxml.py:372
 #, python-format
 msgid "autoxml.check: '%s' errors"
-msgstr ""
+msgstr "autoxml.check: '%s' pogreške"
 
 #: pisi/pxml/autoxml.py:427 pisi/pxml/autoxml.py:437
 #, python-format
@@ -2973,7 +2977,7 @@ msgstr ""
 #: pisi/pxml/autoxml.py:451 pisi/pxml/autoxml.py:461
 #, python-format
 msgid "autoxml.read: File '%s' has errors"
-msgstr ""
+msgstr "autoxml.read: Datoteka '%s' sadrži pogreške"
 
 #: pisi/pxml/autoxml.py:469
 msgid "autoxml.write: object validation has failed"
@@ -2982,7 +2986,7 @@ msgstr ""
 #: pisi/pxml/autoxml.py:477
 #, python-format
 msgid "autoxml.write: File encoding '%s' has errors"
-msgstr ""
+msgstr "autoxml.write: Datoteka kodiranja '%s' sadrži pogreške"
 
 #: pisi/pxml/autoxml.py:527
 #, python-format
@@ -3027,7 +3031,7 @@ msgstr "Objekt ne može biti formiran"
 
 #: pisi/pxml/autoxml.py:750
 msgid "List type must contain only one element"
-msgstr ""
+msgstr "Vrsta popisa mora sadržavati samo jedan element"
 
 #: pisi/pxml/autoxml.py:763 pisi/pxml/autoxml.py:784
 #, python-format
@@ -3071,7 +3075,7 @@ msgstr "Repo ne sadrži paket po imenu %s."
 #: pisi/sourcearchive.py:62
 #, python-format
 msgid "Fetching source from: %s"
-msgstr ""
+msgstr "Dohvaćanje izvora iz: %s"
 
 #: pisi/sourcearchive.py:73
 #, python-format
@@ -3091,12 +3095,12 @@ msgstr "%s zrcala nisu definirana."
 #: pisi/sourcearchive.py:95
 #, python-format
 msgid "Fetching source from mirror: %s"
-msgstr ""
+msgstr "Dohvaćanje izvor iz ogledala: %s"
 
 #: pisi/sourcearchive.py:101
 #, python-format
 msgid "Could not fetch source from %s mirrors."
-msgstr ""
+msgstr "Nije moguće dohvatiti izvor iz %s ogledala."
 
 #: pisi/sourcearchive.py:119
 msgid "unpack: check_file_hash failed"
@@ -3105,17 +3109,17 @@ msgstr ""
 #: pisi/sourcearchive.py:124
 #, python-format
 msgid "Unknown archive type '%s' is given for '%s'."
-msgstr ""
+msgstr "Nepoznata vrsta arhive '%s' je dana za '%s'."
 
 #: pisi/sourcearchive.py:127
 #, python-format
 msgid "Pisi needs %s to unpack this archive but it is not installed."
-msgstr ""
+msgstr "Pisi treba %s raspakirati ovu arhivu, ali nije instalirana."
 
 #: pisi/specfile.py:164
 #, python-format
 msgid "URI: %s, type: %s, sha1sum: %s"
-msgstr ""
+msgstr "URI: %s, tip: %s, sha1sum: %s"
 
 #: pisi/specfile.py:194 pisi/specfile.py:197
 msgid " or "
@@ -3143,7 +3147,7 @@ msgstr "Komponenta: %s\n"
 
 #: pisi/specfile.py:376
 msgid "Provides: "
-msgstr ""
+msgstr "Pruža:"
 
 #: pisi/specfile.py:380
 msgid "Dependencies: "
@@ -3192,12 +3196,12 @@ msgstr ""
 #: pisi/util.py:494
 #, python-format
 msgid "Compression type is not valid: '%s'"
-msgstr ""
+msgstr "Vrsta kompresije nije valjana: '%s'"
 
 #: pisi/util.py:500
 #, python-format
 msgid "Error while decompressing %s: %s"
-msgstr ""
+msgstr "Greška prilikom dekompresije %s: %s"
 
 #: pisi/util.py:543
 #, python-format
