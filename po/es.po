@@ -1,7 +1,7 @@
 # translation of es.po to spanish
 # translation of es.po to
 # Copyright (C) YEAR ORGANIZATION
-#
+# 
 # Klemens Häckel <click3d_at_linuxmail_org>, 2007, 2008.
 # Christian Faure <christian.faurebouvard@laposte.net>, 2007.
 # klemens <click3d at linuxmail org>, 2007.
@@ -19,10 +19,10 @@ msgstr ""
 "PO-Revision-Date: 2010-03-28 20:37-0400\n"
 "Last-Translator: \n"
 "Language-Team: Spanish <kde-i18n-doc@kde.org>\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: pygettext.py 1.5\n"
 "X-Generator: Lokalize 1.0\n"
@@ -83,7 +83,7 @@ msgstr "mostrar número de versión del programa y salir"
 # no idea, i should know the context :(
 #: /usr/lib/python2.7/optparse.py:1273
 msgid "%prog [options]"
-msgstr ""
+msgstr "%prog [opciones]"
 
 #: /usr/lib/python2.7/optparse.py:1493 /usr/lib/python2.7/optparse.py:1532
 #, python-format
@@ -584,24 +584,24 @@ msgid "%s package already fetched"
 msgstr "Paquete %s ya está descargado"
 
 #: pisi/api.py:532
-#, fuzzy, python-format
+#, python-format
 msgid "Cleaning package cache %s..."
-msgstr "Creando Paquete PiSi %s."
+msgstr "Limpiando cache de paquetes %s..."
 
 #: pisi/api.py:534
-#, fuzzy, python-format
+#, python-format
 msgid "Cleaning source archive cache %s..."
-msgstr "No se ha encontrado paquete fuente: %s"
+msgstr "Limpiando cache de paquetes fuentes %s..."
 
 #: pisi/api.py:536
-#, fuzzy, python-format
+#, python-format
 msgid "Cleaning temporary directory %s..."
-msgstr "Limpiando carpeta build..."
+msgstr "Limpiando directorio temporal %s..."
 
 #: pisi/api.py:540
-#, fuzzy, python-format
+#, python-format
 msgid "Removing cache file %s..."
-msgstr "Eliminando paquete %s"
+msgstr "Eliminando archivo %s del cache"
 
 # o mejor decir: capturar estado del sistema ?
 #: pisi/api.py:571
@@ -618,14 +618,13 @@ msgid "File %s not found"
 msgstr "Archivo %s no encontrado"
 
 #: pisi/api.py:786
-#, fuzzy, python-format
+#, python-format
 msgid "Building index of PiSi files under %s"
-msgstr "* Generando índice de archivos de PiSi en %s"
+msgstr "Generando indice de archivos PiSi en %s"
 
 #: pisi/api.py:791
-#, fuzzy
 msgid "Index file written"
-msgstr "* Archivo de índice grabado"
+msgstr "Generación de indice terminado"
 
 #: pisi/api.py:796
 msgid "Not a valid repo name."
@@ -673,9 +672,8 @@ msgid "Updating database at any rate as requested"
 msgstr "Actualizando base de datos de todas formas según solicitado"
 
 #: pisi/api.py:863
-#, fuzzy
 msgid "Package database updated."
-msgstr "* Base de datos de paquetes actualizada."
+msgstr "Base de datos de paquetes actualizada."
 
 #: pisi/api.py:865
 #, python-format
@@ -683,9 +681,9 @@ msgid "No repository named %s found."
 msgstr "No se encontró repositorio con nombre %s."
 
 #: pisi/api.py:878
-#, fuzzy, python-format
+#, python-format
 msgid "Adding '%s' to db... "
-msgstr "* Agregando '%s' a db... "
+msgstr "Agregando '%s' a db... "
 
 #: pisi/api.py:881
 msgid "OK."
@@ -1061,7 +1059,6 @@ msgid "  %s (default)"
 msgstr "  %s (predeterminado)"
 
 #: pisi/cli/check.py:26
-#, fuzzy
 msgid ""
 "Verify installation\n"
 "\n"
@@ -1076,17 +1073,18 @@ msgid ""
 "\n"
 "If no packages are given, checks all installed packages.\n"
 msgstr ""
-"Verificar Instalación\n"
+"Verificar instalación\n"
 "\n"
 "Uso: check [<package1> <package2> ... <packagen>]\n"
+"       check -c <component>\n"
 "\n"
 "<packagei>: nombre de paquete\n"
 "\n"
-"Se guarda un hash criptográfico de verificación para cada archivo instalado.\n"
-"El comando Check usa estas cadenas hash para la verificación de los paquetes.\n"
+"un checksum cryptográfico se guarda por cada archivo instalado.\n"
+"El comando check utiliza los checksums para verificar un paquete.\n"
 "Sencillamente ingrese los nombres de los paquetes.\n"
 "\n"
-"Si no se indican nombres de paquetes, se verificarán todos los paquetes instalados.\n"
+"Si no se especifican paquetes, se verificarán todos los paquetes instalados.\n"
 
 #: pisi/cli/check.py:54
 msgid "check options"
@@ -1107,43 +1105,39 @@ msgstr "Verificando todos los paquetes instalados"
 #: pisi/cli/check.py:91
 #, python-format
 msgid "Checking integrity of %s"
-msgstr ""
+msgstr "Verificando la integridad de %s"
 
 #: pisi/cli/check.py:105
 msgid "Broken"
-msgstr ""
+msgstr "Corrupto"
 
 #: pisi/cli/check.py:110
 msgid "Unknown"
-msgstr ""
+msgstr "Desconocido"
 
 #: pisi/cli/check.py:112
 msgid "OK"
 msgstr "OK"
 
 #: pisi/cli/check.py:118
-#, fuzzy, python-format
+#, python-format
 msgid "Missing file: /%s"
-msgstr ""
-"\n"
-"Archivo faltante: /%s"
+msgstr "Archivo faltante: /%s"
 
 #: pisi/cli/check.py:122
 #, python-format
 msgid "Access denied: /%s"
-msgstr ""
+msgstr "Acceso denegado: /%s"
 
 #: pisi/cli/check.py:126
-#, fuzzy, python-format
+#, python-format
 msgid "Corrupted file: /%s"
-msgstr ""
-"\n"
-"Archivo corrupto: %s"
+msgstr "Archivo corrupto: /%s"
 
 #: pisi/cli/check.py:130
-#, fuzzy, python-format
+#, python-format
 msgid "Modified configuration file: /%s"
-msgstr "Falló la configuración %s ."
+msgstr "Archivo de configuración modificado: /%s"
 
 #: pisi/cli/check.py:135
 #, python-format
@@ -1155,6 +1149,8 @@ msgid ""
 "Pisi was unable to check the integrity of packages which contain files that you don't have read access.\n"
 "Running the check under a privileged user may help fixing this problem."
 msgstr ""
+"Pisi no pudo realizar la verificación de la integridad de paquetes que contienen archivos que requieren privilegios especiales para su acceso.\n"
+"Si ejecuta el chequeo con un usuario privilegiado puede resolver el problema."
 
 #: pisi/cli/clean.py:20
 msgid ""
@@ -1518,20 +1514,20 @@ msgstr ""
 "Use \"%prog help <command>\" para ayuda de un comando específico.\n"
 
 #: pisi/cli/history.py:28
-msgid "emerge"
-msgstr "emerge"
-
-#: pisi/cli/history.py:28
-msgid "install"
-msgstr "instalar"
+msgid "upgrade"
+msgstr "actualizar"
 
 #: pisi/cli/history.py:28
 msgid "remove"
 msgstr "eliminar"
 
 #: pisi/cli/history.py:28
-msgid "repository update"
-msgstr "Actualización de repositorio"
+msgid "emerge"
+msgstr "emerge"
+
+#: pisi/cli/history.py:28
+msgid "install"
+msgstr "instalar"
 
 #: pisi/cli/history.py:28
 msgid "snapshot"
@@ -1543,8 +1539,8 @@ msgid "takeback"
 msgstr "retroceder"
 
 #: pisi/cli/history.py:28
-msgid "upgrade"
-msgstr "actualizar"
+msgid "repository update"
+msgstr "Actualización de repositorio"
 
 #: pisi/cli/history.py:31
 msgid ""
@@ -2651,9 +2647,8 @@ msgstr "Metadata de paquete %s: corrupto, omitiendo..."
 
 # here "source" means - like source code ? (not "base".. )
 #: pisi/index.py:237
-#, fuzzy
 msgid "Adding groups.xml to index"
-msgstr "Agregando %s a index de fuentes"
+msgstr "Agregando groups.xml al indice"
 
 #: pisi/index.py:243
 #, fuzzy
@@ -3537,14 +3532,12 @@ msgstr "Nombre de paquete delta no válido: %s"
 msgid "Invalid version string: '%s'"
 msgstr "Cadena de versión inválida: '%s'"
 
-# sense is "current directory" i think ?
 #~ msgid "Outputting packages in the working directory."
 #~ msgstr "Guardando paquetes en la carpeta actual."
 
 #~ msgid "* Checking %s... "
 #~ msgstr "* Verificando %s... "
 
-# favor verificar, no estoy seguro, depende del contexto
 #~ msgid ""
 #~ "\n"
 #~ "Package %s has changed config files."
