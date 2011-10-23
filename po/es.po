@@ -2651,15 +2651,13 @@ msgid "Adding groups.xml to index"
 msgstr "Agregando groups.xml al indice"
 
 #: pisi/index.py:243
-#, fuzzy
 msgid "Adding components.xml to index"
-msgstr "Agregando paquete a index: %s"
+msgstr "Agregando components.xml al indice"
 
 # here "source" means - like source code ? (not "base".. )
 #: pisi/index.py:253
-#, fuzzy
 msgid "Adding distribution.xml to index"
-msgstr "Agregando %s a index de fuentes"
+msgstr "Agregando distribution.xml al indice"
 
 # here "source" means - like source code ? (not "base".. )
 #: pisi/index.py:274
@@ -2815,12 +2813,12 @@ msgstr "no posible llamar función desde acciones: %s"
 #: pisi/operations/build.py:751
 #, python-format
 msgid "Source package '%s' defines a relative 'Path' element: %s"
-msgstr ""
+msgstr "Paquete fuente '%s' especifica elemento 'Path' relativo: %s"
 
 #: pisi/operations/build.py:755
 #, python-format
 msgid "Source package '%s' defines multiple 'Path' tags for %s"
-msgstr ""
+msgstr "Paquete fuente '%s' especifica multiples tags 'Path' para %s"
 
 # did I get "safety switch" right (in this context)?
 #: pisi/operations/build.py:784
@@ -2870,9 +2868,9 @@ msgid "Patch file is empty: %s"
 msgstr "Archivo de parche está vacío: %s"
 
 #: pisi/operations/build.py:844
-#, fuzzy, python-format
+#, python-format
 msgid "Applying patch: %s"
-msgstr "* Aplicando parche: %s"
+msgstr "Aplicando parche: %s"
 
 #: pisi/operations/build.py:963
 #, python-format
@@ -2919,7 +2917,7 @@ msgstr "Conservando carpeta build"
 
 #: pisi/operations/build.py:1237
 msgid "Action script error caught."
-msgstr ""
+msgstr "Error de script de acción."
 
 #: pisi/operations/build.py:1241
 #, python-format
@@ -2929,7 +2927,7 @@ msgstr "*** %d error(es), %d alerta(s)"
 #: pisi/operations/build.py:1324
 #, python-format
 msgid "Last state was '%s'"
-msgstr ""
+msgstr "Ultimo estado era '%s'"
 
 #: pisi/operations/delta.py:43
 #, python-format
@@ -3397,7 +3395,7 @@ msgstr "Tipo de archivo '%s' desconocido para el archivo '%s'."
 #: pisi/sourcearchive.py:127
 #, python-format
 msgid "Pisi needs %s to unpack this archive but it is not installed."
-msgstr ""
+msgstr "Pisi requiere de %s para descomprimir el archivo, pero no está instalado."
 
 #: pisi/specfile.py:164
 #, python-format
@@ -3470,7 +3468,7 @@ msgstr "Incluyendo carpeta '%s'"
 
 #: pisi/util.py:480
 msgid "You don't have necessary read permissions"
-msgstr ""
+msgstr "No tiene permisos suficientes para la lectura"
 
 #: pisi/util.py:482
 #, python-format
