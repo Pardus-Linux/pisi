@@ -14,11 +14,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Country: CROATIA\n"
 "Language: \n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Croatian\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: CROATIA\n"
 
 #: /usr/lib/python2.7/optparse.py:140
 #, python-format
@@ -1160,7 +1160,7 @@ msgstr "Lozinka:"
 
 #: pisi/cli/command.py:191
 msgid "Command terminated abnormally."
-msgstr ""
+msgstr "Naredba nenormalno prekinuta."
 
 #: pisi/cli/command.py:206 pisi/cli/emerge.py:53
 msgid "Bypass comar configuration agent"
@@ -1460,7 +1460,7 @@ msgstr "Datum: %s %s"
 #: pisi/cli/history.py:72
 #, python-format
 msgid "    * There are %d packages in this snapshot."
-msgstr ""
+msgstr "* Postoje %d paketi u ovom snimku."
 
 #: pisi/cli/index.py:23
 msgid ""
@@ -1623,11 +1623,11 @@ msgstr "Instalirajte komponentu i rekurzivne pakete komponente"
 
 #: pisi/cli/install.py:59
 msgid "Name of the component's repository"
-msgstr ""
+msgstr "Naziv repozitorija komponente "
 
 #: pisi/cli/install.py:61 pisi/cli/upgrade.py:66
 msgid "Fetch upgrades but do not install."
-msgstr ""
+msgstr "Dohvati nadogradnje, ali ne instaliraj."
 
 #: pisi/cli/install.py:63
 msgid "When installing packages, ignore packages and components whose basenames match pattern."
@@ -1751,7 +1751,7 @@ msgstr "opcije listaj-najnovije"
 
 #: pisi/cli/listnewest.py:46
 msgid "List new packages added to repository after this given date formatted as yyyy-mm-dd"
-msgstr ""
+msgstr "Izlistaj nove pakete dodane u repozitorij nakon određenog datuma u formatu yyyy-mm-dd"
 
 #: pisi/cli/listnewest.py:48
 msgid "List new packages added to repository after last nth previous repository update"
@@ -1888,7 +1888,7 @@ msgstr "opcije uklanjanja"
 
 #: pisi/cli/remove.py:46
 msgid "Removes everything including changed config files of the package"
-msgstr ""
+msgstr "Uklanja sve, uključujući promijenjene konfiguracijske datoteke paketa"
 
 #: pisi/cli/remove.py:48
 msgid "Remove component's and recursive components' packages"
@@ -2272,7 +2272,7 @@ msgstr "Došlo je do greške.Provjerite adresu arhiva i/ili dozvole ponovno."
 #: pisi/fetcher.py:207
 #, python-format
 msgid "Proxy configuration has been found for '%s' protocol"
-msgstr ""
+msgstr "Proxy konfiguracija je pronađena za '%s' protokol"
 
 #: pisi/fetcher.py:214
 #, python-format
@@ -2309,7 +2309,7 @@ msgstr ""
 #: pisi/file.py:136
 #, python-format
 msgid "Fetching %s"
-msgstr ""
+msgstr "Dohvaćam %s"
 
 #: pisi/file.py:140
 #, python-format
@@ -2855,6 +2855,8 @@ msgid ""
 "The following list of packages will be removed\n"
 "in the respective order to satisfy dependencies:\n"
 msgstr ""
+"Sljedeći lista paketa će biti uklonjena\n"
+"kako bi zadovoljili ovisnosti:\n"
 
 #: pisi/operations/remove.py:73
 msgid "Package removal declined"
